@@ -1,0 +1,27 @@
+.TrustedPartner-container
+{
+
+}
+
+.TrustedPartner-container .body-heading{
+    font-size: 48px;
+}
+
+.TrustedPartner-container .partner-logo-carasoul
+{
+    background-color:  hsla(0, 0%, 32%, 0.5);
+    border-radius: 20px;
+    padding: 28px;
+    height: 130px;
+}
+
+.TrustedPartner-container .swiper-slide
+{
+    text-align: center;
+}
+
+.TrustedPartner-container .icons
+{
+    width: 60%;
+
+}

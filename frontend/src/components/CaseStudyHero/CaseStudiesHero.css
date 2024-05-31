@@ -1,0 +1,49 @@
+.CaseStudiesHero-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.CaseStudiesHero-container .content-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.CaseStudiesHero-container .text-content {
+    text-align: center;
+}
+
+.CaseStudiesHero-container .body-heading {
+    font-size: 3rem; /* Decrease font size for better fit on smaller screens */
+    padding-top: 6rem; /* Adjust as needed */
+}
+
+.CaseStudiesHero-container .body-paragraph {
+    font-size: 0.9rem; /* Decrease font size for better fit on smaller screens */
+    padding-top: 1rem; /* Adjust as needed */
+    padding-bottom: 3rem; /* Adjust as needed */
+    max-width: 90%; /* Adjust the width as needed */
+    text-align: center; /* Align text to the center */
+    margin: auto; /* Center the description horizontally */
+}
+
+.CaseStudiesHero-container .color-yellow {
+    color: #ffc107;
+}
+
+@media (max-width: 576px) {
+    .CaseStudiesHero-container .body-heading {
+        font-size: 2rem; /* Decrease font size for better fit on smaller screens */
+        padding-top: 4rem; /* Adjust as needed */
+    }
+
+    .CaseStudiesHero-container .body-paragraph {
+        font-size: 0.8rem; /* Decrease font size for better fit on smaller screens */
+        padding-top: 0.5rem; /* Adjust as needed */
+        padding-bottom: 2rem; /* Adjust as needed */
+    }
+}

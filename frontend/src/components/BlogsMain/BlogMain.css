@@ -1,0 +1,145 @@
+.blogmain-container {
+    margin: 0; /* Remove any default margins */
+    padding: 0; /* Remove any default padding */
+    margin-bottom: 0;
+}
+
+.blogmain-container .text-content {
+    margin-top: 130px;
+}
+
+.blogmain-container .body-heading {
+    text-align: center;
+}
+
+.blogmain-container .body-paragraph {
+    text-align: center;
+}
+
+.blogmain-container .image-section {
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    position: relative; /* Important for positioning the transparent box */
+    height: 600px;
+    margin-bottom: 14rem;
+}
+
+.blogmain-container .image-section .small-image {
+    width: 100%; /* Adjust for responsiveness */
+    max-width: 1200px;
+    height: auto;
+}
+
+.blogmain-container .transparent-box {
+    position: absolute;
+    top: 470px; /* Adjust as needed */
+    left: 32%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+    border-radius: 13px;
+    background-color: rgba(119, 116, 116, 0.7); /* Transparent white */
+    padding: 20px;
+    width: 90%; /* Responsive width */
+    max-width: 450px;
+    height: auto; /* Adjust for responsiveness */
+}
+
+.blogmain-container .transparent-box button {
+    background-color: rgba(83, 84, 85, 0.0); /* Transparent Bootstrap primary color */
+    color: rgb(255, 0, 0); /* Semi-transparent white text color */
+    border: 1px solid red;
+    padding: 3px 20px;
+    border-radius: 22px;
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+.blogmain-container .transparent-box h2 {
+    font-size: 26px;
+    margin-top: 8px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+    color: white;
+}
+
+.blogmain-container .transparent-box img {
+    max-width: 100px; /* Adjust as needed */
+    margin-bottom: 10px;
+}
+
+.blogmain-container .transparent-box h4 {
+    font-size: 14px;
+    color: white; /* Gray text color */
+}
+
+.blogmain-container .logo-container {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    margin-left: 10px;
+    margin-top: 1.4rem;
+}
+
+.blogmain-container .logo-img {
+    width: 50px; /* Set width of the logo */
+    height: auto; /* Automatically adjust height to maintain aspect ratio */
+    margin-right: 10px; /* Adjust spacing between logo and text */
+}
+
+.blogmain-container .logo-text {
+    font-size: 14px; /* Adjust font size of the text */
+    color: #777; /* Adjust color of the text */
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+    .blogmain-container .text-content {
+        margin-top: 50px; /* Adjust for smaller screens */
+       
+    }
+
+    .blogmain-container .image-section {
+        height: auto; /* Adjust height for smaller screens */
+        margin-bottom: 7rem;
+    }
+
+    .blogmain-container .transparent-box {
+        top: auto; /* Reset top position */
+        left: 50%;
+        bottom: 20px; /* Position from bottom */
+        transform: translateX(-50%);
+        width: 90%; /* Full width for smaller screens */
+        max-width: none; /* Remove max-width restriction */
+    }
+
+    .blogmain-container .transparent-box h2 {
+        font-size: 20px; /* Adjust font size for smaller screens */
+    }
+
+    .blogmain-container .transparent-box h4 {
+        font-size: 12px; /* Adjust font size for smaller screens */
+    }
+
+    .blogmain-container .transparent-box button {
+        padding: 3px 10px; /* Adjust padding for smaller screens */
+        margin-top: 10px; /* Adjust margin for smaller screens */
+        margin-left: 0; /* Center align on smaller screens */
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .blogmain-container .logo-container {
+        flex-direction: column; /* Stack logo and text vertically */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .blogmain-container .logo-img {
+        margin-right: 0; /* Remove right margin */
+        margin-bottom: 5px; /* Add bottom margin */
+    }
+
+    .blogmain-container .logo-text {
+        font-size: 12px; /* Adjust font size for smaller screens */
+    }
+}

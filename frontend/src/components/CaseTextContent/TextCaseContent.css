@@ -1,0 +1,40 @@
+.TextCaseContent-container
+{
+    background-color: #101010;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    
+}
+
+.TextCaseContent-container .main{
+    height: 40vh;
+}
+
+.TextCaseContent-container .cont-head{
+  margin-top: 45px;
+  margin-bottom: 15px;
+}
+
+.TextCaseContent-container .imgg-style{
+    width: 60vh;
+    height: 35vh;
+    margin-left: 36px;
+}
+
+
+.TextCaseContent-container .body-heading{
+   margin-top: 60px;
+   margin-bottom: 8px;
+}
+
+.TextCaseContent-container .body-paragraph{
+   
+}
+
+
+
+.TextCaseContent-container .list-bullet
+{
+    margin: 0;
+    margin-right: 5px;
+}

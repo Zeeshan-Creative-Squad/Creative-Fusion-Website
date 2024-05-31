@@ -1,0 +1,47 @@
+.ServiceCard-container
+{
+
+}
+
+.ServiceCard-container .body-heading {
+    text-align: center;
+    font-size: 40px;
+}
+
+.ServiceCard-container .body-paragraph{
+    line-height: 2;
+}
+
+.ServiceCard-container .service-card 
+{
+    border-radius: 30px;
+    padding: 40px;
+    /* height: 100%; */
+}
+.ServiceCard-container .service-card:hover
+{
+   
+    background-color:  hsla(0, 0%, 28%, 0.7);
+}
+
+.ServiceCard-container .service-card-anchor
+{
+    cursor: pointer;
+    text-decoration: underline;
+    margin-bottom: 0;
+}
+
+
+.ServiceCard-container .service-card-anchor img
+{
+    width: 40px;
+    height: 22px;
+}
+
+@media(min-width:1300px)
+{
+    .ServiceCard-container .service-card 
+    {
+        padding: 70px;
+    }
+}

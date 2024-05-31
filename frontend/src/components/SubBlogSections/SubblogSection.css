@@ -1,0 +1,37 @@
+.subblogsection-main {
+  padding: 8rem 0;
+}
+
+.subblogsection-main .header-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-bottom: 4rem; */
+    
+  }
+  .subblogsection-main .head-primary{
+    margin-left: 8rem;
+    color: white;
+    font-size: 50px;
+    font-weight: 900;
+  }
+  
+  .subblogsection-main .header-box .btn-pri {
+    border-radius: 50px;
+    margin-right: 6.7rem;
+    width: 155px;
+    height: 45px;
+    font-size: 15px;
+  }
+  
+
+  @media (max-width: 576px) {
+    .subblogsection-main .header-box {
+      flex-direction: column; /* Change flex-direction to column for smaller screens */
+      align-items: flex-start; /* Align items to flex-start for smaller screens */
+    }
+  
+    .subblogsection-main .header-box .btn-pri {
+      margin-top: 20px; /* Add margin-top for better spacing on smaller screens */
+    }
+  }

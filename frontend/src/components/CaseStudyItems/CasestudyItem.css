@@ -1,0 +1,82 @@
+.case-study-item {
+    display: flex;
+    flex-direction: row; /* Align items in a row */
+    align-items: flex-start; /* Align items at the top */
+    margin: 20px; /* Add some margin for spacing between items */
+    padding-top: 45px;
+}
+
+.case-study-item:not(:last-child) {
+    border-bottom: 1px solid rgb(59, 59, 59); /* Add a solid border at the bottom for all except the last child */
+}
+
+.case-study-item .image-container {
+    flex: 1; /* Allow the image to take up available space */
+    max-width: 35%; /* Ensure the image doesn't exceed half the width */
+}
+
+.case-study-item .image-container img {
+    width: 100%; /* Ensure the image fills the container */
+    height: auto; /* Allow the height to adjust proportionally */
+    padding-bottom: 1rem; /* Add some spacing between image and text */
+}
+
+.case-study-item .text-container {
+    flex: 2; /* Allow the text container to take up available space */
+    max-width: 60%; /* Set a max-width to ensure text wraps */
+    text-align: left; /* Align text to the left */
+    word-wrap: break-word; /* Ensure long words break and wrap */
+    margin-left: 20px; /* Add some margin between the image and text */
+}
+
+.case-study-item .text-container h2 {
+    font-size: 2.9rem; /* Adjust heading size as needed */
+    margin-bottom: 10px;
+    color: white; /* Space between heading and description */
+    padding-top: 1.5rem;
+    margin-left: 10.5rem;
+}
+
+.case-study-item .text-container p {
+    font-size: 1.2rem; /* Adjust paragraph size as needed */
+    margin-left: 10.5rem;
+    line-height: 1.8;
+}
+
+.case-study-item .case-study-link {
+    font-size: 1rem; /* Adjust link size as needed */
+    color: rgb(255, 153, 0); /* Link color */
+    text-decoration: none; /* Remove underline from link */
+    display: inline-block; /* Ensure proper spacing and layout */
+    margin-top: 10px; /* Space above the link */
+    margin-left: 10.5rem;
+}
+
+.case-study-item .case-study-link:hover {
+    text-decoration: none; /* Underline on hover */
+} 
+
+/* Media queries for mobile responsiveness */
+@media (max-width: 768px) {
+    .case-study-item {
+        flex-direction: column; /* Change direction to column for mobile layout */
+        align-items: center; /* Center items horizontally */
+    }
+
+    .case-study-item .image-container {
+        max-width: 100%; /* Allow the image to take full width */
+    }
+
+    .case-study-item .text-container {
+        max-width: 100%; /* Allow the text container to take full width */
+        text-align: center; /* Align text to center for mobile layout */
+        margin-top: 20px; /* Add margin between image and text */
+        margin-left: 0; /* Reset margin for mobile layout */
+    }
+
+    .case-study-item .text-container h2,
+    .case-study-item .text-container p,
+    .case-study-item .case-study-link {
+        margin-left: 0; /* Reset margin for mobile layout */
+    }
+}

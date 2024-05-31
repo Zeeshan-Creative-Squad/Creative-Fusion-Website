@@ -1,0 +1,28 @@
+.OurTeam-container {
+    height: auto; /* Change height to auto for responsiveness */
+}
+
+.OurTeam-container .team-card {
+    padding: 15px;
+    margin-top: 15px;
+}
+
+@media (max-width: 991px) {
+    .OurTeam-container .team-card {
+        margin-top: 30px; /* Adjust margin for better spacing on smaller screens */
+    }
+}
+
+@media (max-width: 767px) {
+    .OurTeam-container .team-card {
+        padding: 10px; /* Reduce padding on smaller screens */
+    }
+
+    .OurTeam-container .team-card h5 {
+        font-size: 1.4rem; /* Decrease font size for team member names */
+    }
+
+    .OurTeam-container .team-card p {
+        font-size: 0.9rem; /* Decrease font size for team member roles */
+    }
+}

@@ -1,0 +1,22 @@
+.GratefulPartner-container
+{
+
+}
+
+.GratefulPartner-container .partner-logo-carasoul
+{
+    background-color: rgba(0, 0, 0, 0.154);
+    border-radius: 21px;
+    padding: 20px;
+}
+
+.GratefulPartner-container .swiper-slide
+{
+    text-align: center;
+}
+
+.GratefulPartner-container .icons
+{
+    width: 50%;
+
+}

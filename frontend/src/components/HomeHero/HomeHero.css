@@ -1,0 +1,100 @@
+.HomeHero-container {
+    height: 100vh;
+    min-height: auto;
+    position: relative; /* Add this to ensure absolute positioning works correctly */
+}
+
+.HomeHero-container .text-content {
+    text-align: left; 
+    padding-bottom: 180px;
+}
+
+.HomeHero-container .text-content .body-heading {
+    text-align: left;
+    font-size: 56px;
+    font-weight: 800;
+}
+
+.HomeHero-container .text-content .line-break {
+    display: block;
+}
+
+.HomeHero-container .text-content .body-paragraph {
+    /* Add styles if needed */
+}
+
+.HomeHero-container .home-hero-img {
+    position: absolute;
+    max-height: 140%;
+    left: 57%;
+    bottom: 1.5%;
+    transform: translateX(-50%);
+}
+
+.HomeHero-container .img-1 {
+    top: -88px;
+    width: 80%;
+}
+
+.HomeHero-container .img-container {
+    height: 550px;
+    margin-left: 8%;
+}
+
+@media (min-width: 1400px) {
+    .HomeHero-container {
+        min-height: 65vh;
+    }
+}
+
+@media (max-width: 992px) {
+    .HomeHero-container .img-container {
+        margin-left: 0;
+        
+    }
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+    .HomeHero-container {
+        height: 130vh;
+        padding: 20px; /* Add padding for smaller screens */
+    }
+
+    .HomeHero-container .text-content {
+        text-align: center; /* Center text for smaller screens */
+        padding-bottom: 20px; /* Reduce padding for smaller screens */
+    }
+
+    .HomeHero-container .text-content .body-heading {
+        font-size: 32px; /* Adjust font size for smaller screens */
+    }
+
+    .HomeHero-container .text-content .body-paragraph {
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
+
+    
+    .HomeHero-container .home-hero-img {
+        position: relative;
+        max-height: 100%;
+        width: 100%; /* Make the image responsive */
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+        margin-top: 20px; /* Add margin to separate text and image */
+    }
+    .HomeHero-container .img-1 {
+        top: auto;
+        width: 100%;
+    }
+    .HomeHero-container .img-container {
+        height: auto;
+        margin-left: 0;
+        text-align: center; /* Center image container */
+    }
+    .HomeHero-container .img-2{
+        position: relative;
+        top: -295px;
+    }
+}

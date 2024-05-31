@@ -1,0 +1,179 @@
+.footer {
+  background-color: #000000;
+  color: #fff;
+  padding: 160px 0 40px; /* Adjusted padding to make space for the footer bottom */
+  text-align: left;
+  width: 100%;
+}
+
+.footer .upper-section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.footer-section {
+  flex: 1;
+  margin: 0 20px; /* Adjust spacing between sections */
+}
+
+.footer-section img {
+  margin-left: 7rem;
+}
+
+.footer-section .footer-text {
+  flex: 2; /* Allow the text container to take up available space */
+  max-width: 470px; /* Set a max-width to ensure text wraps */
+  text-align: left; /* Align text to the left */
+  word-wrap: break-word; /* Ensure long words break and wrap */
+  margin-left: 7rem;
+  padding-top: 1.8rem;
+  line-height: 2;
+}
+
+.footer-section h3 {
+  color: #fff;
+}
+
+.footer-section .specific-paragraph .span {
+  color: red;
+  display: inline; /* Move span text to a new line */
+}
+
+.footer-section .specific-paragraph .span-block {
+  color: red;
+  display: block; /* Move span text to a new line */
+}
+
+.footer .footer-section .specific-paragraph {
+  font-size: 21px;
+  margin-left: 7rem;
+}
+
+.footer .footer-heading {
+  margin-top: 20px;
+  margin-left: 7rem;
+  font-size: 35px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-left: 4.9rem;
+  line-height: 2.5;
+}
+
+ul li a {
+  color: white; /* Set text color to white */
+  text-decoration: none; /* Remove underline if any */
+}
+
+ul li a:hover {
+  color: grey; /* Ensure the hover color is the same as the regular color */
+}
+
+.footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  position: relative;
+  margin: 5px; /* Add margins to provide space between the text/icons and the dividers */
+  padding: 15px;
+}
+
+.footer .blog-subfooter {
+  margin: 0 122px;
+}
+
+.footer .p-text {
+  font-size: 15px;
+  margin-left: 2rem;
+}
+
+.footer .social-icons {
+  display: flex;
+  margin-right: 6rem;
+}
+
+.footer .icon {
+  color: white;
+  margin-left: 10px;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+.footer .icon:hover {
+  color: red; /* Change this to the hover color you prefer */
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+  .footer {
+    padding: 80px 20px 20px; /* Adjust padding for smaller screens */
+    text-align: center; /* Center text for smaller screens */
+  }
+
+  .footer .upper-section {
+    flex-direction: column; /* Stack sections vertically */
+    align-items: center; /* Center align items */
+    text-align: center;
+  }
+
+  .footer-section {
+    margin: 20px 0; /* Add vertical margin between sections */
+    text-align: center; /* Center text within sections */
+  }
+
+  .footer-section img,
+  .footer-section .footer-text,
+  .footer .footer-heading,
+  .footer .footer-section .specific-paragraph {
+    margin-left: 0; /* Remove left margin for smaller screens */
+    text-align: center;
+    
+  }
+
+  .footer-section img {
+    max-width: 80%; /* Adjust image size for smaller screens */
+  }
+
+  .footer-section .footer-text {
+    max-width: 100%; /* Allow text to take full width */
+    padding-top: 1rem; /* Adjust padding for smaller screens */
+    text-align: center;
+  }
+
+  .footer-section h3,
+  .footer .footer-heading {
+    font-size: 28px; /* Adjust font size for smaller screens */
+  }
+
+  .footer-section .specific-paragraph .span,
+  .footer-section .specific-paragraph .span-block {
+    font-size: 18px; /* Adjust font size for smaller screens */
+  }
+
+  ul {
+    margin-left: 0; /* Remove left margin for smaller screens */
+   
+  }
+
+  .footer .footer-content {
+    flex-direction: column; /* Stack content vertically */
+  
+  }
+
+  .footer .p-text {
+    margin: 10px 0; /* Add margin for spacing */
+  }
+
+  .footer .social-icons {
+    margin: 20px 0; /* Add margin for spacing */
+  }
+
+  .footer .icon {
+    font-size: 30px; /* Adjust icon size for smaller screens */
+    margin-left: 0; /* Remove left margin */
+  }
+}

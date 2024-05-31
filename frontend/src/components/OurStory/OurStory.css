@@ -1,0 +1,50 @@
+.OurStory-container{}
+
+.OurStory-container .stat-border-right
+{
+    width: 0;
+    height: 100%;
+    
+    border: 1px solid grey;
+}
+
+
+.OurStory-container .story-stuff{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.OurStory-container .body-heading{
+    font-size: 45px;
+    font-weight: 900;
+}
+.OurStory-container .body-paragraph{
+    line-height: 1.9;
+}
+
+.OurStory-container .story-subheading{
+    font-size: 25px;
+}
+
+@media (max-width: 768px) {
+    .OurStory-container .stat-border-right {
+        display: none; /* Hide the border for smaller screens */
+    }
+
+    .OurStory-container .story-stuff {
+        font-size: 30px; /* Adjust font size for smaller screens */
+    }
+
+    .OurStory-container .body-heading {
+        font-size: 35px; /* Adjust font size for smaller screens */
+    }
+
+    .OurStory-container .body-paragraph {
+        font-size: 16px; /* Adjust font size for smaller screens */
+        line-height: 1.6; /* Adjust line height for better readability on mobile */
+    }
+
+    .OurStory-container .story-subheading {
+        font-size: 20px; /* Adjust font size for smaller screens */
+    }
+}

@@ -1,0 +1,206 @@
+.blog-inner {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .blog-inner .header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-right: 60rem;
+  }
+  
+  .blog-inner .header h6 {
+    margin-right: 60px;
+    margin-top: 10px;
+    color: white;
+
+  }
+  
+  .blog-inner .blog-btn {
+    background-color: transparent;
+    border: 2px solid red;
+    color: red;
+    padding: 5px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-right: 40px;
+    border-radius: 60px;
+  }
+  
+  .blog-inner .blog-btn:hover {
+    background-color: transparent;
+    color: white;
+  }
+  
+  .blog-inner .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85%; /* Adjust the width as needed */
+    height: 60vh; /* Adjust the height as needed */
+    margin: 0 auto; /* Center the container horizontally */
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .blog-inner .image-container img {
+    width: 96.5%; /* Ensure the image takes up the entire width of its container */
+    height: 100%; /* Ensure the image takes up the entire height of its container */
+    object-fit: cover; /* This property ensures that the image covers the entire container */
+  }
+  
+  
+  
+  .blog-inner .main-heading {
+    text-align: center;
+    margin-top: 45px;
+    margin-bottom: 40px;
+    margin-right: 55rem; /* Adjust the value as needed */
+    color: white;
+  }
+
+  .blog-inner .blog-head {
+    color: white;
+    font-weight: bold;
+    font-size: 43px;
+    padding-left: 30px;
+  }
+  
+  
+  .blog-inner .subheading-container {
+    position: relative;
+    margin-left: 140px;
+    margin-bottom: 20px;
+  }
+
+  .blog-inner .upperheading-h2{
+    color: white;
+    margin-top: 4rem;
+  }
+
+  .blog-inner .upperpara{
+    color: white;
+    margin-bottom: 3rem;
+    line-height: 2.2;
+  }
+
+  .blog-inner .heading-h2 {
+    color: white;
+  }
+
+  
+  .blog-inner .subheading-content {
+    border-left: 5px solid red;
+    padding-left: 22px;
+    line-height: 2;
+    color: rgb(185, 184, 184);
+  }
+  
+
+
+  .blog-inner .para-content {
+    margin-top: 4rem;
+    line-height: 2;
+    color: rgb(185, 184, 184);
+  }
+
+
+  .blog-inner .subheading-work {
+    margin-top: 2rem;
+    padding-left: 130px;
+    line-height: 2;
+    color: rgb(185, 184, 184);
+  }
+
+
+  .blog-inner .blog-subfooter {
+    position: relative;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.blog-inner .divider {
+  border: 0;
+  height: 1px;
+  background: white;
+  width: 88%; /* Adjust the width as needed */
+  margin: 0 auto; /* Remove top and bottom margins */
+}
+
+.blog-inner .blog-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  position: relative;
+  margin:  20px; /* Add margins to provide space between the text/icons and the dividers */
+}
+
+.blog-inner .footer-text {
+  font-size: 18px;
+  margin-left: 7rem;
+}
+
+.blog-inner .social-icons {
+  display: flex;
+  margin-right: 6rem;
+  
+}
+
+.blog-inner .icon {
+  color: white;
+  margin-left: 10px;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+.blog-inner .icon:hover {
+  color: red; /* Change this to the hover color you prefer */
+}
+
+@media (max-width: 992px) {
+  .blog-inner .header {
+      margin-right: 5%; /* Adjust margin-right for better spacing on medium screens */
+  }
+
+  .blog-inner .blog-btn {
+      margin-right: 10px; /* Adjust margin-right for better spacing on medium screens */
+  }
+
+  .blog-inner .image-container {
+      height: 40vh; /* Adjust the height as needed for medium screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .blog-inner .header {
+    flex-direction: column; /* Change flex-direction to column for smaller screens */
+    align-items: flex-start; /* Align items to flex-start for smaller screens */
+    margin-right: 0; /* Remove margin-right for smaller screens */
+  }
+
+  .blog-inner .header h6 {
+    margin-bottom: 10px; /* Add margin-bottom for better spacing on smaller screens */
+    margin-right: 0; /* Remove margin-right for smaller screens */
+  }
+
+  .blog-inner .blog-btn {
+    margin-right: 0; /* Remove margin-right for smaller screens */
+    margin-top: 10px; /* Add margin-top for better spacing on smaller screens */
+  }
+
+  .blog-inner .main-heading {
+    margin-right: 0; /* Remove margin-right for smaller screens */
+  }
+
+  .blog-inner .image-container {
+    height: 30vh; /* Adjust the height as needed for smaller screens */
+  }
+
+  .blog-inner .image-container img {
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Make the image responsive */
+  }
+}

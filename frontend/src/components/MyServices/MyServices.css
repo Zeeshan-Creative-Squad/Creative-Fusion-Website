@@ -1,0 +1,123 @@
+/* Keep original styles */
+
+.MyServices-container {
+    height: auto;
+}
+
+.MyServices-container .service-card-container {
+    /* border: 4px dashed #707070 ; */
+    /* border-radius: 14px; */
+}
+
+.MyServices-container .text-content {
+    margin-top: 50px;
+}
+
+.MyServices-container .rows .body-paragraph {
+    font-size: 41px;
+}
+
+.MyServices-container .service-card-container .card-title {
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.MyServices-container .service-card-container .card-content {
+    font-size: 16px;
+}
+
+.MyServices-container .service-card-container .card-anchor {
+    font-size: 16px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.MyServices-container .service-card-container .card-anchor:hover {
+    color: #023c58;
+}
+
+.MyServices-container .card-sized-box {
+    overflow-y: scroll;
+    height: 410px;
+}
+
+.MyServices-container .card-sized-box {
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.MyServices-container .card-sized-box::-webkit-scrollbar {
+    display: none;
+}
+
+.MyServices-container .card-sized-box::-webkit-scrollbar {
+    -ms-overflow-style: none;
+}
+
+.MyServices-container .stat-border-right {
+    width: 0;
+    height: 100%;
+    border: 1px solid grey;
+}
+
+.MyServices-container .card-btn {
+    border-radius: 50%;
+    background: transparent;
+    border: 1px solid white;
+    padding: 26px;
+    transition: .3s;
+}
+
+.MyServices-container .card-btn:hover {
+    background: #ea3317;
+    border: 1px solid #ea3317;
+}
+
+.MyServices-container .card-btn-img {
+    width: 45px;
+}
+
+/* New styles for mobile responsiveness */
+
+@media (max-width: 768px) {
+    .MyServices-container {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .MyServices-container .text-content {
+        margin-top: 10px; /* Adjust top margin for smaller screens */
+    }
+
+    .MyServices-container .rows .body-paragraph {
+        font-size: 24px; /* Reduce font size for smaller screens */
+    }
+
+    .MyServices-container .service-card-container .card-title {
+        font-size: 18px; /* Reduce font size for smaller screens */
+    }
+
+    .MyServices-container .service-card-container .card-content {
+        font-size: 12px; /* Reduce font size for smaller screens */
+    }
+
+    .MyServices-container .service-card-container .card-anchor {
+        font-size: 12px; /* Reduce font size for smaller screens */
+    }
+
+    .MyServices-container .card-sized-box {
+        max-height: 380px; /* Adjust max-height for smaller screens */
+    }
+
+    .MyServices-container .stat-border-right {
+        display: none; /* Hide the border for smaller screens */
+    }
+
+    .MyServices-container .card-btn {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .MyServices-container .card-btn-img {
+        width: 25px; /* Adjust image size for smaller screens */
+    }
+}

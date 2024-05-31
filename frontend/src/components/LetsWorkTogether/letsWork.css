@@ -1,0 +1,51 @@
+
+
+
+
+.letsWorkSection {
+    text-align: center;
+    margin: 50px auto;
+  }
+  
+  .letsWorkSection h2 {
+    font-size: 45px;
+    color: white;
+    font-weight: bold;
+    line-height: 1.4;
+  }
+
+  .letsWorkSection span {
+    color: red;
+  }
+  
+  .letsWorkSection p {
+    font-size: 15px;
+    color: white;
+    line-height: 2.1;
+    margin: 20px 0;
+  }
+  
+  .buttonContainer {
+    margin-top: 20px;
+  }
+  
+  .buttonContainer button {
+    padding: 10px 20px;
+    margin: 0 8px;
+    margin-top: 1.8rem;
+    font-size: 16px;
+    cursor: pointer;
+    width: 180px;
+    background-color: red;
+    color: #fff;
+    border: none;
+    border-radius: 22px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .buttonContainer button:hover {
+    background-color: white;
+    color: red;
+    border: none;
+  }
+  

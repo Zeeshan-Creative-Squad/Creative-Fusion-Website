@@ -1,0 +1,145 @@
+.blog-inner{
+  height: 190vh;
+}
+
+
+
+.blog-inner .content {
+    padding: 20px;
+    margin-top: 11rem;
+  }
+
+
+  .blog-inner .case-contentbox{
+    padding-top: 90px;
+    
+  }
+
+  .blog-inner .content .case-head{
+    color: white;
+    margin-left: 2.2rem;
+    font-weight: 900;
+    font-size: 50px;
+  }
+
+  .blog-inner .content .case-para{
+    color: grey;
+  }
+  
+  .blog-inner .text-section {
+    margin-top: 20px;
+  }
+
+  .blog-inner .text-section .case-para{
+  margin-left: 38px;
+  }
+  
+  .blog-inner .bullet-text-section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Right align */
+    margin-top: 20px;
+  }
+  
+  
+  .blog-inner .left-text {
+    text-align: center; /* Text center align */
+    margin-right: 9rem;
+    font-size: 20px;
+    color: whitesmoke;
+  }
+  
+  .blog-inner .center-bullet {
+    font-size: 24px; /* Bullet point ka size */
+    padding-left: 8px;
+    padding-right: 8px;
+
+  }
+  
+  .blog-inner .gradient-line {
+    height: 3px;
+    background: linear-gradient(to right, #d63108, #feb47b);
+    margin-top: 10px; /* Adjusted for spacing */
+    width: 260px;
+    margin-left: auto; /* Right shift */
+    margin-right: 9rem;
+  }
+  
+
+  .blog-inner .image-section {
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    position: relative; /* Important for positioning the transparent box */
+    height: 500px;
+    margin-top: 14rem;
+    margin-bottom: 14rem;
+}
+
+.blog-inner .caseheading {
+  position: relative;
+  margin-left: 140px;
+  margin-bottom: 20px;
+}
+
+.blog-inner .caseparagraph{
+  color: white;
+  padding-right: 9rem;
+  line-height: 2.1;
+
+}
+
+.blog-inner .case-h2 {
+  color: white;
+  margin-bottom: 35px;
+  font-weight: 900;
+}
+
+
+/* Adjustments for smaller screens */
+@media only screen and (max-width: 768px) {
+  .blog-inner .content {
+      margin-top: 5rem; /* Reduce top margin */
+      padding: 10px; /* Adjust padding */
+  }
+
+  .blog-inner .case-contentbox {
+      padding-top: 30px; /* Reduce top padding */
+  }
+
+  .blog-inner .content .case-head {
+      font-size: 40px; /* Decrease font size */
+      margin-left: 0px;
+  }
+
+  .blog-inner .content .case-para{
+    margin-left: 0px;
+  }
+
+  .blog-inner .left-text {
+      margin-right: 4rem; /* Reduce right margin */
+      
+  }
+
+  .blog-inner .gradient-line {
+      margin-right: 2.7rem; /* Reduce right margin */
+  }
+
+  .blog-inner .image-section img {
+    max-width: 100%; /* Set the maximum width to 100% to ensure the image fits within its container */
+    height: auto; /* Allow the height to adjust proportionally based on the width */
+}
+.blog-inner .image-section {
+    height: auto; /* Allow the container's height to adjust based on the image's size */
+    margin-top: 4rem; /* Adjust margin top for smaller screens */
+    margin-bottom: 4rem; /* Adjust margin bottom for smaller screens */
+}
+
+  .blog-inner .caseheading {
+      margin-left: 0px; /* Adjust margin left */
+  }
+
+  .blog-inner .caseparagraph {
+      padding-right: 0; /* Remove padding */
+  }
+}

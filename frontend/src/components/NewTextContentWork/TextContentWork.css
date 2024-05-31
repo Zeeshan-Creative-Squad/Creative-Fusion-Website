@@ -1,0 +1,70 @@
+.TextContent-containers
+{
+    background-color: #101010;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    
+}
+.TextContent-containers.imgg-style{
+    width: 60vh;
+    height: 35vh;
+    margin-left: 36px;
+}
+.TextContent-containers .list-bullet
+{
+    margin: 0;
+    margin-right: 5px;
+}
+
+@media (max-width: 768px) {
+    .TextContent-containers {
+        padding-top: 3rem; /* Reduce top padding for smaller screens */
+        padding-bottom: 3rem; /* Reduce bottom padding for smaller screens */
+    }
+
+    .TextContent-containers .imgg-style {
+        width: 100%; /* Make the image responsive */
+        height: auto; /* Make the image responsive */
+        margin-left: 0; /* Remove left margin for better alignment on mobile */
+    }
+
+    .TextContent-containers .text-content {
+        text-align: center; /* Center align text for smaller screens */
+    }
+
+    .TextContent-containers .body-heading {
+        font-size: 32px; /* Reduce font size for smaller screens */
+        text-align: center;
+    }
+
+    .TextContent-containers .body-paragraph {
+        margin-bottom: 2rem; /* Reduce bottom margin for better spacing on mobile */
+        font-size: 16px; /* Reduce font size for smaller screens */
+        width: auto; /* Allow paragraph to take full width */
+        max-width: 100%; /* Set max-width to 100% for better responsiveness */
+        text-align: start; /* Center align the text */
+    }
+
+    .TextContent-containers .icon-list {
+       text-align: start;
+        align-items: flex-start; /* Align items to start for better alignment on mobile */
+    }
+
+    .TextContent-containers .list-bullet {
+        margin-right: 0.5rem; /* Reduce right margin for better spacing on mobile */
+    }
+
+    .TextContent-containers .genral-btn {
+        width: 100%; /* Make button full width on mobile */
+        margin-top: 1rem; /* Increase top margin for better spacing on mobile */
+    }
+
+    .TextContent-containers.img-fluid {
+        max-width: 100%; /* Make images responsive */
+    }
+
+    .TextContent-containers .row {
+        margin-left: 0; /* Remove left margin for better alignment on mobile */
+        margin-right: 0; /* Remove right margin for better alignment on mobile */
+    }
+}

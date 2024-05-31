@@ -1,0 +1,96 @@
+.main-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 0;
+    padding-top: 5rem;
+    
+}
+
+.main-section .row {
+    --bs-gutter-x: 0rem;
+   /* gap: 2px;*/
+}
+
+.main-section .col {
+    flex: 1; 
+    padding: 0; 
+    margin: 0; 
+  }
+
+.main-section .transparency-box {
+    border-radius: 14px;
+    background-color: rgba(119, 116, 116, 0.459); /* Transparent white */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 20px;
+    margin: 0;
+    width: 450px;
+    height: 410px;
+    margin: 15px; /* Add some margin for spacing between boxes */
+}
+
+.main-section .transparency-box .box-image {
+    width: 100%; /* Adjust width as needed, e.g., 50%, 200px */
+    height: auto; /* Maintains aspect ratio */
+    max-width: 340px; /* Maximum width, if needed */
+    max-height: 200px; /* Maximum height, if needed */
+    object-fit: cover; /* Adjusts how the image is resized */
+}
+
+
+.main-section .transparency-box img {
+    max-width: 34px; /* Adjust as needed */
+    margin-bottom: 7px;
+}
+
+.main-section .transparency-box button {
+    background-color: rgba(83, 84, 85, 0.0); /* Transparent Bootstrap primary color */
+    color: rgb(255, 0, 0); /* Semi-transparent white text color */
+    border: 1px solid red;
+    padding: 3px 20px;
+    border-radius: 22px;
+    margin-top: 15px;
+    margin-right: 16rem;
+    margin-bottom: 10px;
+}
+
+.main-section .transparency-box h2 {
+    font-size: 19px;
+    margin-top: 8px;
+    margin-bottom: 10px;
+    margin-right: 0.2rem;
+    color: white;
+    text-align: center;
+}
+
+.main-section .transparency-box h4 {
+    font-size: 14px;
+    color: white; /* Gray text color */
+    text-align: left;
+}
+
+.main-section .logo-container {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    justify-content: center;
+    margin-top: 0.7rem;
+}
+
+.main-section .logo-img {
+    width: 45px; /* Set width of the logo */
+    height: auto; /* Automatically adjust height to maintain aspect ratio */
+    margin-right: 40px; /* Adjust spacing between logo and text */
+}
+
+.main-section .logo-text {
+    font-size: 14px; /* Adjust font size of the text */
+    font-weight: lighter;
+    color: #777; /* Adjust color of the text */
+    margin-right: 70px;
+    white-space: nowrap;
+}

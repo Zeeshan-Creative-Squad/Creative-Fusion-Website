@@ -1,0 +1,57 @@
+.Privacy-Policy {
+    height: auto;
+    display: flex;
+    justify-content: left; /* Center vertically */
+    align-items: left; /* Center horizontally */
+    text-align: left; /* Center text */
+  }
+
+  .Privacy-Policy .text-center{
+    text-align: left;
+    width: auto;
+  }
+
+  .Privacy-Policy .body-heading{
+    text-align: left;
+    font-size: 30px;
+  }
+
+  .Privacy-Policy .body-paragraph{
+    text-align: left;
+  }
+
+  .Privacy-Policy .main{
+    text-align: left;
+    font-weight: 800;
+    font-size: 20px;
+  }
+
+  .Privacy-Policy .para{
+    font-size: 14px;
+    text-align: left;
+    color: white;
+  }
+
+ 
+  
+  .Privacy-Policy .text-content {
+    padding-bottom: 295px;
+    text-align: center;
+  }
+  
+  .Privacy-Policy .Abouthero-btn {
+    height: 50px;
+  }
+  
+  @media (min-width: 1400px) {
+    .Privacy-Policy {
+      min-height: 65vh;
+    }
+  }
+  
+  @media (max-width: 1400px) {
+    .Privacy-Policy .body-paragraph {
+      width: 100%;
+    }
+  }
+  

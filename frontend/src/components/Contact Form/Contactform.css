@@ -1,0 +1,133 @@
+.contact_section {
+  background: transparent;
+  width: 100%; /* Set width to 100% */
+  height: auto; /* Set height to auto for responsiveness */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px; /* Add padding for small screens */
+  box-sizing: border-box; /* Ensure padding is included in width/height */
+  overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+.contact_section .cont-special {
+  margin-left: 0;
+}
+
+.contact_section .contact-details .body-heading {
+  font-size: 40px; /* Adjust font size for medium screens */
+}
+
+.contact_section .contact-details .body-paragraph {
+  font-size: 16px;
+  margin-left: 0;
+}
+
+.contact_section .contact-details .para_main {
+  font-size: 1.2rem;
+}
+
+.contact_section h4,
+.contact_section h2,
+.contact_section p {
+  align-self: flex-start;
+  text-align: start;
+}
+
+.contact_section .contact-details {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.contact_section .contact-details h4 {
+  font-size: 16px;
+}
+
+/* Styling for input fields */
+.contact_section input[type="text"],
+.contact_section input[type="tel"],
+.contact_section input[type="email"],
+.contact_section textarea {
+  border: none;
+  border-bottom: 0.5px solid rgba(147, 147, 147, 0.5); /* Adjust color and thickness as needed */
+  padding: 15px 10px;
+  font-size: 16px;
+  margin-top: 5px;
+  background: transparent;
+  width: 90%; /* Adjust width for small screens */
+}
+
+/* Styling for input placeholders */
+.contact_section input[type="text"]::placeholder,
+.contact_section input[type="tel"]::placeholder,
+.contact_section input[type="email"]::placeholder,
+.contact_section textarea::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: small;
+}
+
+.contact_section textarea {
+  resize: none;
+  height: 150px;
+}
+
+/* Remove default styling for focus */
+.contact_section input:focus,
+.contact_section textarea:focus,
+.contact_section select:focus,
+.contact_section textarea:focus {
+  outline: none;
+}
+
+.contact_section .button_col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact_section .contact-form-side-img-container {
+  text-align: center;
+}
+
+.contact_section .contact-form-side-img {
+  max-height: 400px;
+  margin-top: 1rem;
+}
+
+.contact_section .btn-sub {
+  width: 91%;
+}
+
+/* Responsive Design */
+@media (max-width: 576px) {
+  .contact_section {
+    padding: 10px; /* Adjust padding for extra small screens */
+  }
+
+  .contact_section .contact-details .body-heading {
+    font-size: 32px; /* Adjust heading size for extra small screens */
+  }
+
+  .contact_section .contact-details .body-paragraph {
+    font-size: 14px;
+  }
+
+  .contact_section .contact-details .para_main {
+    font-size: 1rem;
+  }
+
+  .contact_section input[type="text"],
+  .contact_section input[type="tel"],
+  .contact_section input[type="email"],
+  .contact_section textarea {
+    width: 100%; /* Set width to 100% for extra small screens */
+  }
+
+  .contact_section .btn-sub {
+    width: 100%; /* Set width to 100% for extra small screens */
+  }
+}

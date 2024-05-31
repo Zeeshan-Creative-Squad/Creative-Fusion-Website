@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="52.425" height="52.425" viewBox="0 0 52.425 52.425">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_341" data-name="Rectangle 341" width="27.884" height="27.884" fill="#eaebeb"/>
+    </clipPath>
+  </defs>
+  <g id="Group_1700" data-name="Group 1700" transform="translate(0.5 0.5)">
+    <rect id="Rectangle_339" data-name="Rectangle 339" width="51.425" height="51.425" rx="8" transform="translate(0)" fill="none" stroke="#eaebeb" stroke-width="1"/>
+    <g id="Group_165" data-name="Group 165" transform="translate(11.77 11.771)" clip-path="url(#clip-path)">
+      <path id="Path_338" data-name="Path 338" d="M134.1,176.162l-3.615-.006c-4.063,0-6.688,2.694-6.688,6.862v3.165h-3.636a.569.569,0,0,0-.569.569v4.584a.568.568,0,0,0,.569.567H123.8v11.568a.568.568,0,0,0,.569.569h4.743a.569.569,0,0,0,.569-.569V191.9h4.251a.568.568,0,0,0,.569-.567v-4.584a.569.569,0,0,0-.569-.569h-4.252V183.5c0-1.29.307-1.944,1.987-1.944H134.1a.568.568,0,0,0,.568-.569V176.73A.569.569,0,0,0,134.1,176.162Z" transform="translate(-113.189 -176.156)" fill="#eaebeb"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,84 @@
+.AboutHero-container
+{
+    height: 100vh;
+    min-height: auto;
+}
+
+.AboutHero-container .text-content{
+    text-align: left; 
+    padding-bottom: 295px;
+}
+
+.AboutHero-container .body-heading{
+    font-size: 55px;
+    font-weight: 900;
+}
+
+.AboutHero-container .body-paragraph{
+    line-height: 2.2;
+    /* padding-right: 265px; */
+    width: 70%;
+    font-size: 16px;
+}
+
+.AboutHero-container .home-hero-img{
+    position: absolute;
+    max-height: 100%;
+    left: 45%;
+    bottom: 20%;
+    transform: translateX(-50%);
+}
+/* .AboutHero-container .img-1
+{
+    top: 60px;
+    width: 80%;
+} */
+
+
+.AboutHero-container .Abouthero-btn{
+    height: 50px;
+}
+
+.AboutHero-container .img-container
+{
+    height: 550px;
+}
+
+@media (max-width: 768px) {
+    .AboutHero-container {
+        height: auto; /* Adjust height for smaller screens */
+        padding-bottom: 100px; /* Adjust padding for smaller screens */
+    }
+
+    .AboutHero-container .text-content {
+        padding-bottom: 50px; /* Adjust padding for smaller screens */
+        text-align: center;
+    }
+
+    .AboutHero-container .body-heading {
+        font-size: 40px; /* Adjust font size for smaller screens */
+    }
+
+    .AboutHero-container .body-paragraph {
+        font-size: 14px; /* Adjust font size for smaller screens */
+        line-height: 1.6; /* Adjust line height for better readability on mobile */
+        text-align: center;
+    }
+
+    .AboutHero-container .home-hero-img {
+        max-width: 100%; /* Ensure image fits within container */
+        width: auto; /* Allow image width to adjust accordingly */
+        height: auto; /* Allow image height to adjust accordingly */
+        position: static; /* Reset position for mobile devices */
+        margin: 0 auto; /* Center image horizontally */
+        bottom: auto; /* Reset bottom position */
+        left: 50%; /* Center image horizontally */
+        transform: translateX(0%); /* Center image horizontally */
+        align-items: center;
+    }
+
+    .AboutHero-container .img-container {
+        height: auto; /* Adjust height for smaller screens */
+        align-items: center;
+    }
+}

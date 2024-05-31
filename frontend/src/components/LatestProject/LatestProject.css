@@ -1,0 +1,45 @@
+.LatestProject-container {
+    min-height: 100vh; /* Change height to min-height for better responsiveness */
+    padding: 20px; /* Add padding to create space around content */
+}
+
+.LatestProject-container .CardBox-container {
+    margin: 20px 0; /* Update margin for better spacing */
+    background-color: hsla(0, 0%, 28%, 0.5);
+    border-radius: 20px; /* Reduce border-radius for better appearance on mobile */
+}
+
+.LatestProject-container .project-main {
+    padding-top: 80px; /* Reduce padding-top for better alignment on mobile */
+}
+
+.LatestProject-container .body-paragraph {
+    line-height: 1.8; /* Reduce line-height for better readability on mobile */
+}
+
+.LatestProject-container .anchor {
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .LatestProject-container {
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+
+    .LatestProject-container .project-main {
+        padding-top: 40px; /* Reduce padding-top for better alignment on smaller screens */
+    }
+
+    .LatestProject-container .body-paragraph {
+        font-size: 14px; /* Reduce font size for smaller screens */
+        text-align: center;
+    }
+    .LatestProject-container .body-heading {
+        text-align: center;
+    }
+    .LatestProject-container .anchor {
+        text-align: center;
+        cursor: pointer;
+    }
+
+}

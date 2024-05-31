@@ -1,0 +1,37 @@
+.scope-container {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    background-color: black;
+    color: white;
+    padding: 20px;
+    height: 370px;
+  }
+  
+  .heading {    
+    font-size: 40px;
+    font-weight: 900;
+    margin-left: 145px;
+   
+
+  }
+  
+  .content {
+    padding-top: 20px;
+    margin-left: 88px;
+    line-height: 2.2;
+  }
+  @media only screen and (max-width: 768px) {
+    .scope-container {
+        height: auto; /* Allow the container's height to adjust based on content */
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .heading {
+        font-size: 30px; /* Decrease font size for smaller screens */
+        margin-left: 20px; /* Adjust margin for smaller screens */
+    }
+
+    .content {
+        margin-left: 20px; /* Adjust margin for smaller screens */
+    }
+}
