@@ -11,7 +11,7 @@ function CasestudyInner() {
     <>
       <div className="box multi-gradient blog-inner">
         <Header />
-        <div className="content">
+        <div className="content container">
           <div className="text-section text-center text-lg-start">
             <div className='row'>
               <div className='col-lg-6 case-contentbox'>

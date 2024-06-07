@@ -86,11 +86,17 @@ const Header = ({ darkBg = false }) => {
                     </div>
                   </li>
                   <li>
-                    <Link to={"/casestudies"} className="nav-links font-play">Work</Link>
+                    <Link to={"/casestudies"} className="nav-links font-play">Case Studies</Link>
                   </li>
                   <li>
                     <Link to={"/"} className="nav-links font-play">Learn</Link>
                   </li>
+                  <li>
+                  <Link to={"/blog"} className="nav-links font-play">Blog</Link>
+                </li>
+                {/* <li>
+                  <Link to={"/casestudies"} className="nav-links font-play">Case Studies</Link>
+                </li> */}
                   <li>
                     <Link to={"/"} className="nav-links font-play">Become a Client</Link>
                   </li>

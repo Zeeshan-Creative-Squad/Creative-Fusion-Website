@@ -39,6 +39,7 @@
   margin: 0 2rem;
   font-size: 1.25rem;
   color: whitesmoke;
+
 }
 
 .blog-inner .center-bullet {
@@ -167,11 +168,11 @@
   }
 
   .blog-inner .left-text {
-    margin-right: 6rem;
+    margin-left: 32rem;
   }
 
   .blog-inner .gradient-line {
-    margin-right: 6rem;
+    margin-right: 1rem;
   }
 
   .blog-inner .image-section {

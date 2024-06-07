@@ -9,22 +9,22 @@ import Footer from '../../screens/Footer';
 function CaseStudiesHero() {
     const caseStudies = [
         {
-            image: 'images/creatives/image1.jpg',
+            image: '/images/creatives/image1.jpg',
             title: 'Creative Design <br/> Showcase',
             description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
         },
         {
-            image: 'images/creatives/image1.jpg',
+            image: '/images/creatives/image1.jpg',
             title: 'Creative Design<br/> Showcase',
             description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
         },
         {
-            image: 'images/creatives/item-case.png',
+            image: '/images/creatives/item-case.png',
             title: 'Creative Design<br/> Showcase',
             description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
         },
         {
-            image: 'images/creatives/Mask Group 110-min.png',
+            image: '/images/creatives/Mask Group 110-min.png',
             title: 'Creative Design<br/> Showcase',
             description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
         }
