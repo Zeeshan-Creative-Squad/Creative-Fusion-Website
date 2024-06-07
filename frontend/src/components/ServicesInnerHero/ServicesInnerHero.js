@@ -34,4 +34,4 @@ function ServicesInnerHero() {
   )
 }
 
-export default ServicesInnerHero
+export default ServicesInnerHero;

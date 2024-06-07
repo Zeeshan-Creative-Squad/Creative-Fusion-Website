@@ -41,8 +41,8 @@
         margin-bottom: 2rem; /* Reduce bottom margin for better spacing on mobile */
         font-size: 16px; /* Reduce font size for smaller screens */
         width: auto; /* Allow paragraph to take full width */
+        text-align: center;
         max-width: 100%; /* Set max-width to 100% for better responsiveness */
-        text-align: start; /* Center align the text */
     }
 
     .TextContent-containers .icon-list {

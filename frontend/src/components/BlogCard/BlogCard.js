@@ -43,8 +43,8 @@ function SecondaryCard({
                     </div>
 
                     <div className='col-8'>
-                        <p className='body-paragraph mb-3 date color-red'>Design  ___ {date}</p>
-                        <h3 className='title mb-0 color-white'>{title}</h3>
+                        <p className='body-paragraph mx-4 mb-3 date color-red'>Design  ___ {date}</p>
+                        <h3 className='title mb-0 mx-4 color-white'>{title}</h3>
                     </div>
 
                 </div>
@@ -61,7 +61,7 @@ function BlogCard() {
         <div className='container py-4 my-xxl-5'>
             <div className='main'>
                 <div className='text-content'>
-                    <div className='row gy-3 align-items-center'>
+                    <div className='row gy-3'>
                         <div className='col-lg-6'>
                             <h3 className='body-heading text-center text-lg-start font-bebus color-blue' >Insights and Inspiration for Your Digital Journey</h3>
                             <p className='body-paragraph text-center text-lg-start font-manrope'>Welcome to Creative Fusion's collection of blogs and articles, where we share valuable insights and inspiration customized to our diverse portfolio. From the latest trends in technology and e-commerce to expert tips in healthcare and real estate, our content is designed to keep you informed and inspired.</p>

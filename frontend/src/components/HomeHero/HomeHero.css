@@ -21,6 +21,7 @@
 
 .HomeHero-container .text-content .body-paragraph {
     /* Add styles if needed */
+    line-height: 1.9;
 }
 
 .HomeHero-container .home-hero-img {
@@ -32,8 +33,13 @@
 }
 
 .HomeHero-container .img-1 {
-    top: -88px;
+    top: -83px;
     width: 80%;
+}
+
+.HomeHero-container .img-2{
+    position: relative;
+    top: -173px;
 }
 
 .HomeHero-container .img-container {
@@ -41,23 +47,11 @@
     margin-left: 8%;
 }
 
-@media (min-width: 1400px) {
-    .HomeHero-container {
-        min-height: 65vh;
-    }
-}
 
-@media (max-width: 992px) {
-    .HomeHero-container .img-container {
-        margin-left: 0;
-        
-    }
-}
 
-/* Media Queries for Mobile Responsiveness */
 @media (max-width: 768px) {
     .HomeHero-container {
-        height: 130vh;
+        height: auto;
         padding: 20px; /* Add padding for smaller screens */
     }
 
@@ -74,27 +68,86 @@
         font-size: 16px; /* Adjust font size for smaller screens */
     }
 
-    
     .HomeHero-container .home-hero-img {
-        position: relative;
+        position: absolute;
         max-height: 100%;
         width: 100%; /* Make the image responsive */
         left: 50%;
-        bottom: 0;
+        bottom: 40%;
         transform: translateX(-50%);
-        margin-top: 20px; /* Add margin to separate text and image */
+        margin-top: 25px; /* Add margin to separate text and image */
     }
+    
     .HomeHero-container .img-1 {
-        top: auto;
+        top: -24px;
         width: 100%;
     }
+
     .HomeHero-container .img-container {
         height: auto;
         margin-left: 0;
         text-align: center; /* Center image container */
     }
-    .HomeHero-container .img-2{
+
+    .HomeHero-container .img-2 {
         position: relative;
-        top: -295px;
+        top: 21px; /* Adjust position if necessary */
+        height: 480px; /* Adjust height if necessary */
     }
 }
+
+@media (min-width: 769px) and (max-width: 991px) {
+    .HomeHero-container {
+        height: 100vh; /* Adjust height for medium screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .HomeHero-container {
+        height: auto;
+        padding: 20px; /* Add padding for smaller screens */
+    }
+   
+    .HomeHero-container .text-content {
+        text-align: center; /* Center text for smaller screens */
+        padding-bottom: 20px; /* Reduce padding for smaller screens */
+    }
+
+    .HomeHero-container .text-content .body-heading {
+        font-size: 28px; /* Adjust font size for smaller screens */
+    }
+
+    .HomeHero-container .text-content .body-paragraph {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+
+    .HomeHero-container .home-hero-img {
+        position: absolute;
+        max-height: 100%;
+        width: 100%; /* Make the image responsive */
+        left: 50%;
+        bottom: 40%;
+        transform: translateX(-50%);
+        margin-top: 20px; /* Add margin to separate text and image */
+    }
+    
+    .HomeHero-container .img-1 {
+        top: auto;
+        width: 100%;
+    }
+
+    .HomeHero-container .img-container {
+        height: auto;
+        margin-left: 0;
+        text-align: center; /* Center image container */
+    }
+
+    .HomeHero-container .img-2 {
+        position: relative;
+        top: 21px; /* Adjust position if necessary */
+        height: 490px; /* Adjust height if necessary */
+    }
+}
+
+
+

@@ -105,7 +105,7 @@ const Header = ({ darkBg = false }) => {
             </div>
           </nav>
           <nav className="responsive-popup-menu w-100">
-            <div className="py-3 d-lg-none" style={{ display: menuState ? "block" : "none" }}>
+            <div className="py-3 d-lg-none" style={{ display: menuState ? "block" : "none", backgroundColor: "white" }}>
               <ul className="resp-nav-list d-lg-none w-100 gap-4 hs-dropdown [--trigger:hover] pl-4" style={{ display: menuState ? "block" : "none" }}>
                 <li>
                   <Link to={"/about"} className="nav-links font-play">About</Link>
@@ -117,7 +117,10 @@ const Header = ({ darkBg = false }) => {
                   <Link to={"/casestudies"} className="nav-links font-play">Work</Link>
                 </li>
                 <li>
-                  <Link to={"/"} className="nav-links font-play">Learn</Link>
+                  <Link to={"/blog"} className="nav-links font-play">Blog</Link>
+                </li>
+                <li>
+                  <Link to={"/casestudies"} className="nav-links font-play">Case Studies</Link>
                 </li>
                 <li>
                   <Link to={"/"} className="nav-links font-play">Become a Client</Link>

@@ -20,7 +20,7 @@ function CardBox({
 
                     <div className='text-content'>
                         <h3 className='body-heading '>{title}</h3>
-                        <p className='body-paragraph my-5' >{content}</p>
+                        <p className='body-paragraph boxtext my-5' >{content}</p>
 
                         <p className='anchor color-red'>Read Full Case Study <img src='/images/icons/arrow-right.svg' alt='arrow design'/></p>
                     </div>
@@ -55,6 +55,8 @@ function LatestProject() {
                 </div>
                 <div className='col-lg-6 text-center text-lg-end'>
                     <button className='genral-btn btn-red'>Our Case Studies</button>
+                    <br></br>
+                    <br></br>
 
                 </div>
                 

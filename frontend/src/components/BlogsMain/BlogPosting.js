@@ -5,9 +5,10 @@ function BlogPosting() {
   return (
     <>
       <div className='main-section'>
-  <div className="row">
-    <div className="col">
-      <div className='transparency-box box-1'>
+        <div className='container'>
+  <div className="row gy-4 w-100">
+    <div className="col-lg-4 col-12">
+      <div className='transparency-box box-1 mx-auto '>
         <img src="images/creatives/blogcardimg.png" alt="Image" className='box-image' />
         <button className="btn btn-primary">Tech</button>
         <h2>The Powerof Progressive Web Apps</h2>
@@ -17,8 +18,8 @@ function BlogPosting() {
         </div>
       </div>
     </div>
-    <div className="col">
-      <div className='transparency-box box-2'>
+    <div className="col-lg-4 col-12">
+      <div className='transparency-box box-2 mx-auto '>
         <img src="images/creatives/blogcardimg.png" alt="Image" className='box-image' />
         <button className="btn btn-primary">Tech</button>
         <h2>The Powerof Progressive Web Apps</h2>
@@ -28,8 +29,8 @@ function BlogPosting() {
         </div>
       </div>
     </div>
-    <div className="col">
-      <div className='transparency-box box-3'>
+    <div className="col-lg-4 col-12">
+      <div className='transparency-box box-3 mx-auto'>
         <img src="images/creatives/blogcardimg.png" alt="Image" className='box-image' />
         <button className="btn btn-primary">Tech</button>
         <h2>The Powerof Progressive Web Apps</h2>
@@ -39,6 +40,7 @@ function BlogPosting() {
         </div>
       </div>
     </div>
+  </div>
   </div>
 </div>
 

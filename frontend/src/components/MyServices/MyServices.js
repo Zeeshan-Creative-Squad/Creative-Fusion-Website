@@ -71,27 +71,27 @@ function MyServices() {
                     <h3 className='body-heading '>
                     Elevating Your Digital Presence with Expertise
                     </h3>
-                    <p className='body-paragraph my-4 mx-auto mx-lg-0 mb-5' style={{width:"90%"}}>At Creative Fusion, we offer a comprehensive range of digital media solutions designed to help your business shine online. Explore our services and discover how we can transform your digital world.</p>
+                    <p className='body-paragraph my-5 mx-auto mx-lg-0 mb-5' style={{width:"90%"}}>At Creative Fusion, we offer a comprehensive range of digital media solutions designed to help your business shine online. Explore our services and discover how we can transform your digital world.</p>
                     
                     <div className='row'>
-                        <div className='col-3 '>
-                            <h3 className='color-yellow'>1600+</h3>
-                            <p className='body-paragraph'>Projects Done</p>
+                        <div className='col-3'>
+                            <h3 className='color-yellow story-stuff'>1600+</h3>
+                            <p className='body-paragraph story-subheading'>Projects Done</p>
                         </div>
                         
                         <div className='col-1 '>
                             <div className='stat-border-right'></div>
                         </div>
                         <div className='col-3'>
-                            <h3 className='color-yellow'>99%</h3>
-                            <p className='body-paragraph'>Successful Clients</p>
+                            <h3 className='color-yellow story-stuff'>99%</h3>
+                            <p className='body-paragraph story-subheading'>Successful Clients</p>
                         </div> 
                         <div className='col-1 '>
                             <div className='stat-border-right'></div>
                         </div>
                         <div className='col-3'>
-                            <h3 className='color-yellow'>5.0</h3>
-                            <p className='body-paragraph'>Google Ratings</p>
+                            <h3 className='color-yellow story-stuff'>5.0</h3>
+                            <p className='body-paragraph story-subheading'>Google Ratings</p>
                         </div>
 
                     </div>

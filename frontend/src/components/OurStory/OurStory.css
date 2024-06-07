@@ -26,6 +26,8 @@
     font-size: 25px;
 }
 
+
+
 @media (max-width: 768px) {
     .OurStory-container .stat-border-right {
         display: none; /* Hide the border for smaller screens */

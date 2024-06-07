@@ -7,6 +7,7 @@ function HomeHero() {
     <div className='HomeHero-container d-flex flex-column'>
         <Header/> 
         <div className='container mt-auto'>
+            
 
             <div className='row align-items-center gy-4'>
                 <div className='col-lg-5'>

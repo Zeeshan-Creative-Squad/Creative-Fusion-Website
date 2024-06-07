@@ -48,13 +48,16 @@
     padding-bottom: 190px;
 }
 
-@media (min-width: 1400px) {
-    .ServicesHero-container {
-        min-height: 65vh;
+@media (min-width: 1000px) and (max-width: 1399.98px) {
+    /* Adjust styles for screens between 1000px and 1400px */
+    .ServicesHero-container .text-content {
+        padding-bottom: 150px;
+        text-align: center;
     }
 }
 
 @media (max-width: 768px) {
+    /* Styles for Small screens */
     .ServicesHero-container {
         height: auto;
         padding: 20px;
@@ -93,6 +96,7 @@
 }
 
 @media (max-width: 576px) {
+    /* Styles for X-Small screens */
     .ServicesHero-container .services-heading {
         font-size: 24px;
     }

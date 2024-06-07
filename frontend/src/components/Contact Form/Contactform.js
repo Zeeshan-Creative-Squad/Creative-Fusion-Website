@@ -75,7 +75,7 @@ const Contactform = () => {
     >
       <div className="container pt-5">
         <div className="row cont-special gy-4 gx-lg-6 d-flex align-items-center">
-          <div className="col-md-5 contact-form-side-img-container" >
+          <div className="col-md-6 contact-form-side-img-container" >
               <img src="/images/creatives/contact-form-img.png" className="img-fluid contact-form-side-img" alt="phone icon "/>
           </div>
           <div className="col-md-6">
@@ -84,7 +84,7 @@ const Contactform = () => {
               <h2 className="body-heading mb-4 ">
               Let's Get In Touch
               </h2>
-              <p className="body-paragraph">
+              <p className="body-paragraph text-start">
               Got an idea or need a digital solution? Let's chat! Reach out to us and let's bring your vision to life.
               </p>
             </div>

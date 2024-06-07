@@ -10,12 +10,14 @@
 }
 
 .MyServices-container .text-content {
-    margin-top: 50px;
+    margin-top: 19px;
 }
 
-.MyServices-container .rows .body-paragraph {
-    font-size: 41px;
+.MyServices-container .body-paragraph {
+  /* padding-bottom: 47px; */
+  line-height: 2;
 }
+
 
 .MyServices-container .service-card-container .card-title {
     font-size: 23px;
@@ -38,7 +40,7 @@
 
 .MyServices-container .card-sized-box {
     overflow-y: scroll;
-    height: 410px;
+    height: 400px;
 }
 
 .MyServices-container .card-sized-box {
@@ -78,46 +80,272 @@
     width: 45px;
 }
 
+.MyServices-container .story-stuff{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.MyServices-container .story-subheading{
+    font-size: 20px;
+    padding-top: 5px;
+}
+
 /* New styles for mobile responsiveness */
 
 @media (max-width: 768px) {
     .MyServices-container {
-        padding: 10px; /* Adjust padding for smaller screens */
+        padding: 10px; 
     }
 
     .MyServices-container .text-content {
-        margin-top: 10px; /* Adjust top margin for smaller screens */
+        margin-top: 10px;
     }
 
-    .MyServices-container .rows .body-paragraph {
-        font-size: 24px; /* Reduce font size for smaller screens */
-    }
+
 
     .MyServices-container .service-card-container .card-title {
-        font-size: 18px; /* Reduce font size for smaller screens */
+        font-size: 18px; 
     }
 
     .MyServices-container .service-card-container .card-content {
-        font-size: 12px; /* Reduce font size for smaller screens */
+        font-size: 12px; 
     }
 
     .MyServices-container .service-card-container .card-anchor {
-        font-size: 12px; /* Reduce font size for smaller screens */
+        font-size: 12px; 
     }
 
     .MyServices-container .card-sized-box {
-        max-height: 380px; /* Adjust max-height for smaller screens */
+        max-height: 380px; 
     }
 
     .MyServices-container .stat-border-right {
-        display: none; /* Hide the border for smaller screens */
+        display: none; 
     }
 
     .MyServices-container .card-btn {
-        padding: 10px; /* Adjust padding for smaller screens */
+        padding: 10px; 
     }
 
     .MyServices-container .card-btn-img {
-        width: 25px; /* Adjust image size for smaller screens */
+        width: 25px; 
     }
 }
+@media (max-width: 576px) {
+    .MyServices-container {
+        padding: 5px; 
+    }
+
+    .MyServices-container .text-content {
+        margin-top: 5px; 
+    }
+
+    .MyServices-container .service-card-container .card-title {
+        font-size: 16px; 
+    }
+
+    .MyServices-container .service-card-container .card-content {
+        font-size: 10px; 
+    }
+
+    .MyServices-container .service-card-container .card-anchor {
+        font-size: 10px; 
+    }
+
+    .MyServices-container .card-sized-box {
+        max-height: 300px; 
+    }
+
+    .MyServices-container .stat-border-right {
+        display: none; 
+    }
+
+    .MyServices-container .card-btn {
+        padding: 8px; 
+       justify-content: flex-start !important;
+    }
+
+    .MyServices-container .card-btn-img {
+        width: 20px; /* Further adjust image size for smaller screens */
+    }
+
+    .transparency-box {
+        padding: 10px; /* Further adjust padding for smaller screens */
+    }
+    .MyServices-container .story-stuff{
+        font-size: 35px;
+    }
+    .MyServices-container .story-subheading{
+        font-size: 12px;
+    }
+
+    .transparency-box .box-image {
+        margin-bottom: 5px; /* Adjust margin for smaller screens */
+    }
+
+    .transparency-box .btn-primary {
+        margin-bottom: 5px; /* Adjust margin for smaller screens */
+    }
+
+    .transparency-box h2 {
+        font-size: 18px; /* Further reduce font size for smaller screens */
+    }
+
+    .transparency-box .logo-container {
+        flex-direction: column; /* Stack logo and text vertically */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .transparency-box .logo-img {
+        width: 25px; /* Further adjust image size for smaller screens */
+        margin-bottom: 5px; /* Add margin below the image */
+    }
+
+    .transparency-box .logo-text {
+        font-size: 12px; /* Further reduce font size for smaller screens */
+    }
+}
+
+/* Styles for screens with a maximum width of 1024px */
+@media (max-width: 1024px) {
+    .MyServices-container {
+        padding: 15px; /* Adjust padding for medium screens */
+    }
+
+    .MyServices-container .text-content {
+        margin-top: 15px; /* Adjust top margin for medium screens */
+    }
+
+    .MyServices-container .service-card-container .card-title {
+        font-size: 20px; /* Adjust font size for medium screens */
+    }
+
+    .MyServices-container .service-card-container .card-content {
+        font-size: 14px; /* Adjust font size for medium screens */
+    }
+
+    .MyServices-container .service-card-container .card-anchor {
+        font-size: 14px; /* Adjust font size for medium screens */
+    }
+
+    .MyServices-container .card-sized-box {
+        max-height: 400px; /* Adjust max-height for medium screens */
+    }
+
+    .MyServices-container .stat-border-right {
+        display: none; /* Hide the border for medium screens */
+    }
+
+    .MyServices-container .card-btn {
+        padding: 12px; /* Adjust padding for medium screens */
+       
+    }
+
+    .MyServices-container .card-btn-img {
+        width: 30px; /* Adjust image size for medium screens */
+        
+    }
+
+    .transparency-box {
+        padding: 18px; /* Adjust padding for medium screens */
+    }
+
+    .transparency-box .box-image {
+        margin-bottom: 8px; /* Adjust margin for medium screens */
+    }
+
+    .transparency-box .btn-primary {
+        margin-bottom: 8px; /* Adjust margin for medium screens */
+    }
+
+    .transparency-box h2 {
+        font-size: 22px; /* Adjust font size for medium screens */
+    }
+
+    .transparency-box .logo-container {
+        flex-direction: column; /* Stack logo and text vertically */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .transparency-box .logo-img {
+        width: 28px; /* Adjust image size for medium screens */
+        margin-bottom: 6px; /* Add margin below the image */
+    }
+
+    .transparency-box .logo-text {
+        font-size: 13px; /* Adjust font size for medium screens */
+    }
+}
+
+/* Styles for screens larger than 1024px */
+@media (min-width: 1025px) {
+    .MyServices-container {
+        padding: 20px; /* Adjust padding for large screens */
+    }
+
+    .MyServices-container .text-content {
+        margin-top: 20px; /* Adjust top margin for large screens */
+    }
+
+    .MyServices-container .service-card-container .card-title {
+        font-size: 24px; /* Adjust font size for large screens */
+    }
+
+    .MyServices-container .service-card-container .card-content {
+        font-size: 16px; /* Adjust font size for large screens */
+    }
+
+    .MyServices-container .service-card-container .card-anchor {
+        font-size: 16px; /* Adjust font size for large screens */
+    }
+
+    .MyServices-container .card-sized-box {
+        max-height: 450px; /* Adjust max-height for large screens */
+    }
+
+    .MyServices-container .stat-border-right {
+        display: block; /* Show the border for large screens */
+    }
+
+    .MyServices-container .card-btn {
+        padding: 15px; /* Adjust padding for large screens */
+    }
+
+    .MyServices-container .card-btn-img {
+        width: 35px; /* Adjust image size for large screens */
+    }
+
+    .transparency-box {
+        padding: 20px; /* Adjust padding for large screens */
+    }
+
+    .transparency-box .box-image {
+        margin-bottom: 10px; /* Adjust margin for large screens */
+    }
+
+    .transparency-box .btn-primary {
+        margin-bottom: 10px; /* Adjust margin for large screens */
+    }
+
+    .transparency-box h2 {
+        font-size: 24px; /* Adjust font size for large screens */
+    }
+
+    .transparency-box .logo-container {
+        flex-direction: row; /* Align logo and text horizontally */
+        align-items: center; /* Align items to the center */
+    }
+
+    .transparency-box .logo-img {
+        width: 30px; /* Adjust image size for large screens */
+        margin-bottom: 0; /* Remove margin below the image */
+    }
+
+    .transparency-box .logo-text {
+        font-size: 14px; /* Adjust font size for large screens */
+    }
+}
+
+
+
+

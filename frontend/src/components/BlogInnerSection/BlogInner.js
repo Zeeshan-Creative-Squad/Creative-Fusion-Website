@@ -11,7 +11,7 @@ function BlogInner() {
     <>
     <div className="box multi-gradient blog-inner">
         <Header />
-      <div className="header">
+      <div className="headset">
         <button className='blog-btn'>Technology</button>
         <h6>ByCreativeFusion</h6>
         <h6>March 15, 2024</h6>

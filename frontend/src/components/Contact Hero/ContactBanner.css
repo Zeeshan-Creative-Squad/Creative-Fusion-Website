@@ -1,5 +1,5 @@
 .contact_section {
-  height: 90vh;
+  /* height: 100vh; */
 }
 
 .contact_section .contact-details .body-heading {
@@ -14,7 +14,7 @@
 
 
 .contact_section .third-image {
-  margin-bottom: 163px;
+  margin-bottom: 150px;
 }
 
 .contact_section .contact-heading2 {
@@ -57,6 +57,7 @@
 
 .contact_section .image-Contact {
   height: 23.5vh;
+  transform: translateY(17%)
 }
 
 /* Define the fade animation */
@@ -132,6 +133,7 @@
 .contact_section .contact_form_form_containers textarea {
   border-radius: 6px;
   border: 1px solid grey;
+  width: 100%;
 }
 
 @media (min-width: 1400px) {
@@ -184,5 +186,9 @@
     top: 46.42%; /* Adjust this value as needed for vertical positioning */
     width: 3.1px;
     height: 12.6px;
+  }
+  .contact_section .image-Contact {
+    height: 15vh;
+    transform: translateY(12%)
   }
 }

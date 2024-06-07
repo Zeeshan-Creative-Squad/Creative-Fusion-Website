@@ -78,5 +78,6 @@
     .case-study-item .text-container p,
     .case-study-item .case-study-link {
         margin-left: 0; /* Reset margin for mobile layout */
+        padding-bottom: 12px;
     }
 }

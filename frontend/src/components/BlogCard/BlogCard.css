@@ -51,7 +51,7 @@
 
     .secondary-card {
         height: auto;
-        width: 90%;
+        width: 110%; /* width ko 100% karen ya hata den */
         margin: 20px auto;
     }
 
@@ -60,7 +60,7 @@
     }
 
     .BlogCard-container .title {
-        font-size: 20px;
+        font-size: 15px;
         width: auto;
         margin-bottom: 6px;
     }
@@ -70,7 +70,74 @@
         padding-top: 3px;
     }
     .BlogCard-container .image-of-secondoryCard{
+        margin-top: 20px;
+        height: 110px;
+      
+    }
+}
+@media (max-width: 556px) {
+    .BlogCard-container .secondary-card {
+        width: 100%; /* Set width to 100% */
+    }
+
+    .BlogCard-container .image-of-secondoryCard {
+        height: 100px; /* Adjust image height */
+    }
+}
+
+
+@media (max-width: 1200px) {
+    .secondary-card {
         height: 100px;
-        width: 109px;
+        width: 45vh;
+    }
+    
+    .secondary-card .col-4 {
+        height: 100%;
+        border-radius: 12px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .BlogCard-container .title {
+        font-size: 16px;
+        font-weight: bold;
+        width: 220px;
+        margin-bottom: 9px;
+    }
+    
+    .BlogCard-container .date {
+        font-size: 16px;
+        padding-top: 5px;
+    }
+}
+
+
+@media (max-width: 1400px) {
+    .BlogCard-container {
+        height: 100%;
+        padding-top: 86px;
+    }
+    
+    .secondary-card {
+        height: 100px;
+        width: 60vh;
+    }
+    
+    .secondary-card .col-4 {
+        height: 100%;
+        border-radius: 12px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .BlogCard-container .title {
+        font-size: 16px;
+        font-weight: bold;
+        width: 208px;
+        margin-bottom: 9px;
+    }
+    
+    .BlogCard-container .date {
+        font-size: 16px;
+        padding-top: 5px;
     }
 }

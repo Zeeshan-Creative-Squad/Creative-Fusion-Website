@@ -27,17 +27,18 @@
 
 .blogmain-container .image-section .small-image {
     width: 100%; /* Adjust for responsiveness */
-    max-width: 1200px;
+    max-width: 1500px;
     height: auto;
+    padding-top: 15px;
 }
 
 .blogmain-container .transparent-box {
     position: absolute;
-    top: 470px; /* Adjust as needed */
-    left: 32%; /* Center horizontally */
+    top: 530px; /* Adjust as needed */
+    left: 25%; /* Center horizontally */
     transform: translateX(-50%); /* Center horizontally */
     border-radius: 13px;
-    background-color: rgba(119, 116, 116, 0.7); /* Transparent white */
+    background-color: rgba(119, 116, 116, 0.9); /* Transparent white */
     padding: 20px;
     width: 90%; /* Responsive width */
     max-width: 450px;
@@ -91,55 +92,192 @@
     color: #777; /* Adjust color of the text */
 }
 
-/* Media Queries for Mobile Responsiveness */
-@media (max-width: 768px) {
+/* Small screens */
+@media only screen and (max-width: 576px) {
     .blogmain-container .text-content {
-        margin-top: 50px; /* Adjust for smaller screens */
-       
+      margin-top: 100px;
     }
-
+  
     .blogmain-container .image-section {
-        height: auto; /* Adjust height for smaller screens */
-        margin-bottom: 7rem;
+      height: 400px;
     }
-
+    
     .blogmain-container .transparent-box {
-        top: auto; /* Reset top position */
-        left: 50%;
-        bottom: 20px; /* Position from bottom */
-        transform: translateX(-50%);
-        width: 90%; /* Full width for smaller screens */
-        max-width: none; /* Remove max-width restriction */
+      top: 305px;
+      width: 70%;
+      margin-top: -55px;
+    margin-left: 105px;
+    height: 150px;
     }
-
+  
     .blogmain-container .transparent-box h2 {
-        font-size: 20px; /* Adjust font size for smaller screens */
+      font-size: 12px;
     }
-
     .blogmain-container .transparent-box h4 {
-        font-size: 12px; /* Adjust font size for smaller screens */
+      font-size: 10px;
+      color: white; /* Gray text color */
+  }
+  
+  
+    .blogmain-container .transparent-box img {
+      max-width: 80px;
+      width: 30px;
     }
-
     .blogmain-container .transparent-box button {
-        padding: 3px 10px; /* Adjust padding for smaller screens */
-        margin-top: 10px; /* Adjust margin for smaller screens */
-        margin-left: 0; /* Center align on smaller screens */
-        display: block;
-        width: 100%;
-        text-align: center;
+      background-color: rgba(83, 84, 85, 0.0); /* Transparent Bootstrap primary color */
+      color: rgb(255, 0, 0); /* Semi-transparent white text color */
+      border: 1px solid red;
+      padding: 0 10px;
+      border-radius: 22px;
+      margin-top: -8px;
+      margin-left: 15px;
+      font-size: 12px;
+      margin-bottom: 10px;
+  }
+  }
+  
+  /* Medium screens */
+  @media only screen and (min-width: 577px) and (max-width: 768px) {
+    .blogmain-container .text-content {
+      margin-top: 120px;
     }
+  
+    .blogmain-container .image-section {
+      height: 500px;
+    }
+  
+    .blogmain-container .transparent-box {
+      top: 400px;
+      width: 50%;
+      margin-top: -55px;
+    margin-left: 170px;
+    height: 168px;
+      
+    }
+  
+    .blogmain-container .transparent-box h2 {
+      font-size: 15px;
+    }
+    .blogmain-container .transparent-box h4 {
+      font-size: 12px;
+      color: white; /* Gray text color */
+  }
+  
+    .blogmain-container .transparent-box img {
+      max-width: 80px;
+      width: 40px;
+    }
+    .blogmain-container .transparent-box button {
+      background-color: rgba(83, 84, 85, 0.0); /* Transparent Bootstrap primary color */
+      color: rgb(255, 0, 0); /* Semi-transparent white text color */
+      border: 1px solid red;
+      padding: 5px 20px;
+      border-radius: 22px;
+      margin-top: -8px;
+      margin-left: 15px;
+      font-size: 12px;
+      margin-bottom: 10px;
+  }
+  }
+  
+  /* Large screens */
+  @media only screen and (min-width: 769px) and (max-width: 992px) {
+    .blogmain-container .text-content {
+      margin-top: 130px;
+    }
+  
+    .blogmain-container .image-section {
+      height: 550px;
+    }
+  
+    .blogmain-container .transparent-box {
+      top: 400px;
+      width: 55%;
+      margin-top: -55px;
+    margin-left: 170px;
+    height: 220px;
+      
+    }
+  
+    .blogmain-container .transparent-box h2 {
+      font-size: 17px;
+    }
+    .blogmain-container .transparent-box h4 {
+      font-size: 15px;
+      color: white; 
+  }
+  
+    .blogmain-container .transparent-box img {
+      max-width: 80px;
+      width: 50px;
+    }
+    .blogmain-container .transparent-box button {
+      background-color: rgba(83, 84, 85, 0.0); /* Transparent Bootstrap primary color */
+      color: rgb(255, 0, 0); /* Semi-transparent white text color */
+      border: 1px solid red;
+      padding: 5px 20px;
+      border-radius: 22px;
+      margin-top: -0px;
+      margin-left: 15px;
+      font-size: 12px;
+      margin-bottom: 10px;
+  }
+  }
+  
+  /* Extra large screens */
+  @media only screen and (min-width: 993px) and (max-width: 1200px) {
+    .blogmain-container .text-content {
+      margin-top: 130px;
+    }
+  
+    .blogmain-container .image-section {
+      height: 600px;
+    }
+  
+    .blogmain-container .transparent-box {
+      top: 500px;
+      width: 55%;
+      margin-top: -55px;
+    margin-left: 60px;
+    height: 240px;
+    }
+  
+    .blogmain-container .transparent-box h2 {
+      font-size: 26px;
+    }
+    .blogmain-container .transparent-box h4 {
+      font-size: 17px;
+      color: white; 
+  }
+  
+    .blogmain-container .transparent-box img {
+      max-width: 110px;
+    }
+  }
+  
+  /* XXL screens */
+  @media only screen and (min-width: 1201px) and (max-width: 1400px) {
+    .blogmain-container .text-content {
+      margin-top: 130px;
+    }
+  
+    .blogmain-container .image-section {
+      height: 600px;
+    }
+  
+    .blogmain-container .transparent-box {
+      top: 520px;
+    }
+  
+    .blogmain-container .transparent-box h2 {
+      font-size: 28px;
+    }
+  
+    .blogmain-container .transparent-box img {
+      max-width: 120px;
+    }
+  }
+  
 
-    .blogmain-container .logo-container {
-        flex-direction: column; /* Stack logo and text vertically */
-        align-items: flex-start; /* Align items to the start */
-    }
+  
 
-    .blogmain-container .logo-img {
-        margin-right: 0; /* Remove right margin */
-        margin-bottom: 5px; /* Add bottom margin */
-    }
-
-    .blogmain-container .logo-text {
-        font-size: 12px; /* Adjust font size for smaller screens */
-    }
-}

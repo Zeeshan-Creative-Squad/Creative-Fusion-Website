@@ -165,9 +165,10 @@
     }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 768px) {
     .Testimonials-container .swiper-slide .testimonial-card {
         width: 95%;
+        height: 50vh;
         margin: auto;
     }
 }

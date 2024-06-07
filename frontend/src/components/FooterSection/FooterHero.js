@@ -18,7 +18,7 @@ const FooterHero = () => {
             {/* Part 2: Pages list */}
             <div className="footer-sectio w-auto">
                 
-                <ul>
+                <ul className='ul-segment'>
                     <li><a href="#">About Us</a></li>
                     <li><a href="#">Contact</a></li>
                     <li><a href="#">Blog</a></li>
@@ -45,11 +45,13 @@ const FooterHero = () => {
         <div className="footer-content">
         <p className="p-text">&copy; 2024 CreativeFusion  |  All rights reserved</p>
 
-          <div className="social-icons">
-            <FaFacebook className="icon" />
-            <FaInstagram className="icon" />
-            <FaTwitter className="icon" />
-            <FaLinkedin className="icon" />
+        <div className="social-icons-bottom">
+            <img src="/images/icons/Icon-awesome-cc-visa.svg" alt="Facebook" className="icons" />
+            <img src="/images/icons//Icon-awesome-stripe.svg" alt="Instagram" className="icons" />
+            <img src="/images/icons//Icon-awesome-amazon-pay.svg" alt="Twitter" className="icons" />
+            <img src="/images/icons//Icon-awesome-cc-mastercard.svg" alt="LinkedIn" className="icons" />
+            <img src="/images/icons//Icon-awesome-paypal.svg" alt="LinkedIn" className="icons" />
+
           </div>
         </div>
        

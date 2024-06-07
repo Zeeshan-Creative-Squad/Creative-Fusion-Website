@@ -88,12 +88,12 @@ ul li a:hover {
 
 .footer .p-text {
   font-size: 15px;
-  margin-left: 2rem;
+  margin-left: -1rem;
 }
 
 .footer .social-icons {
   display: flex;
-  margin-right: 6rem;
+  margin-right: -1rem;
 }
 
 .footer .icon {
@@ -107,11 +107,50 @@ ul li a:hover {
   color: red; /* Change this to the hover color you prefer */
 }
 
+.footer .social-icons {
+  display: flex;
+  margin-top: 20px;
+  justify-content: flex-start;
+  padding-left: 13.5rem;
+  padding-bottom: 80px;
+}
+
+.footer .social-icons-bottom {
+  display: flex;
+  gap: 10px;
+  margin-top: 8px;
+  padding-right: 68px;
+}
+
+.footer .icons {
+  width: 38px;
+  height: 38px;
+}
+
+.footer .icon {
+  color: white;
+  margin-left: 10px;
+  font-size: 35px;
+  cursor: pointer;
+}
+
 /* Media Queries for Mobile Responsiveness */
 @media (max-width: 768px) {
   .footer {
     padding: 80px 20px 20px; /* Adjust padding for smaller screens */
     text-align: center; /* Center text for smaller screens */
+  }
+  .footer .social-icons-bottom {
+    display: flex;
+    gap: 10px;
+    margin-top: 8px;
+    padding-right: 0px;
+  }
+  .footer .p-text {
+    font-size: 15px;
+    margin-left: 0rem;
+    text-align: center;
+    /* width: 160%; */
   }
 
   .footer .upper-section {
@@ -123,6 +162,15 @@ ul li a:hover {
   .footer-section {
     margin: 20px 0; /* Add vertical margin between sections */
     text-align: center; /* Center text within sections */
+  }
+
+  .footer-sectio{
+    text-align: center;
+  }
+
+  .footer-section .ul-segment{
+    text-align: center;
+    padding-left: 0px;
   }
 
   .footer-section img,
@@ -151,11 +199,94 @@ ul li a:hover {
 
   .footer-section .specific-paragraph .span,
   .footer-section .specific-paragraph .span-block {
-    font-size: 18px; /* Adjust font size for smaller screens */
+    font-size: 21px; /* Adjust font size for smaller screens */
   }
 
   ul {
     margin-left: 0; /* Remove left margin for smaller screens */
+    padding-right: 2rem;
+
+   
+  }
+
+  .footer .footer-content {
+    flex-direction: column; /* Stack content vertically */
+  
+  }
+
+  .footer .p-text {
+    margin: 10px 0; /* Add margin for spacing */
+  }
+
+  .footer .social-icons {
+    margin: 20px 0; /* Add margin for spacing */
+  }
+
+  .footer .icon {
+    font-size: 30px; /* Adjust icon size for smaller screens */
+    margin-left: 0; /* Remove left margin */
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .footer {
+    padding: 80px 20px 20px; /* Adjust padding for smaller screens */
+    text-align: center; /* Center text for smaller screens */
+  }
+
+  .footer .upper-section {
+    flex-direction: column; /* Stack sections vertically */
+    align-items: center; /* Center align items */
+    text-align: center;
+  }
+
+  .footer-section {
+    margin: 20px 0; /* Add vertical margin between sections */
+    text-align: center; /* Center text within sections */
+  }
+
+  .footer-sectio{
+    text-align: center;
+  }
+
+  .footer-section .ul-segment{
+    text-align: center;
+    padding-left: 0px;
+  }
+
+  .footer-section img,
+  .footer-section .footer-text,
+  .footer .footer-heading,
+  .footer .footer-section .specific-paragraph {
+    margin-left: 0; /* Remove left margin for smaller screens */
+    text-align: center;
+    
+  }
+
+  .footer-section img {
+    max-width: 80%; /* Adjust image size for smaller screens */
+  }
+
+  .footer-section .footer-text {
+    max-width: 100%; /* Allow text to take full width */
+    padding-top: 1rem; /* Adjust padding for smaller screens */
+    text-align: center;
+  }
+
+  .footer-section h3,
+  .footer .footer-heading {
+    font-size: 28px; /* Adjust font size for smaller screens */
+  }
+
+  .footer-section .specific-paragraph .span,
+  .footer-section .specific-paragraph .span-block {
+    font-size: 21px; /* Adjust font size for smaller screens */
+  }
+
+  ul {
+    margin-left: 0; /* Remove left margin for smaller screens */
+    padding-right: 2rem;
+
    
   }
 

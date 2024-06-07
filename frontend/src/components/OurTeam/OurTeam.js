@@ -17,8 +17,8 @@ function OurTeam() {
                 <div className='col-lg-3 col-sm-6'>
                     <div className='team-card text-center'>
                         <img src='/images/creatives/team-2.png' className='img-fluid' alt='team member'/>
-                        <h5 className='body-paragraph mt-3' style={{fontWeight:"bold", fontSize: "1.7rem"}}>Harris Candio</h5>
-                        <p className='body-paragraph'>Copy Writer</p>
+                        <h5 className='body-paragraph mt-3' style={{fontWeight:"bold", fontSize: "1.7rem"}}>Haris Chandio</h5>
+                        <p className='body-paragraph'>Content Writer</p>
                     </div>
                 </div>
 

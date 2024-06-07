@@ -25,4 +25,7 @@
     .OurTeam-container .team-card p {
         font-size: 0.9rem; /* Decrease font size for team member roles */
     }
+    .OurTeam-container .text-content{
+        text-align: center;
+    }
 }

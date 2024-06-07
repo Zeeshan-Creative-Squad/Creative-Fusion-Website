@@ -34,6 +34,7 @@ function TextContent({
                     <h3 className='font-bebus body-heading' style={{color:"white", fontWeight: "900", fontSize: "50px"}}>
                         {heading}<br className='d-none d-lg-block'></br>
                         {headingAfterBr}{headingYellow&&<span className='color-yellow'>{headingYellow}</span>}
+                        <br></br>
                         {headingAfterBrmore}{headingYellow&&<span className='color-yellow'>{headingYellow}</span>}
                     </h3>
                     <p

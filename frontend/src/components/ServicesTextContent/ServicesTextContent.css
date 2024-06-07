@@ -1,58 +1,65 @@
-.ServicesTextContent-container
-{
+.ServicesTextContent-container {
     background-color: #101010;
 }
 
-.ServicesTextContent-container .list-bullet
-{
+.ServicesTextContent-container .list-bullet {
     margin: 0;
     margin-right: 5px;
 }
 
-.ServicesTextContent-container .number-container
-{
+.ServicesTextContent-container .number-container {
     padding: 6px 19px;
     border-radius: 29px;
     background-color: #1a1a1a;
 }
 
-.ServicesTextContent-container .line-seprator
-{
+.ServicesTextContent-container .line-seprator {
     width: 70%;
-    margin: 0 ;
+    margin: 0;
     border: 1px solid rgb(60, 60, 60);
 }
 
-.ServicesTextContent-container .btn-transparent
-{
+.ServicesTextContent-container .btn-transparent {
     border-radius: 24px;
-  padding:7px 23px;
-  font-family: "Manrope", sans-serif;
-  font-size: 13px;
+    padding: 7px 23px;
+    font-family: "Manrope", sans-serif;
+    font-size: 13px;
     background-color: rgba(255, 255, 255, 0);
-    border: 1px solid  #313131;
-    color:  white;
-    transition: .5s;
-  }
-  .btn-transparent:hover
-  {
-    background-color:  #313131;
+    border: 1px solid #313131;
     color: white;
-  }
+    transition: .5s;
+}
 
-@media(min-width:1000px)
-{
-    .ServicesTextContent-container .body-heading
-    {
+.btn-transparent:hover {
+    background-color: #313131;
+    color: white;
+}
+
+@media (min-width: 1000px) {
+    .ServicesTextContent-container .body-heading {
         font-size: 38px;
     }
-
 }
-@media(min-width:1300px)
-{
-    .ServicesTextContent-container .content
-    {
+
+@media (min-width: 1300px) {
+    .ServicesTextContent-container .content {
         width: 80%;
     }
+}
 
+/* Responsive styles for 768px */
+@media (max-width: 768px) {
+    .ServicesTextContent-container .img-container {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .ServicesTextContent-container .text-content {
+        text-align: center;
+    }
+
+    .ServicesTextContent-container .d-flex {
+        flex-direction: column;
+        gap: 10px;
+    }
 }

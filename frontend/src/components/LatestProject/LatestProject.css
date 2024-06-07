@@ -1,6 +1,10 @@
 .LatestProject-container {
-    min-height: 100vh; /* Change height to min-height for better responsiveness */
+    min-height: 110vh; /* Change height to min-height for better responsiveness */
     padding: 20px; /* Add padding to create space around content */
+}
+
+.LatestProject-container .body-paragraph{
+    line-height: 2;
 }
 
 .LatestProject-container .CardBox-container {
@@ -10,7 +14,7 @@
 }
 
 .LatestProject-container .project-main {
-    padding-top: 80px; /* Reduce padding-top for better alignment on mobile */
+    padding-top: 130px; /* Reduce padding-top for better alignment on mobi
 }
 
 .LatestProject-container .body-paragraph {
@@ -33,13 +37,22 @@
     .LatestProject-container .body-paragraph {
         font-size: 14px; /* Reduce font size for smaller screens */
         text-align: center;
+       
     }
     .LatestProject-container .body-heading {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .LatestProject-container .boxtext{
+        font-size: 15px;
         text-align: center;
     }
     .LatestProject-container .anchor {
         text-align: center;
         cursor: pointer;
+    }
+    .LatestProject-container .text-content{
+        margin-top: 14px;
     }
 
 }

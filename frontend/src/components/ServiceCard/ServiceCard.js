@@ -66,7 +66,7 @@ function ServiceCard() {
         <div className='container my-3 my-xl-5'>
             <div className='text-content text-center'>
                 <h3 className='body-heading'>Transforming Ideas into Digital Realities</h3>
-                <p className='body-paragraph my-4'>At Creative Fusion, we follow an orderly full-cycle development process to ensure your online presence is both impactful and inspiring. Discover our comprehensive approach to bringing your digital projects to life.</p>
+                <p className='body-paragraph my-4'>At Creative Fusion, we follow an orderly full-cycle development process to ensure your online presence is both impactful and inspiring. <br></br>Discover our comprehensive approach to bringing your digital projects to life.</p>
             </div>
 
             <div className='row  pt-5 justify-content-center gy-5'>

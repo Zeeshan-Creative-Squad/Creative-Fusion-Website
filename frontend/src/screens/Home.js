@@ -46,8 +46,8 @@ function Home() {
             img="/images/creatives/home-text-2.png"
             subHeading=""
             heading="Showcasing Success"
-            headingAfterBr="Across B2B & B2C "
-            headingAfterBrmore=" Industries"
+            headingAfterBr=" Across B2B & B2C "
+            headingAfterBrmore="Industries"
             paragraph="Creative Fusion takes pride in our diverse portfolio, serving both B2B and B2C clients across various industries. Our expertise spans from professional sports to healthcare, and from real estate to technology, demonstrating our ability to adapt and excel in different fields."
             btn={false}
             btnText=""

@@ -54,7 +54,7 @@ function Testimonials() {
     <div className=" d-flex align-items-center w-100">
       <div className="col-12 text-center px-0">
         <h3 className="body-heading mb-2 color-white">Hear from Our Satisfied Clients</h3>
-        <p className="body-paragraph my-4" >At Creative Fusion, our success is reflected in the satisfaction of our clients across diverse industries. From healthcare to technology, and from e-commerce to real estate, our clients trust us to deliver exceptional digital solutions.</p>
+        <p className="body-paragraph my-4" >At Creative Fusion, our success is reflected in the satisfaction of our clients across diverse industries. From healthcare to technology,<br></br> and from e-commerce to real estate, our clients trust us to deliver exceptional digital solutions.</p>
         
 
         <div className="card-list" style={{position:"relative"}}>
