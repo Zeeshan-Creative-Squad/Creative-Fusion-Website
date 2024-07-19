@@ -8,7 +8,7 @@ import LetsWork from '../LetsWorkTogether/letsWork';
 
 function BlogMain() {
     return (
-        <div className='blogmain-container'>
+        <div className=' blogmain-container'>
             <Header />
             <div className='content-container d-flex flex-column align-items-center justify-content-center'>
                 <div className='text-content text-center'>

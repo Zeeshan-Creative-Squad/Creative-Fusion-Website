@@ -39,7 +39,7 @@
 
 .multi-gradient {
   background-repeat: no-repeat!important;
-  background-image: radial-gradient(circle at 0% 100%, rgba(222, 161, 17, 0.457) 0%, #e8b81a00 30%), radial-gradient(circle at 100% 0%, rgba(222, 34, 17, 0.457) 0%, #e8391a00 30%);
+  background-image: radial-gradient(circle at 0% 100%, rgba(222, 161, 17, 0.457) 0%, #e8b81a00 35%), radial-gradient(circle at 100% 0%, rgba(222, 34, 17, 0.457) 0%, #e8391a00 35%);
   background-size: 100% 100%;
   background-position: left, right center;
 }

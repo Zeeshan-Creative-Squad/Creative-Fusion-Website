@@ -1,5 +1,9 @@
 .ServicesInnerHero-container {
-    height: auto; /* Set height to auto for responsiveness */
+    /* height: 100vh; */
+}
+
+.ServicesInnerHero-container .serviceinner-content{
+    padding: 15vh 0vh;
 }
 
 .ServicesInnerHero-container .body-heading {
@@ -14,33 +18,36 @@
 }
 
 .ServicesInnerHero-container .services-inner-hero-img {
-    max-height: 60%; /* Decrease max height for smaller screens */
-    width: auto; /* Set width to auto for responsiveness */
+    /* max-height: 60%; 
+    width: auto;  */
 }
 
 .ServicesInnerHero-container .serviceinner-content {
-    margin-bottom: 40px; /* Decrease margin for better spacing on smaller screens */
+ 
 }
 
 .ServicesInnerHero-container .img-container {
-    height: auto; /* Set height to auto for responsiveness */
+  
 }
 
-/* Responsive Design */
+
 @media (max-width: 762px) {
+    .ServicesInnerHero-container {
+       padding: 4vh 0vh;
+    }
     .ServicesInnerHero-container .body-heading {
-        font-size: 32px; /* Adjust font size for medium screens */
+        font-size: 32px; 
     }
     .ServicesInnerHero-container .body-paragraph{
         width: 99%;
     }
 
     .ServicesInnerHero-container .services-inner-hero-img {
-        max-height: 50%; /* Adjust max height for medium screens */
+        margin-top: 30px;
     }
 
     .ServicesInnerHero-container .serviceinner-content {
-        margin-bottom: 30px; /* Adjust margin for medium screens */
+        margin-bottom: 30px; 
     }
 }
 

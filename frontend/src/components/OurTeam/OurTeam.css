@@ -1,5 +1,5 @@
 .OurTeam-container {
-    height: auto; /* Change height to auto for responsiveness */
+    height: auto;
 }
 
 .OurTeam-container .team-card {
@@ -9,23 +9,28 @@
 
 @media (max-width: 991px) {
     .OurTeam-container .team-card {
-        margin-top: 30px; /* Adjust margin for better spacing on smaller screens */
+        margin-top: 30px;
     }
 }
 
 @media (max-width: 767px) {
     .OurTeam-container .team-card {
-        padding: 10px; /* Reduce padding on smaller screens */
+        padding: 10px;
     }
 
     .OurTeam-container .team-card h5 {
-        font-size: 1.4rem; /* Decrease font size for team member names */
+        font-size: 1.4rem;
     }
 
     .OurTeam-container .team-card p {
-        font-size: 0.9rem; /* Decrease font size for team member roles */
+        font-size: 0.9rem;
     }
-    .OurTeam-container .text-content{
+
+    .OurTeam-container .text-content {
         text-align: center;
+    }
+
+    .OurTeam-container .body-heading {
+        margin-top: 12px;
     }
 }

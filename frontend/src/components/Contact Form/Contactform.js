@@ -70,10 +70,8 @@ const Contactform = () => {
 
 
   return (
-    <div
-      className="contact_section standard-margin-space"
-    >
-      <div className="container pt-5">
+    <div className="container">
+        <div className="contact_section">
         <div className="row cont-special gy-4 gx-lg-6 d-flex align-items-center">
           <div className="col-md-6 contact-form-side-img-container" >
               <img src="/images/creatives/contact-form-img.png" className="img-fluid contact-form-side-img" alt="phone icon "/>
@@ -84,7 +82,7 @@ const Contactform = () => {
               <h2 className="body-heading mb-4 ">
               Let's Get In Touch
               </h2>
-              <p className="body-paragraph text-start">
+              <p className="body-paragraph">
               Got an idea or need a digital solution? Let's chat! Reach out to us and let's bring your vision to life.
               </p>
             </div>

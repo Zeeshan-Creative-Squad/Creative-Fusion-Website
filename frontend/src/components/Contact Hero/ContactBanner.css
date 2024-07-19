@@ -34,25 +34,25 @@
 
 .contact_section .social-icons-container {
   position: absolute;
-  left: 280px; /* Adjust the left positioning as needed */
+  left: 280px;
   top: 85%;
   transform: translateY(-50%);
   display: flex;
 }
 
 .contact_section .social-icon-wrapper {
-  border: 2px solid #959292; /* Adjust border color and width as needed */
-  padding: 9px; /* Add some padding to space out the icon from the border */
-  margin-right: 10px; /* Adjust spacing between icons */
+  border: 2px solid #959292;
+  padding: 9px;
+  margin-right: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .contact_section .social-icon {
-  width: 25px; /* Adjust size as needed */
+  width: 25px;
   height: 20px;
-  fill: transparent; /* Make the icon transparent */
+  fill: transparent;
 }
 
 .contact_section .image-Contact {
@@ -60,17 +60,16 @@
   transform: translateY(17%)
 }
 
-/* Define the fade animation */
 @keyframes fadeIn {
   from {
-    opacity: 0; /* Start with opacity 0 */
+    opacity: 0;
   }
+
   to {
-    opacity: 1; /* End with opacity 1 */
+    opacity: 1;
   }
 }
 
-/* Apply the animation to the image when the fade-in class is present */
 .image-Contact.fade-in {
   animation: fadeIn 0.5s ease-in;
 }
@@ -79,12 +78,12 @@
   width: 20.5px;
   height: 20.5px;
   border-radius: 50%;
-  background-color: aliceblue; /* Set your desired background color */
-  color: #fff; /* Set text color */
-  font-size: 16px; /* Set font size */
+  background-color: aliceblue;
+  color: #fff;
+  font-size: 16px;
   position: absolute;
-  left: 262px; /* Adjust this value as needed to set the desired distance from the left edge */
-  top: 73.5%; /* Adjust this value as needed to vertically center the button */
+  left: 262px;
+  top: 73.5%;
   transform: translateY(-50%);
 }
 
@@ -92,34 +91,33 @@
   width: 20.5px;
   height: 20.5px;
   position: absolute;
-  right: 1045px; /* Adjust this value as needed to set the desired distance from the left edge */
-  top: 73.5%; /* Adjust this value as needed to vertically center the button */
+  right: 1045px;
+  top: 73.5%;
   transform: translateY(-50%);
   border-radius: 50%;
-  background-color: aliceblue; /* Set your desired background color */
-  color: #fff; /* Set text color */
-  font-size: 16px; /* Set font size */
+  background-color: aliceblue;
+  color: #fff;
+  font-size: 16px;
 }
 
 .button1-Contact.active,
 .button2-Contact.active {
-  background-color: red; /* Set the active button's background color to red */
-  /* Add any additional styles for the active button */
+  background-color: red;
 }
 
 .contact_section .animation-text1 {
-  color: #fff; /* Set text color */
-  font-size: 16px; /* Set font size */
+  color: #fff;
+  font-size: 16px;
   position: absolute;
-  left: 205px; /* Adjust this value as needed to set the desired distance from the left edge */
+  left: 205px;
   top: 68%;
 }
 
 .contact_section .animation-text2 {
-  color: #fff; /* Set text color */
-  font-size: 16px; /* Set font size */
+  color: #fff;
+  font-size: 16px;
   position: absolute;
-  right: 998px; /* Adjust this value as needed to set the desired distance from the left edge */
+  right: 998px;
   top: 68%;
 }
 
@@ -142,51 +140,51 @@
   }
 }
 
-/* Mobile Styles */
 @media (max-width: 768px) {
   .contact_section {
-    height: auto; /* Adjust height for mobile view */
+    height: auto;
   }
 
   .contact_section .contact-details .body-heading {
-    font-size: 30px; /* Adjust font size for mobile view */
+    font-size: 26px;
+    text-align: center;
   }
 
   .contact_section .contact-heading2,
   .contact_section .contact-para,
   .contact_section .contact-notpara {
     text-align: center;
-    margin-bottom: 2rem; /* Adjust margin for mobile view */
+    margin-bottom: 2rem;
   }
 
   .contact_section .social-icons-container {
-    position: static; /* Remove absolute positioning */
-    transform: none; /* Remove transform */
-    justify-content: center; /* Center icons */
-    margin-top: 1rem; /* Add some margin to separate from other elements */
+    position: static;
+    transform: none;
+    justify-content: center;
+    margin-top: 1rem;
   }
-
-  
 
   .contact_section .animation-text1,
   .contact_section .animation-text2 {
-    position: static; /* Remove absolute positioning */
-    text-align: center; /* Center text */
-    margin-bottom: 1rem; /* Add some margin to separate from other elements */
+    position: static;
+    text-align: center;
+    margin-bottom: 1rem;
   }
+
   .contact_section .button1-Contact {
-    left: 15.5%; /* Adjust this value as needed for horizontal positioning */
-    top: 46.42%; /* Adjust this value as needed for vertical positioning */
+    left: 15.5%;
+    top: 46.42%;
     width: 3.1px;
     height: 12.6px;
   }
 
   .contact_section .button2-Contact {
-    right: 15%; /* Adjust this value as needed for horizontal positioning */
-    top: 46.42%; /* Adjust this value as needed for vertical positioning */
+    right: 15%;
+    top: 46.42%;
     width: 3.1px;
     height: 12.6px;
   }
+
   .contact_section .image-Contact {
     height: 15vh;
     transform: translateY(12%)

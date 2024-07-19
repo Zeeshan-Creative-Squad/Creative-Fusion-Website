@@ -11,22 +11,22 @@ function CaseStudiesHero() {
         {
             image: '/images/creatives/image1.jpg',
             title: 'Creative Design <br/> Showcase',
-            description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
+            description: 'Lorem Ipsum is simply dummy text of the printing and <br/> typesetting industry.'
         },
         {
             image: '/images/creatives/image1.jpg',
             title: 'Creative Design<br/> Showcase',
-            description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
+            description: 'Lorem Ipsum is simply dummy text of the printing and <br/> typesetting industry.'
         },
         {
             image: '/images/creatives/item-case.png',
             title: 'Creative Design<br/> Showcase',
-            description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
+            description: 'Lorem Ipsum is simply dummy text of the printing and <br/> typesetting industry.'
         },
         {
             image: '/images/creatives/Mask Group 110-min.png',
             title: 'Creative Design<br/> Showcase',
-            description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
+            description: 'Lorem Ipsum is simply dummy text of the printing and <br/> typesetting industry.'
         }
     ];
 
@@ -39,7 +39,7 @@ function CaseStudiesHero() {
                         Our Case <span className='color-yellow'>Studies</span>
                     </h1>
                     <p className='body-paragraphh my-3'>
-                        Know real-world examples of how Creative Fusion has helped businesses like yours achieve digital success.
+                    Know real-world examples of how Creative Fusion has helped businesses like yours achieve digital success.
                     </p>
                 </div>
                 <div className='case-studies-list'>

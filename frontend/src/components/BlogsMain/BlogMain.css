@@ -1,11 +1,11 @@
 .blogmain-container {
-    margin: 0; /* Remove any default margins */
-    padding: 0; /* Remove any default padding */
-    margin-bottom: 0;
+    /* margin: 0; 
+    padding: 0; 
+    margin-bottom: 0; */
 }
 
 .blogmain-container .text-content {
-    margin-top: 130px;
+  padding: 12vh 0vh;
 }
 
 .blogmain-container .body-heading {
@@ -34,20 +34,22 @@
 
 .blogmain-container .transparent-box {
     position: absolute;
-    top: 530px; /* Adjust as needed */
-    left: 25%; /* Center horizontally */
-    transform: translateX(-50%); /* Center horizontally */
+    top: 530px; 
+    left: 25%; 
+    transform: translateX(-50%); 
     border-radius: 13px;
-    background-color: rgba(119, 116, 116, 0.9); /* Transparent white */
+    background-color: rgba(102, 102, 102, 0.6); 
     padding: 20px;
-    width: 90%; /* Responsive width */
+    width: 90%; 
     max-width: 450px;
-    height: auto; /* Adjust for responsiveness */
+    height: auto; 
+    backdrop-filter: blur(30px);
+-webkit-backdrop-filter: blur(30px);
 }
 
 .blogmain-container .transparent-box button {
-    background-color: rgba(83, 84, 85, 0.0); /* Transparent Bootstrap primary color */
-    color: rgb(255, 0, 0); /* Semi-transparent white text color */
+    background-color: rgba(83, 84, 85, 0.0); 
+    color: rgb(255, 0, 0); 
     border: 1px solid red;
     padding: 3px 20px;
     border-radius: 22px;
@@ -65,37 +67,38 @@
 }
 
 .blogmain-container .transparent-box img {
-    max-width: 100px; /* Adjust as needed */
+    max-width: 100px; 
     margin-bottom: 10px;
 }
 
 .blogmain-container .transparent-box h4 {
     font-size: 14px;
-    color: white; /* Gray text color */
+    color: white; 
 }
 
 .blogmain-container .logo-container {
     display: flex;
-    align-items: center; /* Align items vertically */
+    align-items: center; 
     margin-left: 10px;
     margin-top: 1.4rem;
 }
 
 .blogmain-container .logo-img {
-    width: 50px; /* Set width of the logo */
-    height: auto; /* Automatically adjust height to maintain aspect ratio */
-    margin-right: 10px; /* Adjust spacing between logo and text */
+    width: 50px; 
+    height: auto; 
+    margin-right: 10px;
 }
 
 .blogmain-container .logo-text {
-    font-size: 14px; /* Adjust font size of the text */
-    color: #777; /* Adjust color of the text */
+    font-size: 14px;
+    color: #777; 
 }
 
 /* Small screens */
 @media only screen and (max-width: 576px) {
     .blogmain-container .text-content {
-      margin-top: 100px;
+      /* margin-top: 100px; */
+    
     }
   
     .blogmain-container .image-section {

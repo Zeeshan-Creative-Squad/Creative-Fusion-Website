@@ -1,12 +1,11 @@
-/* Keep original styles */
-
 .MyServices-container {
-    height: auto;
-}
-
-.MyServices-container .service-card-container {
-    /* border: 4px dashed #707070 ; */
-    /* border-radius: 14px; */
+    background-repeat: no-repeat !important;
+    background:
+        radial-gradient(circle at 100% 25%, rgba(222, 34, 17, 0.457) 0%, #e8391a00 38%),
+        radial-gradient(circle at 0% 75%, rgba(722, 161, 17, 0.457) 0%, #e8b81a00 30%);
+    background-color: black;
+    background-size: 100% 150%;
+    background-size: 100% 100%;
 }
 
 .MyServices-container .text-content {
@@ -14,8 +13,8 @@
 }
 
 .MyServices-container .body-paragraph {
-  /* padding-bottom: 47px; */
-  line-height: 2;
+    line-height: 2;
+    width: 90%;
 }
 
 
@@ -40,7 +39,7 @@
 
 .MyServices-container .card-sized-box {
     overflow-y: scroll;
-    height: 400px;
+    height: 410px;
 }
 
 .MyServices-container .card-sized-box {
@@ -59,8 +58,8 @@
 
 .MyServices-container .stat-border-right {
     width: 0;
-    height: 100%;
-    border: 1px solid grey;
+    height: 120px;
+    border: 1px solid rgba(119, 119, 119, 0.4);
 }
 
 .MyServices-container .card-btn {
@@ -80,272 +79,316 @@
     width: 45px;
 }
 
-.MyServices-container .story-stuff{
+.MyServices-container .story-stuff {
     font-size: 50px;
     font-weight: bold;
 }
 
-.MyServices-container .story-subheading{
+.MyServices-container .story-subheading {
     font-size: 20px;
     padding-top: 5px;
 }
 
-/* New styles for mobile responsiveness */
+.MyServices-container .achievements{
+    display: flex;
+}
+
+.MyServices-container .icon-container{
+    justify-content: end;
+}
 
 @media (max-width: 768px) {
     .MyServices-container {
-        padding: 10px; 
+        padding: 10px;
     }
 
     .MyServices-container .text-content {
         margin-top: 10px;
     }
 
-
-
-    .MyServices-container .service-card-container .card-title {
-        font-size: 18px; 
-    }
-
-    .MyServices-container .service-card-container .card-content {
-        font-size: 12px; 
-    }
-
-    .MyServices-container .service-card-container .card-anchor {
-        font-size: 12px; 
-    }
-
-    .MyServices-container .card-sized-box {
-        max-height: 380px; 
-    }
-
-    .MyServices-container .stat-border-right {
-        display: none; 
-    }
-
-    .MyServices-container .card-btn {
-        padding: 10px; 
-    }
-
-    .MyServices-container .card-btn-img {
-        width: 25px; 
-    }
-}
-@media (max-width: 576px) {
-    .MyServices-container {
-        padding: 5px; 
-    }
-
-    .MyServices-container .text-content {
-        margin-top: 5px; 
+    .MyServices-container .body-heading{
+        font-size: 37px;
     }
 
     .MyServices-container .service-card-container .card-title {
-        font-size: 16px; 
+        font-size: 18px;
     }
 
     .MyServices-container .service-card-container .card-content {
-        font-size: 10px; 
-    }
-
-    .MyServices-container .service-card-container .card-anchor {
-        font-size: 10px; 
-    }
-
-    .MyServices-container .card-sized-box {
-        max-height: 300px; 
-    }
-
-    .MyServices-container .stat-border-right {
-        display: none; 
-    }
-
-    .MyServices-container .card-btn {
-        padding: 8px; 
-       justify-content: flex-start !important;
-    }
-
-    .MyServices-container .card-btn-img {
-        width: 20px; /* Further adjust image size for smaller screens */
-    }
-
-    .transparency-box {
-        padding: 10px; /* Further adjust padding for smaller screens */
-    }
-    .MyServices-container .story-stuff{
-        font-size: 35px;
-    }
-    .MyServices-container .story-subheading{
         font-size: 12px;
     }
 
-    .transparency-box .box-image {
-        margin-bottom: 5px; /* Adjust margin for smaller screens */
-    }
-
-    .transparency-box .btn-primary {
-        margin-bottom: 5px; /* Adjust margin for smaller screens */
-    }
-
-    .transparency-box h2 {
-        font-size: 18px; /* Further reduce font size for smaller screens */
-    }
-
-    .transparency-box .logo-container {
-        flex-direction: column; /* Stack logo and text vertically */
-        align-items: flex-start; /* Align items to the start */
-    }
-
-    .transparency-box .logo-img {
-        width: 25px; /* Further adjust image size for smaller screens */
-        margin-bottom: 5px; /* Add margin below the image */
-    }
-
-    .transparency-box .logo-text {
-        font-size: 12px; /* Further reduce font size for smaller screens */
-    }
-}
-
-/* Styles for screens with a maximum width of 1024px */
-@media (max-width: 1024px) {
-    .MyServices-container {
-        padding: 15px; /* Adjust padding for medium screens */
-    }
-
-    .MyServices-container .text-content {
-        margin-top: 15px; /* Adjust top margin for medium screens */
-    }
-
-    .MyServices-container .service-card-container .card-title {
-        font-size: 20px; /* Adjust font size for medium screens */
-    }
-
-    .MyServices-container .service-card-container .card-content {
-        font-size: 14px; /* Adjust font size for medium screens */
-    }
-
     .MyServices-container .service-card-container .card-anchor {
-        font-size: 14px; /* Adjust font size for medium screens */
+        font-size: 12px;
     }
 
     .MyServices-container .card-sized-box {
-        max-height: 400px; /* Adjust max-height for medium screens */
+        max-height: 380px;
     }
 
     .MyServices-container .stat-border-right {
-        display: none; /* Hide the border for medium screens */
+        display: none;
     }
 
     .MyServices-container .card-btn {
-        padding: 12px; /* Adjust padding for medium screens */
-       
+        padding: 10px;
     }
 
     .MyServices-container .card-btn-img {
-        width: 30px; /* Adjust image size for medium screens */
-        
+        width: 25px;
+    }
+
+    .MyServices-container .achievements {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 3vh 0vh;
+    }
+
+    .MyServices-container .main-achievements {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .MyServices-container .story-stuff {
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .MyServices-container .story-subheading {
+        font-size: 16px;
+    }
+
+    .MyServices-container .icon-container{
+        justify-content: center;
+        margin-top: 12px;
+    }
+    .MyServices-container .body-paragraph {
+        width: 100%;
+    }
+
+    .MyServices-container .sliding-card {
+        padding: 10vh 0vh;
+        border: 1px solid rgba(218, 165, 32, 0.151);
+    }
+}
+
+@media (max-width: 576px) {
+    .MyServices-container {
+        padding: 5px;
+    }
+
+    .MyServices-container .text-content {
+        margin-top: 5px;
+    }
+
+    .MyServices-container .service-card-container .card-title {
+        font-size: 16px;
+    }
+
+    .MyServices-container .service-card-container .card-content {
+        font-size: 10px;
+    }
+
+    .MyServices-container .service-card-container .card-anchor {
+        font-size: 10px;
+    }
+
+    .MyServices-container .card-sized-box {
+        max-height: 300px;
+    }
+
+    .MyServices-container .stat-border-right {
+        display: none;
+    }
+
+    .MyServices-container .card-btn {
+        padding: 8px;
+        justify-content: flex-start !important;
+    }
+
+    .MyServices-container .card-btn-img {
+        width: 20px;
     }
 
     .transparency-box {
-        padding: 18px; /* Adjust padding for medium screens */
+        padding: 10px;
+    }
+
+    .MyServices-container .story-stuff {
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .MyServices-container .story-subheading {
+        font-size: 16px;
     }
 
     .transparency-box .box-image {
-        margin-bottom: 8px; /* Adjust margin for medium screens */
+        margin-bottom: 5px;
     }
 
     .transparency-box .btn-primary {
-        margin-bottom: 8px; /* Adjust margin for medium screens */
+        margin-bottom: 5px;
     }
 
     .transparency-box h2 {
-        font-size: 22px; /* Adjust font size for medium screens */
+        font-size: 18px;
     }
 
     .transparency-box .logo-container {
-        flex-direction: column; /* Stack logo and text vertically */
-        align-items: flex-start; /* Align items to the start */
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     .transparency-box .logo-img {
-        width: 28px; /* Adjust image size for medium screens */
-        margin-bottom: 6px; /* Add margin below the image */
+        width: 25px;
+        margin-bottom: 5px;
     }
 
     .transparency-box .logo-text {
-        font-size: 13px; /* Adjust font size for medium screens */
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .MyServices-container {
+        padding: 15px;
+    }
+
+    .MyServices-container .text-content {
+        margin-top: 15px;
+    }
+
+    .MyServices-container .service-card-container .card-title {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .MyServices-container .service-card-container .card-content {
+        font-size: 14px;
+    }
+
+    .MyServices-container .service-card-container .card-anchor {
+        font-size: 14px;
+    }
+
+    .MyServices-container .card-sized-box {
+        max-height: 400px;
+    }
+
+    .MyServices-container .stat-border-right {
+        display: none;
+    }
+
+    .MyServices-container .card-btn {
+        padding: 12px;
+    }
+
+    .MyServices-container .card-btn-img {
+        width: 30px;
+
+    }
+
+    .transparency-box {
+        padding: 18px;
+    }
+
+    .transparency-box .box-image {
+        margin-bottom: 8px;
+    }
+
+    .transparency-box .btn-primary {
+        margin-bottom: 8px;
+    }
+
+    .transparency-box h2 {
+        font-size: 22px;
+    }
+
+    .transparency-box .logo-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .transparency-box .logo-img {
+        width: 28px;
+        margin-bottom: 6px;
+    }
+
+    .transparency-box .logo-text {
+        font-size: 13px;
     }
 }
 
 /* Styles for screens larger than 1024px */
-@media (min-width: 1025px) {
+/* @media (min-width: 1025px) {
     .MyServices-container {
-        padding: 20px; /* Adjust padding for large screens */
+    
     }
 
     .MyServices-container .text-content {
-        margin-top: 20px; /* Adjust top margin for large screens */
+        margin-top: 20px; 
     }
 
     .MyServices-container .service-card-container .card-title {
-        font-size: 24px; /* Adjust font size for large screens */
+        font-size: 24px; 
     }
 
     .MyServices-container .service-card-container .card-content {
-        font-size: 16px; /* Adjust font size for large screens */
+        font-size: 16px; 
     }
 
     .MyServices-container .service-card-container .card-anchor {
-        font-size: 16px; /* Adjust font size for large screens */
+        font-size: 16px; 
     }
 
     .MyServices-container .card-sized-box {
-        max-height: 450px; /* Adjust max-height for large screens */
+        max-height: 450px; 
     }
 
     .MyServices-container .stat-border-right {
-        display: block; /* Show the border for large screens */
+        display: block; 
     }
 
     .MyServices-container .card-btn {
-        padding: 15px; /* Adjust padding for large screens */
+        padding: 15px; 
     }
 
     .MyServices-container .card-btn-img {
-        width: 35px; /* Adjust image size for large screens */
+        width: 35px; 
     }
 
     .transparency-box {
-        padding: 20px; /* Adjust padding for large screens */
+        padding: 20px; 
     }
 
     .transparency-box .box-image {
-        margin-bottom: 10px; /* Adjust margin for large screens */
+        margin-bottom: 10px; 
     }
 
     .transparency-box .btn-primary {
-        margin-bottom: 10px; /* Adjust margin for large screens */
+        margin-bottom: 10px;
     }
 
     .transparency-box h2 {
-        font-size: 24px; /* Adjust font size for large screens */
+        font-size: 24px; 
     }
 
     .transparency-box .logo-container {
-        flex-direction: row; /* Align logo and text horizontally */
-        align-items: center; /* Align items to the center */
+        flex-direction: row; 
+        align-items: center; 
     }
 
     .transparency-box .logo-img {
-        width: 30px; /* Adjust image size for large screens */
-        margin-bottom: 0; /* Remove margin below the image */
+        width: 30px; 
+        margin-bottom: 0; 
     }
 
     .transparency-box .logo-text {
-        font-size: 14px; /* Adjust font size for large screens */
+        font-size: 14px; 
     }
-}
-
-
-
-
+} */

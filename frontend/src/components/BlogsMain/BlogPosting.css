@@ -1,175 +1,265 @@
-.main-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 0;
-    padding-top: 5rem;
-}
 
-.main-section .row {
-    --bs-gutter-x: 0rem;
-    /* gap: 2px; */
-}
+.CourseCard-container
+{
 
-.main-section .col {
-    flex: 1;
-    padding: 0;
-    margin: 0;
-}
-
-.main-section .transparency-box {
-    border-radius: 14px;
-    background-color: rgba(119, 116, 116, 0.459); /* Transparent white */
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: 300px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    position: relative;
-    padding: 20px;
-    margin: 15px;
-    /* width: 450px; */
-    width: 95%;
-    height: 410px;
+    background-repeat: no-repeat !important;
+    background:
+        radial-gradient(circle at 90% 15%, rgba(222, 34, 17, 0.457) 0%, #e8391a00 38%),
+        radial-gradient(circle at 12% 46%, rgba(722, 161, 17, 0.457) 0%, #e8b81a00 30%);
+    background-color: black;
+    background-size: 100% 150%;
+    padding: 10vh 0vh;
+    /* justify-content: space-between; */
 }
 
-.main-section .transparency-box .box-image {
-    width: 100%; /* Adjust width as needed */
-    height: auto; /* Maintains aspect ratio */
-    max-width: 340px; /* Maximum width, if needed */
-    max-height: 200px; /* Maximum height, if needed */
-    object-fit: cover; /* Adjusts how the image is resized */
+.CourseCard-container .btn-container
+{
+    width: 50%;
 }
 
-.main-section .transparency-box img {
-    max-width: 34px; /* Adjust as needed */
-    margin-bottom: 7px;
+.CourseCard-container .main-heading
+{
+    font-size: 42px;
+    font-weight: 500;
+    color: #1e1e1e;
+}
+.CourseCard-container .card-box
+{
+    color: black;
+    padding:  3vh 3vh;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.097);
+    border-radius: 15px;
+    cursor: pointer;
+    height: 100%;
+    background-color: rgba(102, 102, 102, 0.6);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
 }
 
-.main-section .transparency-box button {
-    background-color: rgba(83, 84, 85, 0.0); /* Transparent */
-    color: rgb(255, 0, 0); /* Red text color */
-    border: 1px solid red;
-    padding: 3px 20px;
-    border-radius: 22px;
-    margin-top: 15px;
-    margin-right: 16rem;
-    margin-bottom: 10px;
-}
-
-.main-section .transparency-box h2 {
-    font-size: 19px;
-    margin-top: 8px;
-    margin-bottom: 10px;
-    margin-right: 0.2rem;
-    color: white;
-    text-align: center;
-}
-
-.main-section .transparency-box h4 {
-    font-size: 14px;
-    color: white; /* White text color */
-    text-align: left;
-}
-
-.main-section .logo-container {
+.CourseCard-container .logo-container {
     display: flex;
     align-items: center; /* Align items vertically */
-    justify-content: center;
+    /* justify-content: center; */
     margin-top: 0.7rem;
+    margin-left: 0px;
 }
 
-.main-section .logo-img {
-    width: 45px; /* Set width of the logo */
-    height: auto; /* Automatically adjust height to maintain aspect ratio */
-    margin-right: 40px; /* Adjust spacing between logo and text */
-}
 
-.main-section .logo-text {
+
+.CourseCard-container .logo-text {
     font-size: 14px; /* Adjust font size of the text */
     font-weight: lighter;
-    color: #777; /* Adjust color of the text */
+    color: #FFFFFF;
     margin-right: 70px;
     white-space: nowrap;
 }
 
-/* Styles for tablets (up to 768px) */
-@media (max-width: 768px) {
-    .main-section .transparency-box {
-        width: 80%; /* Adjust width for smaller screens */
-        height: auto; /* Let the height adjust automatically */
-        padding: 15px; /* Adjust padding */
-        margin: 0;
-    }
+.CourseCard-container .swiper-slide
+{
 
-    .main-section .transparency-box button {
-        margin-right: 5rem; /* Adjust margin */
-    }
+    height: 100%;
 }
 
-/* Styles for mobile devices (up to 480px) */
-@media (max-width: 480px) {
-    .main-section {
-        padding-top: 2rem; /* Adjust top padding */
-    }
-
-    .main-section .transparency-box {
-        width: 100%; /* Use full width */
-        height: auto; /* Let the height adjust automatically */
-        padding: 10px; /* Adjust padding */
-        margin-bottom: 22px; /* Adjust the margin */
-    }
-
-    .main-section .transparency-box button {
-        margin-right: 1rem; /* Adjust margin */
-    }
-
-    .main-section .transparency-box h2 {
-        font-size: 16px; /* Adjust font size */
-    }
-
-    .main-section .transparency-box h4 {
-        font-size: 12px; /* Adjust font size */
-    }
+.CourseCard-container .card-box .card-text-content
+{
+    width: 93%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: auto;
 }
 
-@media only screen and (min-width: 769px) and (max-width: 992px) {
-    .main-section {
-        padding-top: 2rem; /* Adjust top padding */
-    }
-
-    .main-section .transparency-box {
-        width: 90%; 
-    height: auto;
-    padding: 10px; 
-    margin-bottom: 22px; 
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    }
-
-    .main-section .transparency-box button {
-        margin-right: 1rem; /* Adjust margin */
-    }
-
-    .main-section .transparency-box h2 {
-        font-size: 16px; /* Adjust font size */
-    }
-
-    .main-section .transparency-box h4 {
-        font-size: 12px; /* Adjust font size */
-    }
+.CourseCard-container .card-box h5{
+    color :#373737;
+    font-size: .9rem;
+    font-weight: 700;
+    margin-top: 10px;
+}
+.CourseCard-container .card-box p{
+    color :#747474;
+    font-size: .78rem;
 }
 
-@media (max-width: 1200px) {
-    .main-section .transparency-box button {
-        background-color: rgba(83, 84, 85, 0.0); /* Transparent */
-        color: rgb(255, 0, 0); /* Red text color */
-        border: 1px solid red;
-        padding: 3px 20px;
-        border-radius: 22px;
-        margin-top: 15px;
-        margin-right: 0rem;
-        margin-bottom: 10px;
+.CourseCard-container .card-box .read-more-anchor
+{
+    font-family: "Inter", sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    padding: 8px 14px;
+    letter-spacing: 1px;
+    margin: 0;
+    border-radius: 4px;
+    border: 1px solid #EE202D!important;
+    background-color: #EE202D!important;
+    color: white!important;
+    transition: 0.1s ease;
+    
+    box-shadow: 0px 3px 16px 0px #ee202e2b!important;
+    
+}
+
+.CourseCard-container .card-box .someImage{
+    width: 100%;
+    margin:5% auto;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.CourseCard-container .card-box .top-links
+{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.CourseCard-container .card-box .blue-box
+{
+    background-color: #D8F3F4;
+    padding: 3px 8px;
+    border-radius: 5px;
+    
+}
+.CourseCard-container .card-box .blue-box p
+{
+    color: #71b0f9;
+    
+}
+.CourseCard-container .card-box .red-text
+{
+    color: #EE202D;
+    font-weight: 500
+    
+}
+.CourseCard-container .card-box .title
+{
+    font-size: 1rem;
+    color: #FFFFFF;
+    text-align: left;
+    
+}
+
+.CourseCard-container .btn-red{
+    background-color: rgba(83, 84, 85, 0.0); 
+    color: #EA3317; 
+    border: 1px solid #EA3317;
+    padding: 3px 0px;
+    border-radius: 22px;
+    width: 90px;
+    margin-bottom: 10px;
+}
+
+
+.CourseCard-container .card-box .top-links img{
+    width: 15px;
+}
+.CourseCard-container .card-box .top-links p{
+    font-size: .8rem;
+
+}
+
+.CourseCard-container .blog-text-content
+{
+    margin-bottom: 40px;
+}
+
+.CourseCard-container .blog-upper-content
+{
+}
+
+.CourseCard-container .blog-upper-content .blog-text-content
+{
+    
+}
+.CourseCard-container .blog-upper-content .blog-btn
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.CourseCard-container .blog-upper-content .blog-btn button
+{
+    padding: 7px 30px;
+}
+
+.CourseCard-container .card-list
+{
+    margin: auto;
+    width: 90%;
+}
+
+.CourseCard-container .blue-btn 
+{
+    margin-top: 40px;
+}
+
+.CourseCard-container .gen-btn
+{
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 15px 45px;
+    letter-spacing: 1px;
+    margin: 0;
+    border-radius: 4px;
+    font-weight: 500;
+    text-align: center;
+    
+    
+  
+  }
+  .CourseCard-container .gen-btn-active {
+    border: 1px solid #EE202D!important;
+    background-color: #EE202D!important;
+    color: white!important;
+    transition: 0.1s ease;
+    padding: 15px 45px;
+    border-radius: 6px;
+   
+    
+    box-shadow: 0px 3px 16px 0px #ee202e2b!important;
+
+  }
+  .CourseCard-container .gen-btn {
+    border: 1px solid #FFFFFF;
+    background-color: #FFFFFF;
+    color: black;
+    transition: 0.1s ease;
+    box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.097);
+  }
+
+  .CourseCard-container .head-h1{
+    font-size: 20px;
+  }
+
+
+@media(max-width:768px)
+{
+    .CourseCard-container .blog-upper-content .blog-btn
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .CourseCard-container .gen-btn-active{
+       
+    
+    }
+    .CourseCard-container .gen-btn{
+        margin-bottom: 16px;
+        font-size: 10px;
+        
+       
+    }
+    .CourseCard-container .card-box .read-more-anchor{
+        margin-left: 12px;
     }
 }

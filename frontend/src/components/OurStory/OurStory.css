@@ -1,4 +1,6 @@
-.OurStory-container{}
+.OurStory-container{
+   
+}
 
 .OurStory-container .stat-border-right
 {
@@ -12,6 +14,7 @@
 .OurStory-container .story-stuff{
     font-size: 50px;
     font-weight: bold;
+    margin-bottom: 0;
 }
 
 .OurStory-container .body-heading{
@@ -20,6 +23,8 @@
 }
 .OurStory-container .body-paragraph{
     line-height: 1.9;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .OurStory-container .story-subheading{
@@ -30,23 +35,35 @@
 
 @media (max-width: 768px) {
     .OurStory-container .stat-border-right {
-        display: none; /* Hide the border for smaller screens */
+        display: none; 
     }
 
     .OurStory-container .story-stuff {
-        font-size: 30px; /* Adjust font size for smaller screens */
+        font-size: 38px; 
+        text-align: center;
+        margin-bottom: 12px;
     }
 
     .OurStory-container .body-heading {
-        font-size: 35px; /* Adjust font size for smaller screens */
+        font-size: 35px; 
+        text-align: center;
     }
 
     .OurStory-container .body-paragraph {
-        font-size: 16px; /* Adjust font size for smaller screens */
-        line-height: 1.6; /* Adjust line height for better readability on mobile */
+        font-size: 14px; 
+        line-height: 1.6; 
+        text-align: center;
+        margin-bottom: 12px;
+    
     }
 
     .OurStory-container .story-subheading {
-        font-size: 20px; /* Adjust font size for smaller screens */
+        font-size: 26px;
+        margin-bottom: 12px; 
+    }
+    .OurStory-container .ranking{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
     }
 }

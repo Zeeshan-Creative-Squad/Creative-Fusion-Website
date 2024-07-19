@@ -40,6 +40,7 @@
   padding:12px 47px;
   font-family: "Manrope", sans-serif;
   font-size: 12px;
+  text-decoration: none;
 }
 
 .btn-red
@@ -48,10 +49,12 @@
   border: 1px solid #ea3317;
   color: white;
   transition: .5s;
+  text-decoration: none;
 }
 .btn-red:hover
 {
   background-color: #f42000;
+  text-decoration: none;
 }
 .btn-yellow
 {

@@ -19,28 +19,29 @@ function Home() {
             </div>
         </div>
         <TextContent
-            img="/images/creatives/home-text-1.png"
+            img="/images/creatives/Mask-Group-107.webp"
             subHeading="About Us"
             heading="Crafting Digital "
             headingAfterBr="Excellence Together"
-            paragraph="At Creative Fusion, we specialize in delivering top-notch digital media solutions that empower businesses to thrive online. With a passionate team of experts, we blend creativity and technology to bring your ideas to life, ensuring your digital presence is both powerful and engaging."
+            paragraph="We specialize in delivering best digital media solutions that empower businesses to thrive online. With a passionate team of experts, we blend creativity and technology to bring your ideas to life."
             btn={true}
             btnText="Learn More"
             shiftRow={false}
         />
 
-        <div className='box multi-4-gradient '>
-            <div className='glass-box'>
+        {/* <div className='box multi-4-gradient '>
+            <div className='glass-box'> */}
                 <MyServices/>
 
-                <div style={{height:"40px"}}></div>
+                {/* <div style={{height:"40px"}}></div> */}
                 <LatestProject/>
 
                 <ServiceCard/>
 
                 <TrustedPartner/>
-            </div>
-        </div>
+            {/* </div>
+        </div> */}
+        
 
         <TextContent
             img="/images/creatives/home-text-2.png"
@@ -48,7 +49,7 @@ function Home() {
             heading="Showcasing Success"
             headingAfterBr=" Across B2B & B2C "
             headingAfterBrmore="Industries"
-            paragraph="Creative Fusion takes pride in our diverse portfolio, serving both B2B and B2C clients across various industries. Our expertise spans from professional sports to healthcare, and from real estate to technology, demonstrating our ability to adapt and excel in different fields."
+            paragraph="Lorem ipsum dolor sit amet in quis, consectetur eros adipiscing et elit. Suspendisse varius enim in eros elementum tristique. Duis cursus,"
             btn={false}
             btnText=""
             shiftRow={true}
@@ -69,6 +70,7 @@ function Home() {
                <Contactform/>
             </div>
         </div>
+       
         <Footer />
     </>
   )

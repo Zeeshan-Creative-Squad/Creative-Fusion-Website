@@ -15,12 +15,12 @@ const testimonialData = [
   {
     clientImg:"/images/icons/testimonial-male.svg",
     clientName:"Ayesha Siddiqui",
-    clientReview:"Working with Creative Fusion was a game-changer for our e-commerce business. Their branding and e-commerce development expertise helped us build a strong brand and a seamless shopping experience for our customers"
+    clientReview:"Working with Creative Fusion was a game-changer for our e-commerce business. Their branding and e-commerce development expertise helped us build a strong brand and a seamless shopping experience for our customers."
   },
   {
     clientImg:"/images/icons/testimonial-male.svg",
     clientName:"Imran Malik",
-    clientReview:"We partnered with Creative Fusion for our real estate website, and they exceeded our expectations. The design is stunning, and the user interface is intuitive. We've received numerous compliments from clients"
+    clientReview:"We partnered with Creative Fusion for our real estate website, and they exceeded our expectations. The design is stunning, and the user interface is intuitive. We've received numerous compliments from clients."
   },
   {
     clientImg:"/images/icons/testimonial-male.svg",
@@ -54,7 +54,7 @@ function Testimonials() {
     <div className=" d-flex align-items-center w-100">
       <div className="col-12 text-center px-0">
         <h3 className="body-heading mb-2 color-white">Hear from Our Satisfied Clients</h3>
-        <p className="body-paragraph my-4" >At Creative Fusion, our success is reflected in the satisfaction of our clients across diverse industries. From healthcare to technology,<br></br> and from e-commerce to real estate, our clients trust us to deliver exceptional digital solutions.</p>
+        <p className="body-paragraph my-4" >Our success is reflected in the satisfaction of our clients across diverse industries. </p>
         
 
         <div className="card-list" style={{position:"relative"}}>

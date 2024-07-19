@@ -1,5 +1,6 @@
 import React from 'react'
 import "./LatestProject.css"
+import { Link } from 'react-router-dom';
 
 function CardBox({
     img,
@@ -10,7 +11,7 @@ function CardBox({
 }) {
     return(
         
-        <div className='CardBox-container p-5 my-xxl-5 my-4'>
+        <div className='CardBox-container my-xxl-5 my-4'>
             <div className='row align-items-center m-xxl-4'>
                 <div className='col-lg-6'>
                     <img src={img} alt='case study thumbnail' className='img-fluid card-thumb'/>
@@ -46,15 +47,22 @@ function CardBox({
 
 function LatestProject() {
   return (
-    <div className='box multi-gradient '>
+    <div className=''>
     <div className='LatestProject-container'>
         <div className='container project-main'>
             <div className='row align-items-center'>
                 <div className='col-lg-6'>
+                <div className='col-lg-6 text-center d-lg-none mb-5'>
+                <Link to="/casestudies">
+      <button className='genral-btn btn-red text-center'>Our Case Studies</button>
+    </Link>
+    </div>
                     <h3 className='body-heading'>Latest Projects</h3>
                 </div>
                 <div className='col-lg-6 text-center text-lg-end'>
-                    <button className='genral-btn btn-red'>Our Case Studies</button>
+                <Link to="/casestudies">
+      <button className='genral-btn btn-red d-lg-inline d-none'>Our Case Studies</button>
+    </Link>
                     <br></br>
                     <br></br>
 

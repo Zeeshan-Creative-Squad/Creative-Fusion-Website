@@ -22,7 +22,7 @@ function TrustedPartner() {
         <div className='container my-3 mb-5'>
             <div className='text-content text-center '>
                 <h3 className='body-heading'>Collaborating with the Best in the Industry</h3>
-                <p className='body-paragraph my-4'>At Creative Fusion, we believe in the power of collaboration. We partner with industry-leading companies to bring you the best digital media solutions. Our trusted partners share our commitment to excellence, ensuring you receive top-tier services and innovative technologies. </p>
+                <p className='body-paragraph my-4'>At Creative Fusion, we believe in the power of collaboration.  </p>
 
             </div>
 

@@ -1,51 +1,83 @@
-import React from 'react';
+import React,{useState} from "react";
 import './BlogPosting.css';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import { Autoplay } from "swiper/modules";
+import CardBox from "./CardBox";
+
+const cardDataOlevel = [
+  {
+    cardImg: "./images/creatives/blogcardimg.png",
+    title: "The Power of Progressive Web apps",
+    price:"PKR 1,500",
+    content:"Moosa Khan",
+  },
+  {
+    cardImg: "./images/creatives/blogcardimg.png",
+    title: "The Power of Progressive Web apps",
+    price:"PKR 1,500",
+    content:"Moosa Khan",
+  },
+  {
+    cardImg: "./images/creatives/blogcardimg.png",
+    title: "The Power of Progressive Web apps",
+    price:"PKR 1,500",
+    content:"Moosa Khan",
+  }
+  
+];
+
+//   const catagory = [
+//     "O - Level",
+//     "AS-Level",
+//     "A2-Level"
+//   ]
 
 function BlogPosting() {
-  return (
-    <>
-      <div className='main-section'>
-        <div className='container'>
-  <div className="row gy-4 w-100">
-    <div className="col-lg-4 col-12">
-      <div className='transparency-box box-1 mx-auto '>
-        <img src="images/creatives/blogcardimg.png" alt="Image" className='box-image' />
-        <button className="btn btn-primary">Tech</button>
-        <h2>The Powerof Progressive Web Apps</h2>
-        <div className='logo-container'>
-          <img src="images/icons/Group 1893.png" alt="Logo" className='logo-img' />
-          <h4 className='logo-text'>CreativeFusion | April 18, 2024</h4>
-        </div>
-      </div>
-    </div>
-    <div className="col-lg-4 col-12">
-      <div className='transparency-box box-2 mx-auto '>
-        <img src="images/creatives/blogcardimg.png" alt="Image" className='box-image' />
-        <button className="btn btn-primary">Tech</button>
-        <h2>The Powerof Progressive Web Apps</h2>
-        <div className='logo-container'>
-          <img src="images/icons/Group 1893.png" alt="Logo" className='logo-img' />
-          <h4 className='logo-text'>CreativeFusion | April 18, 2024</h4>
-        </div>
-      </div>
-    </div>
-    <div className="col-lg-4 col-12">
-      <div className='transparency-box box-3 mx-auto'>
-        <img src="images/creatives/blogcardimg.png" alt="Image" className='box-image' />
-        <button className="btn btn-primary">Tech</button>
-        <h2>The Powerof Progressive Web Apps</h2>
-        <div className='logo-container'>
-          <img src="images/icons/Group 1893.png" alt="Logo" className='logo-img' />
-          <h4 className='logo-text'>CreativeFusion | April 18, 2024</h4>
-        </div>
-      </div>
-    </div>
-  </div>
+  const [cat,setCat] = useState("O - Level")
+
+return (
+  <div className='CourseCard-container'>
+      <div className="container my-5">
+   
+     
+
+    <Swiper
+    loop={true}
+    spaceBetween={50}
+    autoplay={{
+      delay: 3000,
+      disableOnInteraction: false,
+      
+    }}
+    breakpoints={{
+      280: {
+        slidesPerView: 1,
+      },
+      992: {
+        slidesPerView: 3,
+      }
+    }}
+    className="card-list py-4 mx-0 w-100 px-2"
+  >
+      
+    {cardDataOlevel.map((ele, ind) => (
+      <SwiperSlide key={ind} style={{ height: "auto" }}>
+  
+        <CardBox
+          className="h-100"
+          cardImg={ele.cardImg}
+          title={ele.title}
+          price={ele.price}
+          content={ele.content}
+        />
+      </SwiperSlide>
+    ))}
+  </Swiper>
   </div>
 </div>
 
-    </>
-  );
+)
 }
 
 export default BlogPosting;

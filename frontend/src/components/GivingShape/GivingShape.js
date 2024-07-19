@@ -28,21 +28,21 @@ function GivingShape() {
                             <div className='content-section px-3'>
                                 <img src='/images/icons/gs-icon-1.png' alt='service icon'/>
                                 <h6 className='color-white mt-4 '>Discovery & Ideation</h6>
-                                <p className='body-paragraph my-3'>Uncover the essence of your idea, product, or brand through our comprehensive discovery process. We'll dive deep into your goals, audience, and market to unearth insights that will shape the foundation of your project.</p>
+                                <p className='body-paragraph my-3'>We dive deep into your goals, audience, and market to unearth insights to shape your project..</p>
                             </div>
                         </div>
                         <div className='col-lg-4'>
                             <div className='content-section px-3'>
                                 <img src='/images/icons/gs-icon-2.png' alt='service icon'/>
                                 <h6 className='color-white mt-4 '>Design & Development</h6>
-                                <p className='body-paragraph my-3'>Transform your vision into reality with our expert design and development services. Our talented team will craft visually stunning designs and bring them to life with seamless development, ensuring your project is both aesthetically pleasing and functional.</p>
+                                <p className='body-paragraph my-3'>Our talented team crafts visually stunning designs and bring them to life with seamless development.</p>
                             </div>
                         </div>
                         <div className='col-lg-4'>
                             <div className='content-section px-3'>
                                 <img src='/images/icons/gs-icon-3.png' alt='service icon'/>
                                 <h6 className='color-white mt-4 '>Launch & Optimization</h6>
-                                <p className='body-paragraph my-3'>Take your idea, product, or brand to the next level with our launch and optimization services. From strategic launches to continuous optimization, we'll help you navigate the digital world and ensure your project reaches its full potential.</p>
+                                <p className='body-paragraph my-3'>From strategic launches to continuous optimization, we ensure your project reaches its full potential.</p>
                             </div>
                         </div>
 

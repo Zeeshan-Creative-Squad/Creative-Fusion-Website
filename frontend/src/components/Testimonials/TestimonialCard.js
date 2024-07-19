@@ -20,4 +20,4 @@ function TestimonialCard(props) {
   );
 }
 
-export default TestimonialCard
+export default TestimonialCard;

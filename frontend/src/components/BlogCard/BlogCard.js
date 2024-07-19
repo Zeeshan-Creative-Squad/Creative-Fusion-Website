@@ -9,22 +9,22 @@ function MainCard({
     content,
     link
 }) {
-
     const navigate = useNavigate();
 
-    return(
-        <div>
-            <img src={img} className='img-fluid' alt='blog thumbnail'/>
+    return (
+        <div className='MainCard'>
+            <img src={img} className='img-fluid' alt='blog thumbnail' />
 
             <p className='body-paragraph my-3 date color-red'>Design ___ {date}</p>
 
-            <h3 className='titles color-white' >{titles}</h3>
+            <h3 className='titles color-white'>{titles}</h3>
 
             <p className='body-paragraph'>{content}</p>
 
-            <p className='anchor color-yellow'
-                onClick={()=>{navigate(link)}}
-            > Read Article<img src='/images/icons/arrow-right-yellow.svg' style={{width:"40px",height:"22px"}} alt='arrow icon'/></p>
+            <p className='anchor color-yellow' onClick={() => { navigate(link) }}>
+                Read Article
+                <img src='/images/icons/arrow-right-yellow.svg' style={{ width: "40px", height: "22px" }} alt='arrow icon' />
+            </p>
         </div>
     )
 }
@@ -35,38 +35,31 @@ function SecondaryCard({
     title
 }) {
     return (
-        <div>
-            <div className='container mx-xl-3'>
-                <div className='row mb-4 align-items-center secondary-card'>
-                    <div className='col-4 img-fluid image-of-secondoryCard' style={{backgroundImage:`url(${img})`}}>
-                        {/* <img src={img} alt='blog thumbnail' className='img-fluid' /> */}
-                    </div>
-
-                    <div className='col-8'>
-                        <p className='body-paragraph mx-4 mb-3 date color-red'>Design  ___ {date}</p>
-                        <h3 className='title mb-0 mx-4 color-white'>{title}</h3>
-                    </div>
-
+        <div className='SecondaryCard mb-4'>
+            <div className='row'>
+                <div className='col-12 col-lg-5'>
+                    <img src={img} alt='blog thumbnail' className='img-fluid image-of-secondaryCard' />
                 </div>
-
+                <div className='col-12 col-lg-7 design-date-content'>
+                    <p className='body-paragraph mx-auto mb-2 date color-red'>Design  ___ {date}</p>
+                    <h3 className='title mx-auto color-white'>{title}</h3>
+                </div>
             </div>
         </div>
     )
 }
 
-
 function BlogCard() {
   return (
+        <div className='container'>
     <div className='BlogCard-container'>
-        <div className='container py-4 my-xxl-5'>
-            <div className='main'>
+            {/* <div className='main'> */}
                 <div className='text-content'>
                     <div className='row gy-3'>
                         <div className='col-lg-6'>
                             <h3 className='body-heading text-center text-lg-start font-bebus color-blue' >Insights and Inspiration for Your Digital Journey</h3>
-                            <p className='body-paragraph text-center text-lg-start font-manrope'>Welcome to Creative Fusion's collection of blogs and articles, where we share valuable insights and inspiration customized to our diverse portfolio. From the latest trends in technology and e-commerce to expert tips in healthcare and real estate, our content is designed to keep you informed and inspired.</p>
+                            <p className='body-paragraph text-center text-lg-start font-manrope'>Our content is designed to keep you informed and inspired.</p>
                         </div>
-
                         <div className='col-lg-6 text-center text-lg-end my-3 my-lg-0'>
                             <button className='genral-btn btn-red'>Our Blogs</button>
                         </div>
@@ -114,7 +107,7 @@ function BlogCard() {
 
         </div>
 
-    </div>
+    // </div>
   )
 }
 

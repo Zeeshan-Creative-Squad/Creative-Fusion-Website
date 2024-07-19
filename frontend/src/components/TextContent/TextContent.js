@@ -19,26 +19,27 @@ function TextContent({
     transparentBg=false
 }) {
   return (
-    <div className='TextContent-container'
+    <div className='TextContent-container'>
+    <div className='container'
     style={transparentBg ? {backgroundColor: "transparent" } : {backgroundColor: "#101010"}}
     >
-        <div className='container my-4'>
+        <div className='my-4'>
             <div className={`main row align-items-center gy-3 ${shiftRow && "flex-row-reverse"}`}>
                 <div className='img-container col-lg-6 px-4'>
-                    <img src={img} className='img-fluid' alt='text content ' />
+                    <img src={img} className='img-fluid' alt='text content '/>
                     {/* <img src={imgg} className='img-fluid imgg-style' alt='text content ' /> */}
                 </div>
 
                 <div className='text-content col-lg-6 text-center text-lg-start'>
-                    {subHeading && <h6 className='color-red sub-heading mb-3'>{subHeading} _______</h6>}
-                    <h3 className='font-bebus body-heading' style={{color:"white", fontWeight: "900", fontSize: "50px"}}>
+                    {subHeading && <h6 className='color-red sub-heading mb-3'>{subHeading} <span className='d-lg-inline d-none'>_____</span></h6>}
+                    <h3 className='font-bebus body-heading'>
                         {heading}<br className='d-none d-lg-block'></br>
                         {headingAfterBr}{headingYellow&&<span className='color-yellow'>{headingYellow}</span>}
                         <br></br>
                         {headingAfterBrmore}{headingYellow&&<span className='color-yellow'>{headingYellow}</span>}
                     </h3>
                     <p
-        className='body-paragraph my-4'
+        className='body-paragraph'
         style={{ lineHeight: '2.1'}}
         dangerouslySetInnerHTML={{ __html: paragraph }}
       />
@@ -86,6 +87,7 @@ function TextContent({
                 </div>
             </div>
         </div>
+    </div>
     </div>
   )
 }

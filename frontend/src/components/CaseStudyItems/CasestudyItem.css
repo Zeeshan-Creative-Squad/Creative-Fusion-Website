@@ -1,83 +1,80 @@
 .case-study-item {
     display: flex;
-    flex-direction: row; /* Align items in a row */
-    align-items: flex-start; /* Align items at the top */
-    margin: 20px; /* Add some margin for spacing between items */
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 20px;
     padding-top: 45px;
 }
 
 .case-study-item:not(:last-child) {
-    border-bottom: 1px solid rgb(59, 59, 59); /* Add a solid border at the bottom for all except the last child */
+    border-bottom: 1px solid rgb(59, 59, 59);
 }
 
 .case-study-item .image-container {
-    flex: 1; /* Allow the image to take up available space */
-    max-width: 35%; /* Ensure the image doesn't exceed half the width */
+    flex: 1;
+    max-width: 35%;
 }
 
 .case-study-item .image-container img {
-    width: 100%; /* Ensure the image fills the container */
-    height: auto; /* Allow the height to adjust proportionally */
-    padding-bottom: 1rem; /* Add some spacing between image and text */
+    width: 100%;
+    height: auto;
+    margin-bottom: 25px;
 }
 
 .case-study-item .text-container {
-    flex: 2; /* Allow the text container to take up available space */
-    max-width: 60%; /* Set a max-width to ensure text wraps */
-    text-align: left; /* Align text to the left */
-    word-wrap: break-word; /* Ensure long words break and wrap */
-    margin-left: 20px; /* Add some margin between the image and text */
+    flex: 2;
+    max-width: 60%;
+    text-align: left;
+    word-wrap: break-word;
+    margin-left: 80px;
 }
 
 .case-study-item .text-container h2 {
-    font-size: 2.9rem; /* Adjust heading size as needed */
+    font-size: 2.9rem;
     margin-bottom: 10px;
-    color: white; /* Space between heading and description */
+    color: white;
     padding-top: 1.5rem;
-    margin-left: 10.5rem;
+    font-weight: 800;
 }
 
 .case-study-item .text-container p {
-    font-size: 1.2rem; /* Adjust paragraph size as needed */
-    margin-left: 10.5rem;
+    font-size: 1.2rem;
     line-height: 1.8;
 }
 
 .case-study-item .case-study-link {
-    font-size: 1rem; /* Adjust link size as needed */
-    color: rgb(255, 153, 0); /* Link color */
-    text-decoration: none; /* Remove underline from link */
-    display: inline-block; /* Ensure proper spacing and layout */
-    margin-top: 10px; /* Space above the link */
-    margin-left: 10.5rem;
+    font-size: 1rem;
+    color: rgb(255, 153, 0);
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
 }
 
 .case-study-item .case-study-link:hover {
-    text-decoration: none; /* Underline on hover */
-} 
+    text-decoration: none;
+}
 
-/* Media queries for mobile responsiveness */
 @media (max-width: 768px) {
     .case-study-item {
-        flex-direction: column; /* Change direction to column for mobile layout */
-        align-items: center; /* Center items horizontally */
+        flex-direction: column;
+        align-items: center;
     }
 
     .case-study-item .image-container {
-        max-width: 100%; /* Allow the image to take full width */
+        max-width: 100%;
     }
 
     .case-study-item .text-container {
-        max-width: 100%; /* Allow the text container to take full width */
-        text-align: center; /* Align text to center for mobile layout */
-        margin-top: 20px; /* Add margin between image and text */
-        margin-left: 0; /* Reset margin for mobile layout */
+        max-width: 100%;
+        text-align: center;
+        margin-top: 20px;
+        margin-left: 0;
     }
 
     .case-study-item .text-container h2,
     .case-study-item .text-container p,
     .case-study-item .case-study-link {
-        margin-left: 0; /* Reset margin for mobile layout */
+        margin-left: 0;
         padding-bottom: 12px;
     }
 }

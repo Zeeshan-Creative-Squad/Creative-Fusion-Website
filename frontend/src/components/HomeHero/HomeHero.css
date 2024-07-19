@@ -24,6 +24,11 @@
     line-height: 1.9;
 }
 
+.HomeHero-container .head-h1 {
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
 .HomeHero-container .home-hero-img {
     position: absolute;
     max-height: 140%;

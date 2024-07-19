@@ -1,47 +1,115 @@
 .BlogCard-container {
-    height: 115vh;
-    padding-top: 86px;
-}
-
-.secondary-card {
-    height: 180px;
-    width: 90vh;
-}
-
-.secondary-card .col-4 {
-    height: 100%;
-    border-radius: 12px;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.BlogCard-container .body-heading {
+    padding: 12vh 0;
+  }
+  
+ .BlogCard-container .body-heading {
     font-weight: 900;
-}
-
-.BlogCard-container .body-paragraph {
-    margin-top: 19px;
-    margin-bottom: 3rem;
-}
-
-.BlogCard-container .anchor {
+    font-size: 50px; /* Adjust font size for responsiveness */
+  }
+  
+  .BlogCard-container .body-paragraph {
+    margin-top: 15px; /* Adjust spacing */
+    margin-bottom: 2rem; /* Adjust spacing */
+  }
+  
+  .BlogCard-container .anchor {
     text-decoration: underline;
     cursor: pointer;
     transition: .3s;
-    width: fit-content;
-}
-
-.BlogCard-container .title {
-    font-size: 24px;
+    display: inline-block; /* Ensures clickable area fits content */
+  }
+  
+  .BlogCard-container .title {
+    font-size: 20px;
     font-weight: bold;
-    width: 340px;
-    margin-bottom: 9px;
-}
-
-.BlogCard-container .date {
-    font-size: 16px;
-    padding-top: 5px;
-}
+    margin-bottom: 6px;
+    
+  }
+  
+  .date {
+    font-size: 14px; /* Adjust font size */
+    margin-top: 3px; /* Adjust spacing */
+  }
+  
+  .secondary-card {
+    /* height: 180px; */ /* Uncomment if needed */
+    /* width: 90vh; */ /* Uncomment if needed */
+  }
+  
+  .image-of-secondoryCard img {
+    max-width: 100%; /* Ensure images don't overflow container */
+  }
+  
+  @media (max-width: 992px) {
+   .BlogCard-container .body-heading {
+      font-size: 20px;
+    }
+  
+    .body-paragraph {
+      margin-bottom: 1.5rem;
+    }
+  
+    .anchor {
+      width: 100%; /* Full width button on smaller screens */
+      text-align: center;
+    }
+  
+    .title {
+      font-size: 18px;
+    }
+  
+    .date {
+      font-size: 12px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .SecondaryCard {
+        /* padding: 10px; */
+    }
+    .BlogCard-container .body-heading {
+      font-size: 18px;
+    }
+  
+    .body-paragraph {
+      margin-bottom: 1rem;
+    }
+  
+    .title {
+        font-size: 16px;
+    }
+  
+    .date {
+        font-size: 11px;
+    }
+    .design-date-content{
+        text-align: center;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .BlogCard-container .body-heading {
+      font-size: 42px;
+    }
+  
+    .body-paragraph {
+      margin-bottom: 0.5rem;
+      text-align: center;
+    }
+  
+    .title {
+      font-size: 14px;
+      text-align: center;
+    }
+    .titles{
+        text-align: center;
+    }
+  
+    .date {
+      font-size: 10px;
+    }
+  }
+  
 
 @media (max-width: 768px) {
     .BlogCard-container {
@@ -63,11 +131,16 @@
         font-size: 15px;
         width: auto;
         margin-bottom: 6px;
+        text-align: center;
+    }
+    .MainCard .titles{
+        text-align: center;
     }
 
     .BlogCard-container .date {
         font-size: 14px;
         padding-top: 3px;
+        text-align: center;
     }
     .BlogCard-container .image-of-secondoryCard{
         margin-top: 20px;
@@ -77,19 +150,19 @@
 }
 @media (max-width: 556px) {
     .BlogCard-container .secondary-card {
-        width: 100%; /* Set width to 100% */
+        /* width: 100%;  */
     }
 
     .BlogCard-container .image-of-secondoryCard {
-        height: 100px; /* Adjust image height */
+        height: 100px; 
     }
 }
 
 
 @media (max-width: 1200px) {
     .secondary-card {
-        height: 100px;
-        width: 45vh;
+        /* height: 100px;
+        width: 45vh; */
     }
     
     .secondary-card .col-4 {
@@ -101,7 +174,7 @@
     .BlogCard-container .title {
         font-size: 16px;
         font-weight: bold;
-        width: 220px;
+        /* width: 220px; */
         margin-bottom: 9px;
     }
     
@@ -119,8 +192,8 @@
     }
     
     .secondary-card {
-        height: 100px;
-        width: 60vh;
+        /* height: 100px;
+        width: 60vh; */
     }
     
     .secondary-card .col-4 {
@@ -132,12 +205,13 @@
     .BlogCard-container .title {
         font-size: 16px;
         font-weight: bold;
-        width: 208px;
+        /* width: 208px; */
         margin-bottom: 9px;
     }
     
     .BlogCard-container .date {
         font-size: 16px;
         padding-top: 5px;
+        
     }
 }

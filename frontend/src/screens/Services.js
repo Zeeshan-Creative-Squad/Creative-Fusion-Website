@@ -28,7 +28,7 @@ function Services() {
                 headingNumber="001"
             />
 
-        <div className='box multi-gradient '>
+        <div className='box multi-gradient'>
             <div className='glass-box'>
             <ServicesTextContent
                 img="/images/creatives/services-text-2.png"

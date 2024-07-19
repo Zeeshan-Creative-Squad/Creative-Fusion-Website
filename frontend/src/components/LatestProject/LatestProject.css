@@ -1,57 +1,80 @@
-.LatestProject-container {
-    min-height: 110vh; /* Change height to min-height for better responsiveness */
-    padding: 20px; /* Add padding to create space around content */
+.CardBox-container {
+    padding: 4vh 4vh;
 }
 
-.LatestProject-container .body-paragraph{
+
+
+.LatestProject-container {
+
+    padding: 7vh 0vh;
+    background-repeat: no-repeat !important;
+    background:
+        radial-gradient(circle at 90% 80%, rgba(222, 34, 17, 0.3) 0%, #e8391a00 25%),
+        radial-gradient(circle at 0% 0%, rgba(722, 161, 17, 0.457) 0%, #e8881a00 45%);
+    background-color: black;
+    background-size: 100% 100%;
+    background-position: right center;
+
+}
+
+.LatestProject-container .body-paragraph {
     line-height: 2;
 }
 
 .LatestProject-container .CardBox-container {
-    margin: 20px 0; /* Update margin for better spacing */
+    margin: 20px 0;
     background-color: hsla(0, 0%, 28%, 0.5);
-    border-radius: 20px; /* Reduce border-radius for better appearance on mobile */
+    border-radius: 20px;
 }
 
 .LatestProject-container .project-main {
-    padding-top: 130px; /* Reduce padding-top for better alignment on mobi
-}
+    /* padding-top: 130px; */
 
-.LatestProject-container .body-paragraph {
-    line-height: 1.8; /* Reduce line-height for better readability on mobile */
 }
 
 .LatestProject-container .anchor {
     cursor: pointer;
 }
 
+
+
+
+
 @media (max-width: 768px) {
     .LatestProject-container {
-        padding: 10px; /* Reduce padding for smaller screens */
+        padding: 10px;
+        /* Reduce padding for smaller screens */
     }
 
     .LatestProject-container .project-main {
-        padding-top: 40px; /* Reduce padding-top for better alignment on smaller screens */
+        padding-top: 40px;
+        /* Reduce padding-top for better alignment on smaller screens */
     }
 
     .LatestProject-container .body-paragraph {
-        font-size: 14px; /* Reduce font size for smaller screens */
+        font-size: 14px;
+        /* Reduce font size for smaller screens */
         text-align: center;
-       
+
     }
+
     .LatestProject-container .body-heading {
         text-align: center;
-        margin-bottom: 30px;
+        margin-bottom: 0px;
+       
     }
-    .LatestProject-container .boxtext{
+
+    .LatestProject-container .boxtext {
         font-size: 15px;
         text-align: center;
     }
+
     .LatestProject-container .anchor {
         text-align: center;
         cursor: pointer;
     }
-    .LatestProject-container .text-content{
+
+    .LatestProject-container .text-content {
         margin-top: 14px;
     }
 

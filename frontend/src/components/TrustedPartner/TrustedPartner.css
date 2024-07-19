@@ -1,6 +1,7 @@
 .TrustedPartner-container
 {
-
+    background: radial-gradient(circle at 100% 100%, rgba(222, 34, 17, 0.457) 10%, #e8391a00 45%);
+    background-color: black;
 }
 
 .TrustedPartner-container .body-heading{

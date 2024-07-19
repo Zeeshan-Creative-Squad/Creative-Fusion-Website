@@ -1,6 +1,15 @@
 .ServiceCard-container
 {
+    background-repeat: no-repeat!important;
+    background: 
+    radial-gradient(circle at 100% 25%, rgba(222, 34, 17, 0.457) 0%, #e8391a00 38%),
+    radial-gradient(circle at 0% 75%,  rgba(722, 161, 17, 0.457) 0%, #e8b81a00 30%);
+  background-color: black;
+  background-size: 100% 150%; /* Adjust the height (second value) as needed */
+  
 
+    background-size:100% 100%;
+  
 }
 
 .ServiceCard-container .body-heading {
@@ -16,12 +25,13 @@
 {
     border-radius: 30px;
     padding: 40px;
+    background-color:  hsla(0, 0%, 28%, 0.7);
     /* height: 100%; */
 }
 .ServiceCard-container .service-card:hover
 {
    
-    background-color:  hsla(0, 0%, 28%, 0.7);
+    background-color:  hsla(0, 0%, 28%, 1);
 }
 
 .ServiceCard-container .service-card-anchor
@@ -42,6 +52,6 @@
 {
     .ServiceCard-container .service-card 
     {
-        padding: 70px;
+        padding: 60px;
     }
 }

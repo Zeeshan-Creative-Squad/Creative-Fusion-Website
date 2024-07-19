@@ -1,5 +1,5 @@
 import React from 'react';
-import './ScopeofWork.css'; // Import CSS file for styling
+import './ScopeofWork.css'; 
 
 function ScopeofWork() {
   return (

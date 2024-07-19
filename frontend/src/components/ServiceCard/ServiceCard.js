@@ -4,33 +4,33 @@ import { useNavigate } from 'react-router-dom'
 
 const cardData = [
     {
-        img:'/images/icons/card-icon.svg',
+        img:'/images/HomeSection/Staging-Planning.svg',
         title:"Staging Planning",
-        content:"We start with a thorough planning phase, where we understand your vision, set goals, and create a roadmap for your project. This ensures a clear and structured path to success.",
+        content:"We start with a thorough planning phase, where we understand your vision & set goals for your project. ",
         link:"#",
     },
     {
-        img:'/images/icons/card-icon.svg',
+        img:'/images/HomeSection/Content-Creation.svg',
         title:"Content Creation",
-        content:"Our talented team crafts engaging and relevant content that resonates with your audience. From text to visuals, we ensure every piece aligns with your brand's voice and message.",
+        content:"Our talented team crafts engaging and relevant content that resonates with your audience. ",
         link:"#",
     },
     {
-        img:'/images/icons/card-icon.svg',
+        img:'/images/HomeSection/Performance-Marketing.svg',
         title:"Performance Marketing",
-        content:"We drive traffic and engagement through targeted performance marketing strategies. Our campaigns are designed to reach the right audience and achieve measurable results.",
+        content:"Our campaigns are designed to reach the right audience and achieve measurable results.",
         link:"#",
     },
     {
-        img:'/images/icons/card-icon.svg',
+        img:'/images/HomeSection/Analytics.svg',
         title:"Analytics",
-        content:"We believe in data-driven decisions. Our team continuously monitors your project’s performance, providing detailed analytics to track progress and identify areas for improvement.",
+        content:"Our team continuously monitors your project’s performance, providing analytics to track progress ",
         link:"#",
     },
     {
-        img:'/images/icons/card-icon.svg',
+        img:'/images/HomeSection/Optimization.svg',
         title:"Optimization",
-        content:"We refine and enhance your digital assets based on analytical insights. This ongoing process ensures your online presence remains effective and competitive.",
+        content:"We refine and enhance your digital assets based on analytical insights. ",
         link:"#",
     },
 ]
@@ -66,7 +66,7 @@ function ServiceCard() {
         <div className='container my-3 my-xl-5'>
             <div className='text-content text-center'>
                 <h3 className='body-heading'>Transforming Ideas into Digital Realities</h3>
-                <p className='body-paragraph my-4'>At Creative Fusion, we follow an orderly full-cycle development process to ensure your online presence is both impactful and inspiring. <br></br>Discover our comprehensive approach to bringing your digital projects to life.</p>
+                <p className='body-paragraph my-4'>We follow an orderly full-cycle development process to ensure your online presence is both impactful and inspiring.</p>
             </div>
 
             <div className='row  pt-5 justify-content-center gy-5'>

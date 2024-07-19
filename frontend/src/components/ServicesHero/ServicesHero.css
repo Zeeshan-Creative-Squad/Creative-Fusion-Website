@@ -1,7 +1,4 @@
-.ServicesHero-container {
-    height: 100vh;
-    min-height: auto;
-}
+.ServicesHero-container {}
 
 .ServicesHero-container .text-content {
     text-align: left;
@@ -49,7 +46,6 @@
 }
 
 @media (min-width: 1000px) and (max-width: 1399.98px) {
-    /* Adjust styles for screens between 1000px and 1400px */
     .ServicesHero-container .text-content {
         padding-bottom: 150px;
         text-align: center;
@@ -57,7 +53,6 @@
 }
 
 @media (max-width: 768px) {
-    /* Styles for Small screens */
     .ServicesHero-container {
         height: auto;
         padding: 20px;
@@ -93,17 +88,14 @@
     .ServicesHero-container .services-hero-img {
         padding-bottom: 50px;
     }
+    .ServicesHero-container .service-btn{
+        margin-top: 12px;
+    }
 }
 
 @media (max-width: 576px) {
-    /* Styles for X-Small screens */
     .ServicesHero-container .services-heading {
         font-size: 24px;
-    }
-
-    .ServicesHero-container .services-para {
-        font-size: 12px;
-        line-height: 1.5;
     }
 
     .service-btn {

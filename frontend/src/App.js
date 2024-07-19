@@ -13,6 +13,7 @@ import LatestProject from './components/LatestProject/LatestProject';
 import Bloginner from './components/BlogInnerSection/BlogInner'
 import CasestudyInner from './components/CaseStudyInnerSection/CasestudyInner';
 import PrivacyPolicyPage from './screens/PrivacyPolicyPage';
+import Header from './components/Header/Header';
 
 
 function App() {

@@ -84,13 +84,13 @@
 }
 
 .Testimonials-container .swiper-slide {
-    transform: translate(22%, 25px);
+    transform: translate(7%, 0px);
     overflow-y: visible;
     display: block;
 }
 
 .Testimonials-container .swiper-slide-active {
-    transform: translate(-12%, 25px);
+    transform: translate(-7%, 0px);
     display: block;
 }
 

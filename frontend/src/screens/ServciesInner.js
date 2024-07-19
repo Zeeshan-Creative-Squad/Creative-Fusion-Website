@@ -26,11 +26,10 @@ function ServciesInner() {
             img="/images/creatives/services-inner-text-1.png"
             subHeading=""
             heading="Brand Identity Development"
-            paragraph="Your brand is more than just a logo; it's the essence of your business. Through our brand identity development process, we work closely with you to define your brand's personality, values, and visual identity. From logo design to color palettes and typography, we create a cohesive brand identity that reflects who you are and resonates with your target audience. With our expertise, your brand will stand out in a crowded marketplace and leave a lasting impression on your customers."
+            paragraph="Your brand is more than just a logo; it's the essence of your business. Through our brand identity development process, we work closely with you to define your brand's personality, values, and visual identity. From logo design to color palettes and typography, we create a cohesive brand identity."
             btn={true}
             btnText="Contact Us"
             shiftRow={true}
-            
                  
         />
         
@@ -41,7 +40,7 @@ function ServciesInner() {
                 img="/images/creatives/services-inner-text-2.png"
                 subHeading=""
                 heading="Creative Design Solutions"
-                paragraph="In today's digital world, design plays a crucial role in capturing attention and conveying messages effectively. Our creative design solutions are customized to meet your specific needs and objectives. Whether you need a stunning website, eye-catching graphics, or engaging marketing materials, our team will bring your ideas to life with creativity and precision. With our designs, you'll not only attract attention but also inspire action, driving meaningful results for your business. Partner with Creative Fusion and let us help you bring your brand to life with captivating designs that leave a lasting impression."
+                paragraph="Our creative design solutions are customized to meet your specific needs and objectives. Whether you need a stunning website, eye-catching graphics, or engaging marketing materials, we bring your ideas to life with creativity and precision. "
                 btn={true}
                 btnText="Contact Us"
                 shiftRow={false}
