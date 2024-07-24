@@ -55,8 +55,8 @@ function ServicesTextContent({
                         {btn && <button className='genral-btn btn-red mt-2'>{btnText}</button>}
                         <div className='line-seprator my-3'></div>
                         <div className='d-flex flex-wrap align-items-center gap-3'>
-                            <button className='btn-transparent' onClick={() => { navigate("/servicesinner") }}>Ui/Ux Design</button>
                             <button className='btn-transparent' onClick={() => { navigate("/servicesinner") }}>Web Development</button>
+                            <button className='btn-transparent' onClick={() => { navigate("/servicesinner") }}>Ui/Ux Design</button>
                             <button className='btn-transparent' onClick={() => { navigate("/servicesinner") }}>Ui/Ux Design</button>
                         </div>
                     </div>

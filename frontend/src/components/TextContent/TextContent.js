@@ -33,7 +33,7 @@ function TextContent({
                 <div className='text-content col-lg-6 text-center text-lg-start'>
                     {subHeading && <h6 className='color-red sub-heading mb-3'>{subHeading} <span className='d-lg-inline d-none'>_____</span></h6>}
                     <h3 className='font-bebus body-heading'>
-                        {heading}<br className='d-none d-lg-block'></br>
+                        {heading}<br className='d-none'></br>
                         {headingAfterBr}{headingYellow&&<span className='color-yellow'>{headingYellow}</span>}
                         <br></br>
                         {headingAfterBrmore}{headingYellow&&<span className='color-yellow'>{headingYellow}</span>}

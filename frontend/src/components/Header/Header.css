@@ -238,25 +238,15 @@
 .dropdown-item .dropdown-image {
   position: absolute;
   right: 0;
-  
-  
- 
-
-  /* Change as needed */
   top: 0;
-  /* Change as needed */
   width: 275px;
   margin-top: 16px;
-  
-  /* Change as needed */
   height: 160px;
   display: none;
 }
 
 .dropdown-item:hover .dropdown-image {
   display: block;
-  
-  
 }
 
 .dropdown-content {

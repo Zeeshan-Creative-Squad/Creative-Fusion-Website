@@ -10,7 +10,7 @@ function Services() {
     <div>
             <div className='box multi-gradient'>
                 <div className='glass-box'>
-                    <ServicesHero/>
+                    <ServicesHero />
                 </div>
             </div>
 

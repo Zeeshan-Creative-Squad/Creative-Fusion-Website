@@ -10,7 +10,7 @@ function ServicesHero() {
     <div className='row align-items-center gy-4'>
       <div className='col-lg-6'>
         <div className='text-content text-center text-lg-start'>
-        <h1 className='body-heading text-center text-lg-start my-3' >Elevate Your Digital Presence <br></br> <span className='color-yellow'>with Our Creative Solutions</span> </h1>
+        <h1 className='body-heading text-center text-lg-start my-3' >Elevate Your Digital Presence with <br></br> <span className='color-yellow'> Our Creative Solutions</span> </h1>
           <p className='body-paragraph services-para' style={{ color: "#eaebeb" }}>
           We offer a range of innovative digital solutions designed to help your business thrive online. From branding to web development, e-commerce to application development, our team is here to turn your digital dreams into reality. Let's explore how we can elevate your digital presence together.
           </p>

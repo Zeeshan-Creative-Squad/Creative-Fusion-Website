@@ -14,12 +14,13 @@ const Header = ({ darkBg = false }) => {
 
 
   const services = [
-    { name: "Ads Management", image: "images/creatives/submenu.png", link: "/services/service1" },
-    { name: "Call Intelligence", image: "images/creatives/submenu1.png", link: "/services/service2" },
-    { name: "Local Services Ads", image: "images/creatives/submenu2.png", link: "/services/service3" },
-    { name: "eCommerce", image: "images/creatives/submenu3.png", link: "/services/service4" },
-    { name: "Video Marketing", image: "images/creatives/submenu4.png", link: "/services/service5" },
-    { name: "Web Services", image: "images/creatives/submenu5.png", link: "/services/service6" },
+    { name: "Ads Management", image: "images/creatives/Google-Ads.png", link: "/services/service1" },
+    { name: "Call Intelligence", image: "images/creatives/Design-&-Branding.png", link: "/services/service2" },
+    { name: "Local Services Ads", image: "images/creatives/Performance-Marketing.png", link: "/services/service3" },
+    { name: "eCommerce", image: "images/creatives/Search-Engine-Optimization.png", link: "/services/service4" },
+    { name: "Video Marketing", image: "images/creatives/Social-Media-Marketing.png", link: "/services/service5" },
+    { name: "Web Services", image: "images/creatives/UI-UX.png", link: "/services/service6" },
+    { name: "Web Services", image: "images/creatives/Web-Development.png", link: "/services/service6" },
   ];
 
   useEffect(() => {
@@ -68,7 +69,7 @@ const Header = ({ darkBg = false }) => {
                               to={service.link}
                               className="nav-links font-play dropdown-item text-start"
                               onMouseEnter={() => {setHoveredItem(index); setImgurl(services[index].image) }}
-                              onMouseLeave={() => {setHoveredItem(null); setImgurl(null)}}
+                              onMouseLeave={() => {setHoveredItem(index); setImgurl(services[index].image)}}
                               onClick={() => { setIsDropdownOpenDesk(false); setMenuState(false); }}
                             >
                               <p className="itemsof-dropdown mb-0">{service.name}</p>
@@ -78,7 +79,7 @@ const Header = ({ darkBg = false }) => {
                         ))}
                         </div>
                         {imgurl && (
-                              <img src={imgurl} alt={"service"} className="dropdown-image" />
+                              <img src={imgurl} alt={"service"} className="dropdown-image" style={{width: "450px"}} />
                             )}
                       </div>
                       </div>

@@ -1,7 +1,7 @@
 import React from 'react'
 import "./GivingShape.css"
 
-function GivingShape() {
+function GivingShape(props) {
   return (
     <div className='GivingShape-container py-5'>
         <div className='container my-xxl-5 my-4'>
@@ -14,7 +14,7 @@ function GivingShape() {
 
                         
                         <h3 className='font-bebus body-heading color-white mb-4' >
-                            Giving shape to your idea, product and brand
+                        {props.Heading}
                         </h3>
 
                     </div>
@@ -27,22 +27,22 @@ function GivingShape() {
                         <div className='col-lg-4'>
                             <div className='content-section px-3'>
                                 <img src='/images/icons/gs-icon-1.png' alt='service icon'/>
-                                <h6 className='color-white mt-4 '>Discovery & Ideation</h6>
-                                <p className='body-paragraph my-3'>We dive deep into your goals, audience, and market to unearth insights to shape your project..</p>
+                                <h6 className='color-white mt-4 '>{props.ShapeHeadingOne}</h6>
+                                <p className='body-paragraph my-3'>{props.Discovery}</p>
                             </div>
                         </div>
                         <div className='col-lg-4'>
                             <div className='content-section px-3'>
                                 <img src='/images/icons/gs-icon-2.png' alt='service icon'/>
-                                <h6 className='color-white mt-4 '>Design & Development</h6>
-                                <p className='body-paragraph my-3'>Our talented team crafts visually stunning designs and bring them to life with seamless development.</p>
+                                <h6 className='color-white mt-4 '>{props.ShapeHeadingTwo}</h6>
+                                <p className='body-paragraph my-3'>{props.Design}</p>
                             </div>
                         </div>
                         <div className='col-lg-4'>
                             <div className='content-section px-3'>
                                 <img src='/images/icons/gs-icon-3.png' alt='service icon'/>
-                                <h6 className='color-white mt-4 '>Launch & Optimization</h6>
-                                <p className='body-paragraph my-3'>From strategic launches to continuous optimization, we ensure your project reaches its full potential.</p>
+                                <h6 className='color-white mt-4 '>{props.ShapeHeadingThree}</h6>
+                                <p className='body-paragraph my-3'>{props.Optimization}</p>
                             </div>
                         </div>
 
