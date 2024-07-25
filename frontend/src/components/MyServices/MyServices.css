@@ -221,10 +221,13 @@
     .MyServices-container .story-stuff {
         font-size: 50px;
         text-align: center;
+        margin-bottom: 0px;
     }
 
     .MyServices-container .story-subheading {
         font-size: 16px;
+        padding-top: 0px;
+        /* margin-bottom: 12px; */
     }
 
     .transparency-box .box-image {
@@ -286,6 +289,7 @@
 
     .MyServices-container .card-btn {
         padding: 12px;
+        border: none;
     }
 
     .MyServices-container .card-btn-img {

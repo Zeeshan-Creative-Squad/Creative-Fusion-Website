@@ -25,7 +25,7 @@
 }
 
 .HomeHero-container .head-h1 {
-    font-size: 16px;
+    font-size: 18px;
     color: #FFFFFF;
 }
 
@@ -60,9 +60,17 @@
         padding: 20px; /* Add padding for smaller screens */
     }
 
+    .HomeHero-container .Hero-Text-Div{
+        padding: 40px 20px;
+    }
+
+    .HomeHero-container .head-h1 {
+        padding: 0px 12px;
+    }
+
     .HomeHero-container .text-content {
         text-align: center; /* Center text for smaller screens */
-        padding-bottom: 20px; /* Reduce padding for smaller screens */
+        padding-bottom: 0px; 
     }
 
     .HomeHero-container .text-content .body-heading {
@@ -115,11 +123,11 @@
    
     .HomeHero-container .text-content {
         text-align: center; /* Center text for smaller screens */
-        padding-bottom: 20px; /* Reduce padding for smaller screens */
+        padding-bottom: 0px; 
     }
 
     .HomeHero-container .text-content .body-heading {
-        font-size: 28px; /* Adjust font size for smaller screens */
+        /* font-size: 28px;  */
     }
 
     .HomeHero-container .text-content .body-paragraph {

@@ -41,7 +41,8 @@ function SecondaryCard({
                     <img src={img} alt='blog thumbnail' className='img-fluid image-of-secondaryCard' />
                 </div>
                 <div className='col-12 col-lg-7 design-date-content'>
-                    <p className='body-paragraph mx-auto mb-2 date color-red'>Design  ___ {date}</p>
+                    <p className='body-paragraph mx-auto mb-2 date color-red'>Design ____
+                    {date}</p>
                     <h3 className='title mx-auto color-white'>{title}</h3>
                 </div>
             </div>
@@ -57,10 +58,13 @@ function BlogCard() {
                 <div className='text-content'>
                     <div className='row gy-3'>
                         <div className='col-lg-6'>
+                        <div className='col-lg-6 text-center text-lg-end d-lg-none my-3 my-lg-0'>
+                            <button className='genral-btn btn-red'>Our Blogs</button>
+                        </div>
                             <h3 className='body-heading text-center text-lg-start font-bebus color-blue' >Insights and Inspiration for Your Digital Journey</h3>
                             <p className='body-paragraph text-center text-lg-start font-manrope'>Our content is designed to keep you informed and inspired.</p>
                         </div>
-                        <div className='col-lg-6 text-center text-lg-end my-3 my-lg-0'>
+                        <div className='col-lg-6 text-center d-none d-lg-block text-lg-end my-3 my-lg-0'>
                             <button className='genral-btn btn-red'>Our Blogs</button>
                         </div>
                     </div>
@@ -111,4 +115,4 @@ function BlogCard() {
   )
 }
 
-export default BlogCard
+export default BlogCard;

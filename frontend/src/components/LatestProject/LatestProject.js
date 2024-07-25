@@ -54,7 +54,7 @@ function LatestProject() {
                 <div className='col-lg-6'>
                 <div className='col-lg-6 text-center d-lg-none mb-5'>
                 <Link to="/casestudies">
-      <button className='genral-btn btn-red text-center'>Our Case Studies</button>
+      <button className='genral-btn btn-red text-center d-none d-lg-block'>Our Case Studies</button>
     </Link>
     </div>
                     <h3 className='body-heading'>Latest Projects</h3>

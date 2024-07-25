@@ -26,3 +26,9 @@
     width: 60%;
 
 }
+
+@media (max-width: 768px) {
+    .TrustedPartner-container .body-heading{
+        font-size: 40px;
+    }
+}

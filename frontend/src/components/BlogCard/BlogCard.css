@@ -188,7 +188,7 @@
 @media (max-width: 1400px) {
     .BlogCard-container {
         height: 100%;
-        padding-top: 86px;
+        padding-top: 0px;
     }
     
     .secondary-card {
@@ -214,4 +214,10 @@
         padding-top: 5px;
         
     }
+}
+
+@media (max-width: 768px) {
+  .BlogCard-container {
+    padding: 6vh 0vh;
+}
 }

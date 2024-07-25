@@ -35,7 +35,7 @@ const FooterHero = () => {
                         <ul className='ul-segment-second pl-0'>
                             <h2 className='head-h1'>Terms & Updates</h2>
                             <li onClick={() => handleClick("/contact")}><span className='span-hover'>Refund Policy</span></li>
-                            <li onClick={() => handleClick("/contact")}><span className='span-hover'>Privacy Policy</span></li>
+                            <li onClick={() => handleClick("/privacy-policy")}><span className='span-hover'>Privacy Policy</span></li>
                         </ul>
                     </div>
 
@@ -56,7 +56,7 @@ const FooterHero = () => {
                 <div className="blog-subfooter">
                     <hr className="divider" />
                     <div className="footer-content">
-                        <p className="p-text">&copy; 2024 Chemistry with Moosa Khan  |  All rights reserved</p>
+                        <p className="p-text">&copy; 2024 Creative Fusion  |  All rights reserved</p>
                         <div className="social-icons-bottom">
                         <img src="/images/icons/Icon-awesome-cc-visa.svg" alt="Facebook" className="icons" />
             <img src="/images/icons//Icon-awesome-stripe.svg" alt="Instagram" className="icons" />

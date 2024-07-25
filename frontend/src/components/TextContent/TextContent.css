@@ -58,8 +58,8 @@
     }
 
     .TextContent-container .icon-list {
-        flex-direction: start; 
-        align-items: flex-start; 
+        flex-direction: column; 
+       
     }
 
     .TextContent-container .list-bullet {

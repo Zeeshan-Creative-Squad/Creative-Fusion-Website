@@ -48,7 +48,7 @@ function App() {
         <Route path="/blog" element={<Blog />} />
         <Route path="/bloginner" element={<Bloginner />} />
         <Route path="/projects" element={<LatestProject />} />
-        <Route path="/privacy_policy" element={<PrivacyPolicyPage />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
       </Routes>
     </div>
   );

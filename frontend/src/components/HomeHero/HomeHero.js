@@ -10,7 +10,7 @@ function HomeHero() {
             
 
             <div className='row align-items-center gy-4'>
-                <div className='col-lg-5'>
+                <div className='col-lg-5 Hero-Text-Div'>
                     <div className='text-content'>
                     <h1 className='body-heading text-center text-lg-start my-4'>Welcome to <span className='line-break'> Creative Fusion</span></h1>
                         <h6 className='head-h1 my-4'>Your Trusted Partner For <span className='color-yellow'>Digital Media Solutions</span></h6>
