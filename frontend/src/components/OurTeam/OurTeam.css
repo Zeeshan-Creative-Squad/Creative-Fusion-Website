@@ -11,12 +11,14 @@
     .OurTeam-container .team-card {
         margin-top: 30px;
     }
+   
 }
 
 @media (max-width: 767px) {
     .OurTeam-container .team-card {
         padding: 10px;
     }
+    
 
     .OurTeam-container .team-card h5 {
         font-size: 1.4rem;

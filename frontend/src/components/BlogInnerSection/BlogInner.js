@@ -63,7 +63,7 @@ function BlogInner() {
       </div>
    
       {/* <SubblogSection /> */}
-      <BlogPosting />
+      <BlogPosting heading="Latest Blogs" button="More Blogs"/>
      
       
       <div>

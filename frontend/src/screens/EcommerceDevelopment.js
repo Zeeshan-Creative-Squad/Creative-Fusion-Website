@@ -15,7 +15,7 @@ function EcommerceDevelopment() {
                 Heading="E-Commerce" 
                 yellowHeading="Development" 
                 Para="Step into the world of E-commerce Development with us, where we collaborate to create a powerful and seamless online shopping experience. From platform selection to custom development and optimization, we're here for you." 
-                heroBannerImg="/images/creatives/UIUX-Hero.png"/>
+                heroBannerImg="/images/creatives/Ecommerce-Hero.webp"/>
             </div>
         </div>
 
@@ -35,7 +35,7 @@ function EcommerceDevelopment() {
         </div>
 
         <TextContent
-            img="/images/creatives/UIUX-One.webp"
+            img="/images/creatives/Ecommerce-One.webp"
             subHeading=""
             heading="Custom E-commerce Solutions"
             paragraph="Your e-commerce site is more than just a platform; it's a crucial part of your sales strategy. Through our custom e-commerce solutions, we work closely with you to create a site that reflects your brand's personality and meets your business needs.  "
@@ -49,7 +49,7 @@ function EcommerceDevelopment() {
             <div className='glass-box'>
                 
             <TextContent
-                img="/images/creatives/UIUX-Two.webp"
+                img="/images/creatives/Ecommerce-Two.webp"
                 subHeading=""
                 heading="Innovative E-commerce Techniques"
                 paragraph="Our innovative e-commerce techniques are customized to meet your specific needs and objectives. Whether you need a comprehensive online store, a mobile commerce solution, or seamless integration with existing systems, our team brings your ideas to life with creativity and precision. "

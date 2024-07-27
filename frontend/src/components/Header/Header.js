@@ -7,6 +7,7 @@ const Header = ({ darkBg = false }) => {
   const [isDropdownOpenDesk, setIsDropdownOpenDesk] = useState(false);
   const [hoveredItem, setHoveredItem] = useState(null);
   const [imgurl, setImgurl] = useState(null);
+  const [isServicesDropdownOpen, setIsServicesDropdownOpen] = useState(false);
 
   const navigate = useNavigate();
   const dropdownRef = useRef();
@@ -15,14 +16,20 @@ const Header = ({ darkBg = false }) => {
 
 
   const services = [
-    { name: "Ads Management", image: "images/creatives/Google-Ads.png", link: "/services/service1" },
-    { name: "Call Intelligence", image: "images/creatives/Design-&-Branding.png", link: "/services/service2" },
-    { name: "Local Services Ads", image: "images/creatives/Performance-Marketing.png", link: "/services/service3" },
-    { name: "eCommerce", image: "images/creatives/Search-Engine-Optimization.png", link: "/services/service4" },
-    { name: "Video Marketing", image: "images/creatives/Social-Media-Marketing.png", link: "/services/service5" },
-    { name: "Web Services", image: "images/creatives/UI-UX.png", link: "/services/service6" },
-    { name: "Web Services", image: "images/creatives/Web-Development.png", link: "/services/service6" },
+    { name: "Design & Branding", image: "images/creatives/Google-Ads.png", link: "/servicesinner" },
+    { name: "Web Development", image: "images/creatives/Design-&-Branding.png", link: "/web-development" },
+    { name: "SocialMediaMarketing", image: "images/creatives/Performance-Marketing.png", link: "/social-media-marketing" },
+    { name: "GoogleAds", image: "images/creatives/Search-Engine-Optimization.png", link: "/google-ads" },
+    { name: "SEO", image: "images/creatives/Social-Media-Marketing.png", link: "/service-engine-optimization" },
+    { name: "UIUXDevelopment", image: "images/creatives/UI-UX.png", link: "/uiux-development" },
+    // { name: "Web Services", image: "images/creatives/Web-Development.png", link: "/services/service6" },
+    { name: "EcommerceDevelopment", image: "images/creatives/Web-Development.png", link: "/ecommerce-development" },
+    { name: "PerformanceMarketing", image: "images/creatives/Web-Development.png", link: "/performance-marketing" },
+    { name: "EcommerceDevelopment", image: "images/creatives/Web-Development.png", link: "/ecommerce-development" },
+    { name: "ApplicationDevelopment", image: "images/creatives/Web-Development.png", link: "/application-development" },
   ];
+
+ 
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -63,7 +70,7 @@ const Header = ({ darkBg = false }) => {
         onMouseLeave={() => setIsDropdownOpenDesk(false)}
         ref={triggerRef}
       >
-        <span className="nav-links font-play">Services</span>
+      <Link to="/services" style={{textDecoration: "none"}}> <span className="nav-links font-play">Services</span></Link> 
       </div>
       <div
         className={`dropdown-content ${isDropdownOpenDesk ? 'open' : 'd-none'}`}
@@ -88,7 +95,7 @@ const Header = ({ darkBg = false }) => {
             ))}
           </div>
           {imgurl && (
-            <img src={imgurl} alt="service" className="dropdown-image" style={{ width: "450px" }} />
+            <img src={imgurl} alt="service" className="dropdown-image" style={{ width: "550px" }} />
           )}
         </div>
       </div>
@@ -107,7 +114,7 @@ const Header = ({ darkBg = false }) => {
                   <Link to={"/casestudies"} className="nav-links font-play">Case Studies</Link>
                 </li> */}
                   <li>
-                    <Link to={"/"} className="nav-links font-play">Become a Client</Link>
+                    <Link to={"/contact"} className="nav-links font-play">Become a Client</Link>
                   </li>
                 </ul>
               </nav>
@@ -120,17 +127,17 @@ const Header = ({ darkBg = false }) => {
             </div>
           </nav>
           <nav className="responsive-popup-menu w-100">
-            <div className="py-3 d-lg-none" style={{ display: menuState ? "block" : "none", backgroundColor: "white" }}>
-              <ul className="resp-nav-list d-lg-none w-100 gap-4 hs-dropdown [--trigger:hover] pl-4" style={{ display: menuState ? "block" : "none" }}>
+            <div className="py-3 d-lg-none navbar-box" style={{ display: menuState ? "block" : "none"}}>
+              <ul className="resp-nav-list d-lg-none w-100 gap-4 hs-dropdown [--trigger:hover] pl-4" style={{ display: menuState ? "block" : "none", color: "white" }}>
                 <li>
                   <Link to={"/about"} className="nav-links font-play">About</Link>
                 </li>
                 <li>
                   <Link to={"/services"} className="nav-links font-play">Services</Link>
                 </li>
-                <li>
+                {/* <li>
                   <Link to={"/casestudies"} className="nav-links font-play">Work</Link>
-                </li>
+                </li> */}
                 <li>
                   <Link to={"/blog"} className="nav-links font-play">Blog</Link>
                 </li>
@@ -138,9 +145,11 @@ const Header = ({ darkBg = false }) => {
                   <Link to={"/casestudies"} className="nav-links font-play">Case Studies</Link>
                 </li>
                 <li>
-                  <Link to={"/"} className="nav-links font-play">Become a Client</Link>
+                  <Link to={"/contact"} className="nav-links font-play">Become a Client</Link>
                 </li>
               </ul>
+              
+              
               <div className="nav-buttton flex-wrap d-flex gap-4 extras-btns">
       <button className="genral-btn btn-red" onClick={() => { navigate("/contact") }}>Contact Us</button>
     </div>

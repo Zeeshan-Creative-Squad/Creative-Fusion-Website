@@ -60,6 +60,14 @@
   transform: translateY(17%)
 }
 
+.contact_section .genral-btn{
+  font-size: 15px;
+}
+
+.contact_section .genral-btn:hover {
+  background-color: #ea3317b6;
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;

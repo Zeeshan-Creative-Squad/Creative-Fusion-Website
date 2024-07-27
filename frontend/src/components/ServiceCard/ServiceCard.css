@@ -26,12 +26,14 @@
     border-radius: 30px;
     padding: 40px;
     background-color:  hsla(0, 0%, 28%, 0.7);
+    transition: transform 0.3s ease, background-color 0.3s ease;
     /* height: 100%; */
 }
 .ServiceCard-container .service-card:hover
 {
    
     background-color:  hsla(0, 0%, 28%, 1);
+    transform: translateY(-20px);
 }
 
 .ServiceCard-container .service-card-anchor

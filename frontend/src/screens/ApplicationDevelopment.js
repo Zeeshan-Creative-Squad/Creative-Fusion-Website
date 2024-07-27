@@ -15,7 +15,7 @@ function EcommerceDevelopment() {
                 Heading="Application " 
                 yellowHeading="Development" 
                 Para="Step into the world of Application Development with us, where we collaborate to create innovative and scalable digital solutions. From initial concept to deployment and maintenance, we're here for you. " 
-                heroBannerImg="/images/creatives/UIUX-Hero.png"/>
+                heroBannerImg="/images/creatives/Application-Hero.webp"/>
             </div>
         </div>
 
@@ -35,7 +35,7 @@ function EcommerceDevelopment() {
         </div>
 
         <TextContent
-            img="/images/creatives/UIUX-One.webp"
+            img="/images/creatives/Application-One.webp"
             subHeading=""
             heading="Custom Application Solutions"
             paragraph="Your application is more than just software; it's a digital solution tailored to meet specific needs and deliver tangible results. Through our custom application solutions, we work closely with you to understand your objectives and develop applications that align with your business goals.   "
@@ -49,7 +49,7 @@ function EcommerceDevelopment() {
             <div className='glass-box'>
                 
             <TextContent
-                img="/images/creatives/UIUX-Two.webp"
+                img="/images/creatives/Application-Two.webp"
                 subHeading=""
                 heading="Innovative Development Techniques"
                 paragraph="Our innovative development techniques are customized to meet your unique challenges and objectives. Whether you need cloud integration, IoT solutions, or AI-powered applications, our team leverages the latest technologies to build scalable and future-proof applications.  "

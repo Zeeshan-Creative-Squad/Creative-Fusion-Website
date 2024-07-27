@@ -5,7 +5,7 @@ import GratefulPartner from '../components/GratefulPartner/GratefulPartner';
 import TextContent from '../components/TextContent/TextContent';
 import Footer from './Footer'
 
-function SocialMediaMarketing() {
+function SearchEngineOptimization() {
   return (
     <>
         <div className='box multi-gradient '>
@@ -59,4 +59,4 @@ function SocialMediaMarketing() {
   )
 }
 
-export default SocialMediaMarketing;
+export default SearchEngineOptimization;

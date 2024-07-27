@@ -31,4 +31,8 @@
     .TrustedPartner-container .body-heading{
         font-size: 40px;
     }
+
+    .TrustedPartner-container .body-paragraph{
+        padding: 0px 16px;
+    }
 }

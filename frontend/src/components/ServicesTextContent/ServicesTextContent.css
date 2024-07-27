@@ -55,6 +55,12 @@
         margin-bottom: 20px;
     }
 
+    .ServicesTextContent-container .number-container {
+        
+        background-color: #38383896;
+    }
+    
+
     .ServicesTextContent-container .text-content {
         text-align: center;
     }
@@ -65,5 +71,8 @@
     }
     .ServicesTextContent-container .line-seprator {
         width: 100%;
+    }
+    .ServicesTextContent-container .body-heading{
+        font-size: 26px;
     }
 }

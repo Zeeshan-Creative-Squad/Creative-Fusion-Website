@@ -1,6 +1,12 @@
 import React from 'react'
 import "./LatestProject.css"
 import { Link } from 'react-router-dom';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import { Autoplay } from "swiper/modules";
+
+
+
 
 function CardBox({
     img,
@@ -71,12 +77,35 @@ function LatestProject() {
             </div>
             
 
-            <CardBox
-                img={"/images/creatives/case-study-card-1.png"}
-                title="Di- Coin Crypto Dashboard Design"
-                catagory="Charu Immigration"
-                content="Lorem ipsum dolor sit amet in quis, consectetur eros adipiscing et elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, quis viverra ornare, eros dolor et interdum nulla"
-            />
+            <Swiper
+    spaceBetween={10}
+    autoplay={{
+    delay: 1500,
+    disableOnInteraction: false,
+    }}
+    loop={true}
+    modules={[Autoplay]}
+    className="mySwiper"
+  >
+    <SwiperSlide>
+      <CardBox
+        img="/images/creatives/case-study-card-1.png"
+        title="Di- Coin Crypto Dashboard Design"
+        catagory="Charu Immigration"
+        content="Lorem ipsum dolor sit amet in quis, consectetur eros adipiscing et elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, quis viverra ornare, eros dolor et interdum nulla"
+      />
+    </SwiperSlide>
+    <SwiperSlide>
+      <CardBox
+        img="/images/creatives/case-study-card-1.png"
+        title="Di- Coin Crypto Dashboard Design"
+        catagory="Charu Immigration"
+        content="Lorem ipsum dolor sit amet in quis, consectetur eros adipiscing et elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, quis viverra ornare, eros dolor et interdum nulla"
+      />
+    </SwiperSlide>
+    {/* Add more SwiperSlide components as needed */}
+  </Swiper>
+
             </div>
 
         </div>

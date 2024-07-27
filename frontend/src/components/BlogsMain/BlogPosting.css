@@ -29,6 +29,10 @@
     font-weight: 500;
     color: #1e1e1e;
 }
+
+.CourseCard-container .body-heading {
+    text-align: left;
+}
 .CourseCard-container .card-box
 {
     color: black;
@@ -157,6 +161,31 @@
     margin-bottom: 10px;
 }
 
+.CourseCard-container .general-btn {
+    text-decoration: none;
+}
+
+.CourseCard-container .btn-blog-red {
+    background-color: #ea3317;
+    border: 1px solid #ea3317;
+    color: white;
+    transition: .5s;
+    text-decoration: none;
+    border-radius: 24px;
+  padding:12px 49px;
+  font-family: "Manrope", sans-serif;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.link-no-underline {
+    text-decoration: none;
+}
+
+.CourseCard-container .btn-blog-red:hover {
+    text-decoration: none;
+}
+
 
 .CourseCard-container .card-box .top-links img{
     width: 15px;
@@ -261,5 +290,21 @@
     }
     .CourseCard-container .card-box .read-more-anchor{
         margin-left: 12px;
+    }
+    .CourseCard-container .body-heading {
+        text-align: center;
+        margin-bottom: 18px;
+    }
+
+    .CourseCard-container .btn-blog-red {
+        margin-top: 8px;
+    }
+
+    .CourseCard-container .logo-text {
+        padding: 0px 12px;
+    }
+
+    .CourseCard-container .btn-red {
+        padding: 2px 12px;
     }
 }

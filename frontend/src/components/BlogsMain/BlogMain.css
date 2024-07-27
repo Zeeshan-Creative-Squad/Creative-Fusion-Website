@@ -97,12 +97,14 @@
 /* Small screens */
 @media only screen and (max-width: 576px) {
     .blogmain-container .text-content {
-      /* margin-top: 100px; */
+      padding: 12vh 0vh 0vh 0vh;
     
     }
   
     .blogmain-container .image-section {
       height: 400px;
+      margin-bottom: 200px;
+      
     }
     
     .blogmain-container .transparent-box {

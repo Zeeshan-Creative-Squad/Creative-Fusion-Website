@@ -63,13 +63,13 @@ function TextContent({
                     {
                         reviewContent &&
                         <div>
-                            <div className='d-flex gap-3 align-items-center '>
+                            <div className='d-flex gap-3 align-items-center founder-div'>
                                 <img src='/images/creatives/about-text-content-1.png' alt='person '/>
 
                                 <div>
                                     <p className='sub-heading color-red mb-0'>Salman Baig</p>
                                     <p className='body-paragraph mb-3'>Founder, CEO</p>
-                                    <div className='d-flex gap-2'>
+                                    <div className='d-flex gap-2 social-icons-founder'>
                                         <img src='/images/icons/rc-x-icon.svg' alt='social icon'/>
                                         <img src='/images/icons/rc-insta-icon.svg' alt='social icon'/>
                                         <img src='/images/icons/rc-fb-icon.svg' alt='social icon'/>

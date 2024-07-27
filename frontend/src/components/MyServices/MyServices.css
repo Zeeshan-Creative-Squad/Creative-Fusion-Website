@@ -38,22 +38,35 @@
 }
 
 .MyServices-container .card-sized-box {
-    overflow-y: scroll;
+    overflow-y: auto;
     height: 410px;
+    scrollbar-width: auto;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* Internet Explorer 10+ */
 }
 
-.MyServices-container .card-sized-box {
-    overflow-y: scroll;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-}
 
 .MyServices-container .card-sized-box::-webkit-scrollbar {
-    display: none;
+    display: block;
 }
 
+
 .MyServices-container .card-sized-box::-webkit-scrollbar {
-    -ms-overflow-style: none;
+    width: 5px;
+}
+
+.MyServices-container .card-sized-box::-webkit-scrollbar-track {
+    background: #242424;
+}
+
+.MyServices-container .card-sized-box::-webkit-scrollbar-thumb {
+    background: #7575755d;
+    border-radius: 10px;
+}
+
+.MyServices-container .card-sized-box::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }
 
 .MyServices-container .stat-border-right {
@@ -89,11 +102,11 @@
     padding-top: 5px;
 }
 
-.MyServices-container .achievements{
+.MyServices-container .achievements {
     display: flex;
 }
 
-.MyServices-container .icon-container{
+.MyServices-container .icon-container {
     justify-content: end;
 }
 
@@ -106,7 +119,7 @@
         margin-top: 10px;
     }
 
-    .MyServices-container .body-heading{
+    .MyServices-container .body-heading {
         font-size: 37px;
     }
 
@@ -162,10 +175,11 @@
         font-size: 16px;
     }
 
-    .MyServices-container .icon-container{
+    .MyServices-container .icon-container {
         justify-content: center;
         margin-top: 12px;
     }
+
     .MyServices-container .body-paragraph {
         width: 100%;
     }
@@ -273,6 +287,7 @@
 
     .MyServices-container .service-card-container .card-content {
         font-size: 14px;
+        text-align: center;
     }
 
     .MyServices-container .service-card-container .card-anchor {

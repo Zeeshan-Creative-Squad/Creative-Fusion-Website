@@ -1,6 +1,6 @@
 import "./Testimonials.css"
 import React,{useState} from "react";
-import { Autoplay,Pagination  } from "swiper/modules";
+import { Navigation, Autoplay, Parallax } from "swiper/modules";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -66,38 +66,35 @@ function Testimonials() {
           prevEl: '.swiper-button-prev',
         }}
         loop={true}
-        autoplay={
-          {
-            delay:2000,
-            disableOnInteraction:false
-          }
-        }
-        // modules={[Autoplay]}
-        // pagination={{ clickable: true }}
-        observer ={true}
+        autoplay={{
+          delay: 1000,
+          disableOnInteraction: false
+        }}
+        modules={[Navigation, Autoplay, Parallax]}
+        observer={true}
         observeParents={true}
         parallax={true}
         breakpoints={{
-            280: {
-              slidesPerView: 1,
-            },
-            1450: {
-              slidesPerView: 3,
-            }
-          }}
+          280: {
+            slidesPerView: 1,
+          },
+          1450: {
+            slidesPerView: 3,
+          }
+        }}
         className="testimonials-list py-5 mt-2"
         id="testimonial-cards-slider"
-            >
-              {
-                testimonialData.map((clientData,ind)=>{
-                  return(<>
-                    <SwiperSlide key={ind} className="pt-5 px-3 px-sm-0">
-                      <TestimonialCard clientImg={clientData.clientImg} clientName={clientData.clientName} clientReview={clientData.clientReview}/>
-                    </SwiperSlide>
-                     </>)
-                })
-              }
-        </Swiper>
+      >
+        {testimonialData.map((clientData, ind) => (
+          <SwiperSlide key={ind} className="pt-5 px-3 px-sm-0">
+            <TestimonialCard
+              clientImg={clientData.clientImg}
+              clientName={clientData.clientName}
+              clientReview={clientData.clientReview}
+            />
+          </SwiperSlide>
+        ))}
+      </Swiper>
         
         </div>
         

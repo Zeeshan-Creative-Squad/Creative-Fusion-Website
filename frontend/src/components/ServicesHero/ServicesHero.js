@@ -8,7 +8,7 @@ function ServicesHero() {
   <Header/> 
   <div className='container mt-auto'>
     <div className='row align-items-center gy-4'>
-      <div className='col-lg-6'>
+      <div className='col-lg-6 service-text-div'>
         <div className='text-content text-center text-lg-start'>
         <h1 className='body-heading text-center text-lg-start my-3' >Elevate Your Digital Presence with <br></br> <span className='color-yellow'> Our Creative Solutions</span> </h1>
           <p className='body-paragraph services-para' style={{ color: "#eaebeb" }}>

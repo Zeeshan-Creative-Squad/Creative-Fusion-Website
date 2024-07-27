@@ -5,7 +5,7 @@ import GratefulPartner from '../components/GratefulPartner/GratefulPartner';
 import TextContent from '../components/TextContent/TextContent';
 import Footer from './Footer'
 
-function ServciesInner() {
+function DesignAndBranding() {
   return (
     <>
         <div className='box multi-gradient '>
@@ -70,4 +70,4 @@ function ServciesInner() {
   )
 }
 
-export default ServciesInner
+export default DesignAndBranding;

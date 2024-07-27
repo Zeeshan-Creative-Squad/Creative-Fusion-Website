@@ -58,7 +58,7 @@ function BlogCard() {
                 <div className='text-content'>
                     <div className='row gy-3'>
                         <div className='col-lg-6'>
-                        <div className='col-lg-6 text-center text-lg-end d-lg-none my-3 my-lg-0'>
+                        <div className='col-lg-6 text-center text-lg-end d-none my-3 my-lg-0'>
                             <button className='genral-btn btn-red'>Our Blogs</button>
                         </div>
                             <h3 className='body-heading text-center text-lg-start font-bebus color-blue' >Insights and Inspiration for Your Digital Journey</h3>
@@ -83,7 +83,7 @@ function BlogCard() {
                     </div>
 
                     <div className='col-lg-6'>
-                        <div className='d-flex flex-column'>
+                        <div className='d-flex flex-column secondary-card-div'>
                             <SecondaryCard
                                 img="/images/creatives/side-blog-1.png"
                                 date="Jan 30,2024"

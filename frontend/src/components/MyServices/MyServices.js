@@ -54,9 +54,16 @@ function ServiceCard({
                         <p className='body-paragraph card-content my-1'>{content}</p>
                     </div>
                     <div className='col-lg-3 icon-container d-flex align-items-start'> {/* Change col-3 to col-lg-3 */}
-                        <button className='card-btn d-flex align-items-center justify-content-center' onClick={() => { navigate(link) }}>
+                        <button className='card-btn d-flex align-items-center justify-content-center d-none d-lg-block' onClick={() => { navigate(link) }}>
                             <img className='img-fluid card-btn-img' alt='service icon' src="/images/icons/btn-navigation.svg" />
                         </button>
+                        <p 
+            className='service-card-anchor color-yellow d-lg-none d-md-block'
+            onClick={()=>{navigate(link)}}
+            >
+                Read More 
+                <img src='/images/icons/arrow-right-yellow.svg' alt='arrow right '/>
+            </p>
                     </div>
                 </div>
             </div>

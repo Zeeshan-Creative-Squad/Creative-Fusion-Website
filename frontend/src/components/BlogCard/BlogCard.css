@@ -20,9 +20,12 @@
   }
   
   .BlogCard-container .title {
-    font-size: 20px;
+    /* font-size: 20px;
     font-weight: bold;
-    margin-bottom: 6px;
+    margin-bottom: 6px; */
+    font-size: 30px;
+    text-align: left;
+   
     
   }
   
@@ -40,184 +43,51 @@
     max-width: 100%; /* Ensure images don't overflow container */
   }
   
-  @media (max-width: 992px) {
-   .BlogCard-container .body-heading {
-      font-size: 20px;
-    }
-  
-    .body-paragraph {
-      margin-bottom: 1.5rem;
-    }
-  
-    .anchor {
-      width: 100%; /* Full width button on smaller screens */
-      text-align: center;
-    }
-  
-    .title {
-      font-size: 18px;
-    }
-  
-    .date {
-      font-size: 12px;
-    }
-  }
-  
   @media (max-width: 768px) {
-    .SecondaryCard {
-        /* padding: 10px; */
-    }
     .BlogCard-container .body-heading {
-      font-size: 18px;
+        font-size: 36px; /* Smaller font size for tablets */
     }
-  
-    .body-paragraph {
-      margin-bottom: 1rem;
+
+    .BlogCard-container .title {
+        font-size: 18px; /* Adjusted font size for titles */
     }
-  
-    .title {
-        font-size: 16px;
+
+    .BlogCard-container .body-paragraph {
+        margin-top: 10px; /* Adjusted spacing */
+        margin-bottom: 1.5rem; /* Adjusted spacing */
     }
-  
+
     .date {
-        font-size: 11px;
+        font-size: 12px; /* Smaller font size for date */
     }
-    .design-date-content{
-        text-align: center;
+
+    .secondary-card-div{
+      justify-content: center;
+      align-items: center;
     }
-  }
-  
-  @media (max-width: 576px) {
+    
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+    .BlogCard-container {
+        padding: 8vh 0; /* Adjust padding for mobile */
+    }
+
     .BlogCard-container .body-heading {
-      font-size: 42px;
+        font-size: 28px; /* Even smaller font size for mobile */
     }
-  
-    .body-paragraph {
-      margin-bottom: 0.5rem;
-      text-align: center;
+
+    .BlogCard-container .title {
+        font-size: 16px; /* Further adjusted font size for titles */
     }
-  
-    .title {
-      font-size: 14px;
-      text-align: center;
+
+    .BlogCard-container .body-paragraph {
+        margin-top: 8px; /* Further adjusted spacing */
+        margin-bottom: 1rem; /* Further adjusted spacing */
     }
-    .titles{
-        text-align: center;
-    }
-  
+
     .date {
-      font-size: 10px;
+        font-size: 10px; /* Smaller font size for date */
     }
-  }
-  
-
-@media (max-width: 768px) {
-    .BlogCard-container {
-        height: auto;
-        padding-top: 56px;
-    }
-
-    .secondary-card {
-        height: auto;
-        width: 110%; /* width ko 100% karen ya hata den */
-        margin: 20px auto;
-    }
-
-    .secondary-card .col-4 {
-        height: auto;
-    }
-
-    .BlogCard-container .title {
-        font-size: 15px;
-        width: auto;
-        margin-bottom: 6px;
-        text-align: center;
-    }
-    .MainCard .titles{
-        text-align: center;
-    }
-
-    .BlogCard-container .date {
-        font-size: 14px;
-        padding-top: 3px;
-        text-align: center;
-    }
-    .BlogCard-container .image-of-secondoryCard{
-        margin-top: 20px;
-        height: 110px;
-      
-    }
-}
-@media (max-width: 556px) {
-    .BlogCard-container .secondary-card {
-        /* width: 100%;  */
-    }
-
-    .BlogCard-container .image-of-secondoryCard {
-        height: 100px; 
-    }
-}
-
-
-@media (max-width: 1200px) {
-    .secondary-card {
-        /* height: 100px;
-        width: 45vh; */
-    }
-    
-    .secondary-card .col-4 {
-        height: 100%;
-        border-radius: 12px;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-    .BlogCard-container .title {
-        font-size: 16px;
-        font-weight: bold;
-        /* width: 220px; */
-        margin-bottom: 9px;
-    }
-    
-    .BlogCard-container .date {
-        font-size: 16px;
-        padding-top: 5px;
-    }
-}
-
-
-@media (max-width: 1400px) {
-    .BlogCard-container {
-        height: 100%;
-        padding-top: 0px;
-    }
-    
-    .secondary-card {
-        /* height: 100px;
-        width: 60vh; */
-    }
-    
-    .secondary-card .col-4 {
-        height: 100%;
-        border-radius: 12px;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-    .BlogCard-container .title {
-        font-size: 16px;
-        font-weight: bold;
-        /* width: 208px; */
-        margin-bottom: 9px;
-    }
-    
-    .BlogCard-container .date {
-        font-size: 16px;
-        padding-top: 5px;
-        
-    }
-}
-
-@media (max-width: 768px) {
-  .BlogCard-container {
-    padding: 6vh 0vh;
-}
 }

@@ -26,6 +26,7 @@ function Services() {
                 listData={null}
                 reviewContent={false}
                 headingNumber="001"
+                button="Web Development"
             />
 
         <div className='box multi-gradient'>
@@ -43,6 +44,7 @@ function Services() {
                 reviewContent={false}
                 headingNumber="002"
                 transparentBg={true}
+                button="Social Media Marketing"
             />
             </div>
         </div>
@@ -59,6 +61,7 @@ function Services() {
                 listData={null}
                 reviewContent={false}
                 headingNumber="003"
+                button="Google Ads"
             />
 
         <div className='box multi-gradient '>
@@ -76,6 +79,7 @@ function Services() {
                 reviewContent={false}
                 headingNumber="004"
                 transparentBg={true}
+                button="Search Engine Optimization"
             />
             </div>
         </div>
@@ -92,6 +96,7 @@ function Services() {
                 listData={null}
                 reviewContent={false}
                 headingNumber="005"
+                button="Design & Branding"
             />
 
         <div className='box multi-gradient '>
@@ -109,6 +114,7 @@ function Services() {
                 reviewContent={false}
                 headingNumber="006"
                 transparentBg={true}
+                button="Performance Marketing"
             />
             </div>
         </div>
@@ -125,6 +131,35 @@ function Services() {
                 listData={null}
                 reviewContent={false}
                 headingNumber="007"
+                button="UI UX Designing"
+            />
+        <ServicesTextContent
+                img="/images/creatives/Ecommerce-Hero.webp"
+                subHeading=""
+                heading="E-commerce Development"
+                headingYellow=""
+                paragraph="Our team helps you level up your E-commerce store just the way you like it."
+                btn={false}
+                btnText=""
+                shiftRow={true}
+                listData={null}
+                reviewContent={false}
+                headingNumber="007"
+                button="E-commerce Development"
+            />
+        <ServicesTextContent
+                img="/images/creatives/Application-Hero.webp"
+                subHeading=""
+                heading="Application Development"
+                headingYellow=""
+                paragraph="we provide best applications development services worldwide"
+                btn={false}
+                btnText=""
+                shiftRow={true}
+                listData={null}
+                reviewContent={false}
+                headingNumber="007"
+                button="Application development"
             />
          <div className='box multi-gradient '>
             <div className='glass-box'>
