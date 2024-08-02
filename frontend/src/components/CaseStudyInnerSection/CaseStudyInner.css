@@ -119,6 +119,10 @@
   .blog-inner .caseparagraph {
     padding-right: 0;
   }
+  .blog-inner {
+    min-height: 100vh;
+    padding: 20px 8px;
+  }
 }
 
 /* Adjustments for medium screens */

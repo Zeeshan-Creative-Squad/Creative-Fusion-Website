@@ -57,7 +57,7 @@ function BlogInner() {
             <FaLinkedin className="icon" />
           </div>
         </div>
-        <hr className="divider" />
+        <hr className="divider d-none d-lg-block" />
       </div>
       </div>
       </div>

@@ -86,7 +86,7 @@ function Testimonials() {
         id="testimonial-cards-slider"
       >
         {testimonialData.map((clientData, ind) => (
-          <SwiperSlide key={ind} className="pt-5 px-3 px-sm-0">
+          <SwiperSlide key={ind} className="px-3 px-sm-0 swiper-slide-div">
             <TestimonialCard
               clientImg={clientData.clientImg}
               clientName={clientData.clientName}

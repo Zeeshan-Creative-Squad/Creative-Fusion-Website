@@ -11,7 +11,7 @@ function OurStory() {
 
             </div>
         <div className='row ranking'>
-                        <div className='col-lg-3 col-md-1'>
+                        <div className='col-lg-3 col-md-1 row-ranking-under-section'>
                             <h3 className='color-yellow story-stuff'>84+</h3>
                             <p className='body-paragraph story-subheading'>Worldwide Clients</p>
                             <p className='body-paragraph'>In the tapestry of our organizational narrative,</p>
@@ -21,7 +21,7 @@ function OurStory() {
                         <div className='col-1 '>
                             <div className='stat-border-right'></div>
                         </div>
-                        <div className='col-lg-3 col-md-1'>
+                        <div className='col-lg-3 col-md-1 row-ranking-under-section'>
                             <h3 className='color-yellow story-stuff'>200+</h3>
                             <p className='body-paragraph story-subheading'>Realtime Projects</p>
                             <p className='body-paragraph'>In the tapestry of our organizational narrative,</p>
@@ -29,7 +29,7 @@ function OurStory() {
                         <div className='col-1 '>
                             <div className='stat-border-right'></div>
                         </div>
-                        <div className='col-lg-3 col-md-1'>
+                        <div className='col-lg-3 col-md-1 row-ranking-under-section'>
                             <h3 className='color-yellow story-stuff'>64+</h3>
                             <p className='body-paragraph story-subheading' >Top-notch Reviews</p>
                             <p className='body-paragraph'>In the tapestry of our organizational narrative,</p>

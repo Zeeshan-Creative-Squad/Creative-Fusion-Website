@@ -29,7 +29,7 @@
     margin-top: 20px;
   }
   
-  .buttonContainer button {
+  .buttonContainer .lets-work-button {
     padding: 10px 20px;
     margin: 0 8px;
     margin-top: 1.8rem;
@@ -43,9 +43,19 @@
     transition: background-color 0.3s ease;
   }
   
-  .buttonContainer button:hover {
+  .buttonContainer .lets-work-button:hover {
     background-color: white;
     color: red;
     border: none;
+  }
+
+  @media (max-width: 768px) {
+    .buttonContainer {
+      display: flex;
+      padding: 0px 5px;
+    }
+    .buttonContainer .lets-work-button {
+      font-size: 13px;
+    }
   }
   

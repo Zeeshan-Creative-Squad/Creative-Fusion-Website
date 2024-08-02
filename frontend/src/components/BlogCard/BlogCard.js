@@ -15,7 +15,7 @@ function MainCard({
         <div className='MainCard'>
             <img src={img} className='img-fluid' alt='blog thumbnail' />
 
-            <p className='body-paragraph my-3 date color-red'>Design ___ {date}</p>
+            <p className='body-paragraph my-3 date color-red'>Design <span className='span-line'>___</span> {date}</p>
 
             <h3 className='titles color-white'>{titles}</h3>
 
@@ -23,7 +23,7 @@ function MainCard({
 
             <p className='anchor color-yellow' onClick={() => { navigate(link) }}>
                 Read Article
-                <img src='/images/icons/arrow-right-yellow.svg' style={{ width: "40px", height: "22px" }} alt='arrow icon' />
+                <img src='/images/icons/arrow-right-yellow.svg' className='blogs-article-icon' alt='arrow icon' />
             </p>
         </div>
     )

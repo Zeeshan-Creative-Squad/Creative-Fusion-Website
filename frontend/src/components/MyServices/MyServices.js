@@ -62,7 +62,7 @@ function ServiceCard({
             onClick={()=>{navigate(link)}}
             >
                 Read More 
-                <img src='/images/icons/arrow-right-yellow.svg' alt='arrow right '/>
+                <img src='/images/icons/arrow-right-yellow.svg' alt='arrow right' style={{width: "18px"}}/>
             </p>
                     </div>
                 </div>

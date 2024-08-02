@@ -81,5 +81,14 @@
         font-size: 2rem;
        
     }
+
+    .case-study-item:not(:last-child) {
+        border-bottom: none;
+    }
+
+    .case-study-item .arrow-icon-caseStudy {
+        width: 20px;
+        height: 20px;
+    }
   
 }

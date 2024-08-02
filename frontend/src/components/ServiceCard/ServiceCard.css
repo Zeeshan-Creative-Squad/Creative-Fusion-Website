@@ -46,8 +46,8 @@
 
 .ServiceCard-container .service-card-anchor img
 {
-    width: 40px;
-    height: 22px;
+    width: 20px;
+    height: 20px;
 }
 
 @media(min-width:1300px)

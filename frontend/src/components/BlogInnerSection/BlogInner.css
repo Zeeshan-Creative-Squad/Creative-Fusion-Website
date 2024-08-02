@@ -163,8 +163,8 @@
 
   .blog-inner .blog-head {
     padding-left: 0px;
-    font-size: 28px;
-    text-align: center;
+    font-size: 26px;
+    /* text-align: center; */
   }
 
   .blog-inner .subheading-container {

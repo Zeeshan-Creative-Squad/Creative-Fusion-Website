@@ -67,4 +67,7 @@
         align-items: center;
         width: 100%;
     }
+    .OurStory-container .row-ranking-under-section {
+        padding: 4vh 0vh;
+    }
 }

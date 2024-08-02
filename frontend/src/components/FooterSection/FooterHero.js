@@ -43,9 +43,15 @@ const FooterHero = () => {
                         <p className='specific-paragraph'>
                         <span className='span'>hello</span>@creativefusion.com
                         </p>
-                        <p className='specific-paragraph'>
+                        <p className='specific-paragraph d-none d-lg-block'>
                         +92<span className='span'>3001234567</span>
                         </p>
+
+                        <p className='specific-paragraph d-lg-none d-md-none d-block'>
+                        +92<span className='span'>3001234567</span>
+                        </p>
+
+
                         <p className='specific-paragraph'>
                         3rd Floor, Al-Ahmed plaza, University Rd, Block 13-C<br />
                         <span className='span-block'>Gulshan-e-Iqbal, Karachi</span>

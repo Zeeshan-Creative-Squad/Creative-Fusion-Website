@@ -26,7 +26,7 @@ function CardBox({
                 <div className='col-lg-6'>
 
                     <div className='text-content'>
-                        <h3 className='body-heading '>{title}</h3>
+                        <h3 className='body-heading-under'>{title}</h3>
                         <p className='body-paragraph boxtext my-5' >{content}</p>
 
                         <p className='anchor color-red'>Read Full Case Study <img src='/images/icons/arrow-right.svg' alt='arrow design'/></p>

@@ -39,8 +39,8 @@ function BlogMain() {
             </div>
            
            <div>
-            <BlogPosting />
-            <Pagination />
+            <BlogPosting heading={false}/>
+            {/* <Pagination /> */}
             <LetsWork />
            </div>
            

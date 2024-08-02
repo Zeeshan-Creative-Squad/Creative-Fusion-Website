@@ -51,7 +51,7 @@ function TextContent({
                             {listData.map((ele)=>{
                                 return(
                                     <div className='col-lg-6 '>
-                                        <div class="d-flex align-items-center my-2 icon-list gap-2 " ><img src="/images/icons/list-card-bullets.png" alt="icon" class="list-bullet"/><p class="body-paragraph my-0 list-para">{ele}</p></div>
+                                        <div class="d-flex align-items-center my-2 icon-list gap-2 " ><img src="/images/icons/list-card-bullets.png" alt="icon" class="list-bullet d-lg-block d-none"/><p class="body-paragraph my-0 list-para">{ele}</p></div>
                                     </div>
                                 )
                             })}
@@ -64,7 +64,7 @@ function TextContent({
                         reviewContent &&
                         <div>
                             <div className='d-flex gap-3 align-items-center founder-div'>
-                                <img src='/images/creatives/about-text-content-1.png' alt='person '/>
+                                <img src='/images/creatives/about-text-content-1.png' alt='person' className=''/>
 
                                 <div>
                                     <p className='sub-heading color-red mb-0'>Salman Baig</p>

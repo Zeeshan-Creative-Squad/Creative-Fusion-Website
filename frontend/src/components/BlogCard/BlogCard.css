@@ -42,10 +42,23 @@
   .image-of-secondoryCard img {
     max-width: 100%; /* Ensure images don't overflow container */
   }
+
+  .MainCard .blogs-article-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .MainCard .span-line {
+   
+  }
   
   @media (max-width: 768px) {
     .BlogCard-container .body-heading {
         font-size: 36px; /* Smaller font size for tablets */
+    }
+
+    .BlogCard-container .MainCard {
+      padding: 8vh 0vh;
     }
 
     .BlogCard-container .title {
@@ -64,6 +77,13 @@
     .secondary-card-div{
       justify-content: center;
       align-items: center;
+    }
+    .MainCard .span-line {
+      
+    }
+
+    .design-date-content {
+      padding: 2vh 0vh;
     }
     
 }

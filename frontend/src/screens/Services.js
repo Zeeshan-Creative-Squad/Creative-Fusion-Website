@@ -133,6 +133,8 @@ function Services() {
                 headingNumber="007"
                 button="UI UX Designing"
             />
+            <div className='box multi-gradient'>
+                <div className='glass-box'>
         <ServicesTextContent
                 img="/images/creatives/Ecommerce-Hero.webp"
                 subHeading=""
@@ -145,8 +147,11 @@ function Services() {
                 listData={null}
                 reviewContent={false}
                 headingNumber="007"
+                transparentBg={true}
                 button="E-commerce Development"
             />
+            </div>
+            </div>
         <ServicesTextContent
                 img="/images/creatives/Application-Hero.webp"
                 subHeading=""

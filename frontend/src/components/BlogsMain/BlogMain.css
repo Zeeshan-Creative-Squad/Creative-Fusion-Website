@@ -97,8 +97,11 @@
 /* Small screens */
 @media only screen and (max-width: 576px) {
     .blogmain-container .text-content {
-      padding: 12vh 0vh 0vh 0vh;
+      padding: 12vh 0vh 15vh 0vh;
     
+    }
+    .blogmain-container .logo-container {
+      margin-top: 0px;
     }
   
     .blogmain-container .image-section {
@@ -108,11 +111,11 @@
     }
     
     .blogmain-container .transparent-box {
-      top: 305px;
+      top: 94px;
       width: 70%;
       margin-top: -55px;
-    margin-left: 105px;
-    height: 150px;
+      margin-left: 94px;
+      height: 140px;
     }
   
     .blogmain-container .transparent-box h2 {
@@ -138,6 +141,10 @@
       margin-left: 15px;
       font-size: 12px;
       margin-bottom: 10px;
+  }
+
+  .blogmain-container .image-section {
+    height: 0px;
   }
   }
   

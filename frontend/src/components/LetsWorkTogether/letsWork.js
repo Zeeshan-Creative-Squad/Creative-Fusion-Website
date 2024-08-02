@@ -11,8 +11,8 @@ function LetsWork() {
       Don't miss out on our latest insights and inspiration. Subscribe to our newsletter and stay ahead in the digital world. Let’s connect!
       </p>
       <div className="buttonContainer">
-        <button>Let's talk</button>
-        <button>Learn more</button>
+        <button className='lets-work-button'>Let's talk</button>
+        <button className='lets-work-button'>Learn more</button>
       </div>
     </div>
   );

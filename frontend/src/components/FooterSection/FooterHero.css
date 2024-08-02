@@ -342,6 +342,9 @@ ul {
     margin-top: 8px;
     margin-right: 0px;
   }
+  .ul-segment-second {
+    padding-left: 0px;
+  }
 }
 
 
@@ -413,6 +416,9 @@ ul {
     padding: 0;
     margin-top: 18px;
     line-height: 2.5;
+  }
+  .ul-segment-second {
+    padding-left: 0px;
   }
 }
 

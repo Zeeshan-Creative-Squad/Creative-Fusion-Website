@@ -53,7 +53,7 @@ const Header = ({ darkBg = false }) => {
     <div className={`header w-100`}>
       <div className="header-wrapper container">
         <nav className="navbar d-md-flex flex-md-row d-block">
-          <nav className="navbar-container px-lg-0 px-2 py-2">
+          <nav className="navbar-container px-lg-2 py-2">
             <div className="nav-elements d-flex justify-content-between align-items-center px-lg-2">
               <input className="d-none" type="checkbox" id="menu-toggle" />
               <img src="/images/icons/nav-logo.png" className="nav-logo" onClick={() => { navigate("/") }} style={{ cursor: "pointer" }} />

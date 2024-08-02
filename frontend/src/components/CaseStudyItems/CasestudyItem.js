@@ -11,7 +11,7 @@ function CaseStudyItem({ image, title, description }) {
                 <h2 dangerouslySetInnerHTML={{ __html: title }} />
                 <p dangerouslySetInnerHTML={{ __html: description }} />
                 <a href='#' className='case-study-link'>
-                    Case study <img src="images/icons/arrow-right-yellow.svg" alt="Arrow Icon" />
+                    Case study <img src="images/icons/arrow-right-yellow.svg" alt="Arrow Icon" className='arrow-icon-caseStudy'/>
                 </a>
             </div>
         </div>
