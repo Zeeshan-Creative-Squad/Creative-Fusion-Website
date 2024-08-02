@@ -5,7 +5,11 @@ const router = express.Router();
 
 const storage = multer.diskStorage({
   destination(req, file, cb) {
-    cb(null, "uploads/");
+    const isImage = file.fieldname === 'image';
+    
+    const destinationPath = isImage ? './uploads/blogImages/' : './uploads/assesmentCv/';
+    
+    cb(null, destinationPath);
   },
   filename(req, file, cb) {
     cb(
@@ -16,35 +20,63 @@ const storage = multer.diskStorage({
 });
 
 function checkFileType(file, cb) {
-  const filetypes = /jpg|jpeg|png|webp/;
-  console.log("file info ==>",file);
+
+  const imageFiletypes = /jpg|jpeg|png|webp/;
+  const cvFiletypes = /txt|pdf|doc|docx/; 
+
+  const filetypes = file.fieldname === 'image' ? imageFiletypes : cvFiletypes;
+
+  const fileSizeLimit = file.fieldname === 'cv' ? 1 * 1024 * 1024 : Infinity;
+  
   const extname = filetypes.test(path.extname(file.originalname).toLowerCase());
   const mimetype = filetypes.test(file.mimetype);
+  
   if (extname && mimetype) {
-    console.log("picture verified")
+    console.log("success");
     return cb(null, true);
   } else {
-    console.log("not  recieved");
-    cb("Images Only");
+    const errorMessage = file.fieldname === 'image' ? 'Images Only' : 'Text file Only i.e(.pdf , .docx etc)';
+    cb(errorMessage);
   }
 }
 
-const upload = multer({
-  storage:storage,
-  fileFilter: function (req, file, cb) {
-    const data = req.body;
-  console.log("req.body",data);
-    checkFileType(file, cb);
-  },
-})
+const cvLimits = {
+  fileSize: 1 * 1024 * 1024,
+  files: 1, 
+};
+
+const imageLimits = {
+  fileSize: 10 * 1024 * 1024, 
+  files: 1, 
+};
+
+const upload = {
+  cv: multer({
+    storage: storage,
+    fileFilter:function (req, file, cb) {
+          checkFileType(file, cb);
+        },
+    limits: cvLimits,
+
+  }),
+  image: multer({
+    storage: storage,
+    fileFilter: function (req, file, cb) {
+          checkFileType(file, cb);
+        },
+  }),
+};
 
 
-router.post("/", upload.single("image"), (req, res) => {
-  const data = req.body;
-  console.log("req.body",data);
+router.post("/", upload.image.single("image"), (req, res) => {
   
-  console.log("file recieved",req.file.path);
   res.send(`/${req.file.path}`);
 })
+router.post("/assesment", upload.cv.single("cv"), (req, res) => {
+  res.send(`${req.file.path}`);
+})
+
+
+
 
 export default router

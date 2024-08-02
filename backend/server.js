@@ -16,10 +16,11 @@ dotenv.config();
 connectDataBase();
 
 const app = express();
-
+ 
 app.use(compression())
 app.use(cors());
 app.use(express.json({ limit: "1500kb" }));
+app.use('/uploads', express.static('uploads/blogImages'));
  
 app.use("/api/users", userRoutes);
 app.use("/api/upload", uploadRoutes);
@@ -28,13 +29,24 @@ app.use("/", blogRoutes);
 app.use('/api/locationpages', locationRouter);
 
 
+  
 let transport = {
-  service: "hotmail",
+  host: "smtpout.secureserver.net",  
+  secure: true,
+  secureConnection: false,
+  tls: {
+      ciphers:'SSLv3'
+  },
+  requireTLS:true,
+  port: 465,
+  debug: true,
   auth: {
     user: process.env.USER,
     pass: process.env.PASS,
   },
 };
+
+
 let transporter = nodemailer.createTransport(transport);
 
 transporter.verify((error, success) => {
@@ -53,12 +65,13 @@ app.post("/send-appointment", (req, res, next) => {
   let message = req.body.message;
   let appointment = req.body.appointmentType;
   let date = req.body.date;
+  console.log("Received Request", name)
   let content = `Form-type: ${formType} \n Appointment type: ${appointment} \n date: ${date} \n name: ${name} \n email: ${email} \n phone number: ${phone} \n message: ${message}`;
 
   let mail = {
     from: name,
     to: process.env.USER,
-    subject: "New Message From Creative Fusion",
+    subject: "New Message From HB-Care",
     text: content,
     replyTo:email
   };
@@ -86,8 +99,8 @@ app.post("/send-contact-form-main", (req, res, next) => {
 
   let mail = {
     from: name,
-    to: process.env.USER,
-    subject: "New Message From Creative Fusion",
+    to: [process.env.USER],
+    subject: "New Message From HB-Care",
     text: content,
     replyTo:email
   };
@@ -103,56 +116,22 @@ app.post("/send-contact-form-main", (req, res, next) => {
     }
   });
 });
+
 
 app.post("/send-quote", (req, res, next) => {
   let name = req.body.name;
   let email = req.body.email;
   let phone = req.body.phone;
-  let message = req.body.message;
+  let service = req.body.service;
   let formType = req.body.formType;
-  let content = `Form-type: ${formType} \n name: ${name} \n email: ${email} \n phone number: ${phone} \n message : ${message}`;
+  let content = `Form-type: ${formType} \n name: ${name} \n email: ${email} \n phone number: ${phone} \n service : ${service}`;
 
   let mail = {
     from: name,
     to: process.env.USER,
-    subject: "New Message From Creative Fusion",
+    subject: "New Message From HB-Care",
     text: content,
     replyTo:email
-  };
-  transporter.sendMail(mail, (err, data) => {
-    if (err) {
-      res.json({
-        msg: "fail",
-      });
-    } else {
-      res.json({
-        msg: "success",
-      });
-    }
-  });
-});
-app.post("/send-plan-quote", (req, res, next) => {
-  let q1 = req.body.q1;
-  let q2 = req.body.q2;
-  let q3 = req.body.q3;
-  let q4 = req.body.q4;
-  let q5 = req.body.q5;
-  let formType = req.body.formType;
-  let question = [
-    "Is there an existing IT team at your company?",
-    "How many operational locations does your business have?",
-    "What is the current number of servers in use?",
-    "How many users are in need of support?",
-    "What volume of data requires backup? (in Terabytes)"
-  ]
-
-  let content = `Form-type: ${formType} \n ${question[0]}: \n ${q1} \n ${question[1]}: \n ${q2} \n ${question[2]}: \n ${q3} \n ${question[3]} : \n ${q4} \n ${question[4]} : \n ${q5}`;
-
-  let mail = {
-    from: process.env.USER,
-    to: process.env.USER,
-    subject: "New Message From Creative Fusion",
-    text: content,
   };
   transporter.sendMail(mail, (err, data) => {
     if (err) {
@@ -174,12 +153,66 @@ app.post("/send-newsletter", (req, res, next) => {
 
   let mail = {
     to: process.env.USER,
-    subject: "New Message From Creative Fusion",
+    subject: "New Message From HB-Care",
     text: content,
     replyTo:email
   };
   transporter.sendMail(mail, (err, data) => {
     if (err) {
+      res.json({
+        msg: "fail",
+      });
+    } else {
+      res.json({
+        msg: "success",
+      });
+    }
+  });
+});
+app.post("/send-assesment", (req, res, next) => {
+  let email = req.body.email;
+  let formType = req.body.formType;
+  let {assementData} = req.body;
+  const content = `
+Form-type: ${formType}
+Client-email: ${email}
+
+Assessment Data:
+  Name: ${assementData.name}
+  Email: ${assementData.email}
+  Phone: ${assementData.phone}
+  Date of Birth: ${assementData.dateOfBirth.year}-${assementData.dateOfBirth.month}-${assementData.dateOfBirth.day}
+  Residence: ${assementData.residence}
+  Education: ${assementData.education}
+  Language Score: ${assementData.langScore}
+  Reading Score: ${assementData.readingScore}
+  Speaking Score: ${assementData.speakingScore}
+  Listening Score: ${assementData.listeningScore}
+  Writing Score: ${assementData.writingScore}
+  Experience: ${assementData.experience}
+  Canada Experience: ${assementData.canadaExperience}
+  Canada Study: ${assementData.candaStudy}
+  Study Organization: ${assementData.studyOrg}
+  ECA: ${assementData.ECA}
+  Canada Job Offer: ${assementData.candaJobOffer}
+  Marital Status: ${assementData.maritalStatus}
+`;
+
+
+  let mail = {
+    to: process.env.USER,
+    subject: "New Message From HB-Care",
+    text: content,
+    replyTo:email,
+    attachments:[
+      {
+        path:assementData.cv
+      }
+    ]
+  };
+  transporter.sendMail(mail, (err, data) => {
+    if (err) {
+      console.log(error);
       res.json({
         msg: "fail",
       });
@@ -204,9 +237,7 @@ if(process.env.NODE_ENV === 'production') {
   })
 }
 
-
-
-app.use('/uploads', express.static(path.join(__dirname, '/uploads/')))
+app.use('/uploads', express.static(path.join(__dirname, '/uploads')))
 
 if (process.env.NODE_ENV === "production") {
   app.use(express.static(path.join(path.resolve(), "/frontend/build"))); 
@@ -226,8 +257,8 @@ if (process.env.NODE_ENV === "production") {
 app.use(notFound);
 app.use(errorHandler);
 
-const Port = process.env.PORT || 5000;
 
+const Port = process.env.PORT || 5000;
 
 app.listen(
   Port,

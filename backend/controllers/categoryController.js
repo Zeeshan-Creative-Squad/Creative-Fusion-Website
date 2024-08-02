@@ -1,20 +1,9 @@
 import Category from "../models/categoryModel.js";
 
 const getAllCategories = (req, res) => {
-    Category.find().select({ __v: 0, _id: 0 })
+    Category.find()
     .then(category => {
       res.json({ message: 'Successfully retrieved categories!', status: 'success', data: category });
-    })
-    .catch(error => {
-      res.status(500).json({ message: 'Failed to retrieve categories!', status: 'fail', error: error });
-    });
-};
-const getIdCategories = (req, res) => {
-    const catId = req.params.id;
-    Category.find({category_id:catId}).select({ __v: 0, _id: 0 })
-    .then(category => {
-        console.log("catagory",category);
-      res.json({ message: 'Successfully retrieved categories!', status: 'success', data: category[0] });
     })
     .catch(error => {
       res.status(500).json({ message: 'Failed to retrieve categories!', status: 'fail', error: error });
@@ -64,4 +53,4 @@ const createCategory = (req, res) => {
     });
 };
 
-export {getAllCategories, createCategory,getIdCategories};
+export {getAllCategories, createCategory};

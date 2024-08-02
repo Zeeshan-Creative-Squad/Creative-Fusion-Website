@@ -58,12 +58,12 @@ function OurTeam() {
                                 slidesPerView: 3,
                             }
                         }}
-                        className="testimonials-list py-5 mt-2"
+                        className="testimonials-list py-5 mt-2 d-lg-none"
                         id="testimonial-cards-slider"
                     >
                         {Team.map(({ Img, title, name }) => (
     <SwiperSlide key={title} className="px-3 px-sm-0 swiper-slide-div">
-        <div className='col-lg-3 col-sm-6'>
+        <div className='col-lg-3 col-sm-6 d-lg-none d-md-block'>
             <div className='team-card text-center'>
                 <img src={Img} className='img-fluid' alt='team member' />
                 <h5 className='body-paragraph mt-3' style={{ fontWeight: "bold", fontSize: "1.7rem" }}>{name}</h5>
@@ -87,6 +87,15 @@ function OurTeam() {
                         </div>
 
                     </div>
+                    {Team.map(({ Img, title, name }) => (
+                    <div key={title} className='col-lg-3 col-sm-6 d-lg-block d-none'>
+            <div className='team-card text-center'>
+                <img src={Img} className='img-fluid' alt='team member' />
+                <h5 className='body-paragraph mt-3' style={{ fontWeight: "bold", fontSize: "1.7rem" }}>{name}</h5>
+                <p className='body-paragraph'>{title}</p>
+            </div>
+        </div>
+        ))}
 
                 </div>
 

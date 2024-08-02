@@ -29,7 +29,7 @@ function CardBox({
                         <h3 className='body-heading-under'>{title}</h3>
                         <p className='body-paragraph boxtext my-5' >{content}</p>
 
-                        <p className='anchor color-red'>Read Full Case Study <img src='/images/icons/arrow-right.svg' alt='arrow design'/></p>
+                        <p className='anchor color-red'>Read Full Case Study <img src='/images/icons/arrow-right.svg' alt='arrow design' className='latest-project-arrow-icon'/></p>
                     </div>
 
                 </div>
@@ -67,7 +67,7 @@ function LatestProject() {
                 </div>
                 <div className='col-lg-6 text-center text-lg-end'>
                 <Link to="/casestudies">
-      <button className='genral-btn btn-red d-lg-inline d-none'>Our Case Studies</button>
+      <button className='genral-btn btn-red d-lg-inline d-none' style={{textDecoration: "none", textDecorationLine: "none"}}>Our Case Studies</button>
     </Link>
                     <br></br>
                     <br></br>

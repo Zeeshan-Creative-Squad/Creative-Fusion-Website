@@ -24,7 +24,7 @@ function CaseStudiesHero() {
             description: 'Lorem Ipsum is simply dummy text of the printing and <br/> typesetting industry.'
         },
         {
-            image: '/images/creatives/Mask Group 110-min.png',
+            image: '/images/creatives/case-item.png',
             title: 'Creative Design<br/> Showcase',
             description: 'Lorem Ipsum is simply dummy text of the printing and <br/> typesetting industry.'
         }

@@ -71,7 +71,7 @@ const ContactBanner = () => {
                   <p className="body-paragraph contact-notpara">info@creativefusion.com</p>
                   <p className="body-paragraph contact-para">3rd Floor, Al-Ahmed plaza, Block-C, Gulshan-e-Iqbal, Karachi</p>
                   <img
-                    src="images/creatives/Group 1893.svg"
+                    src="images/creatives/tomb.svg"
                     alt="Tomb of Quaid-e-Azam"
                     className={`image-Contact ${animate ? 'fade-in' : ''}`}
                   />
@@ -83,7 +83,7 @@ const ContactBanner = () => {
                   <p className="body-paragraph contact-notpara">info@creativesquad.ca</p>
                   <p className="body-paragraph contact-para">2300 Yonge Street, Suite 1600 toronto</p>
                   <img
-                    src="images/creatives/Group 1894.svg"
+                    src="images/creatives/effel.svg"
                     alt="Canada Place"
                     className={`image-Contact ${animate ? 'fade-in' : ''}`}
                   />
@@ -91,7 +91,7 @@ const ContactBanner = () => {
               )}
               <div className="third-image">
                
-                <img className="img-fluid" src="images/creatives/Group 1896.svg" alt="Your Third Image" />
+                <img className="img-fluid" src="images/creatives/bottom-image.svg" alt="Your Third Image" />
               </div>
             </div>
             <div className="col-md-6">

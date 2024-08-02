@@ -6,13 +6,18 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 import ScrollToTop from "./ScrollToTop"
 import "./bootstrap.min.css"
+import { Provider } from 'react-redux';
+import Store from './store/store'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <BrowserRouter>
+  <Provider store={Store}>
+    <BrowserRouter>
   <ScrollToTop/>
     <App />
   </BrowserRouter> 
+  </Provider>
+  
 );
 
 // If you want to start measuring performance in your app, pass a function

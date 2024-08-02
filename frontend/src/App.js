@@ -21,11 +21,19 @@ import ApplicationDevelopment from './screens/ApplicationDevelopment';
 import SearchEngineOptimization from './screens/SearchEngineOptimization';
 import DesignAndBranding from './screens/DesignAndBranding';
 
+import BlogsScreen from "./AdminScreens/BlogsScreens/BlogsScreen";
+import AdminScreen from "./AdminScreens/AdminScreen";
+import LocationScreen from './screens/LocationScreens/LocationScreen';
+import LocationPages from "./components/LocationPages_/LocationPages"
+import BlogInnerPage from './screens/BlogInnerPage';
+
+
 
 
 function App() {
   return (
     <div className="App">
+   
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -45,9 +53,14 @@ function App() {
         <Route path="/casestudies" element={<CaseStudies />} />
         <Route path="/casestudyinner" element={<CasestudyInner />} />
         <Route path="/blog" element={<Blog />} />
-        <Route path="/bloginner" element={<Bloginner />} />
+        <Route path="/blogs/:id" element={<BlogInnerPage />} />
         <Route path="/projects" element={<LatestProject />} />
         <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
+
+        <Route path="/admin" element={<AdminScreen />} />
+        <Route path="/admin/blogs" element={<BlogsScreen />} />
+        <Route path='/location/:slug' element={<LocationPages />} />
+        <Route path='/admin/location-pages' element={<LocationScreen />}/>
       </Routes>
     </div>
   );

@@ -9,24 +9,27 @@ const Header = ({ darkBg = false }) => {
   const [imgurl, setImgurl] = useState(null);
   const [isServicesDropdownOpen, setIsServicesDropdownOpen] = useState(false);
 
+
+  const toggleMenu = () => {
+    setMenuState(!menuState);
+};
+
   const navigate = useNavigate();
   const dropdownRef = useRef();
   const triggerRef = useRef();
 
-
+  
 
   const services = [
-    { name: "Design & Branding", image: "images/creatives/Google-Ads.png", link: "/servicesinner" },
-    { name: "Web Development", image: "images/creatives/Design-&-Branding.png", link: "/web-development" },
-    { name: "SocialMediaMarketing", image: "images/creatives/Performance-Marketing.png", link: "/social-media-marketing" },
-    { name: "GoogleAds", image: "images/creatives/Search-Engine-Optimization.png", link: "/google-ads" },
-    { name: "SEO", image: "images/creatives/Social-Media-Marketing.png", link: "/service-engine-optimization" },
+    { name: "Design & Branding", image: "images/creatives/Design-&-Branding.png", link: "/servicesinner" },
+    { name: "Web Development", image: "images/creatives/Web-Development.png", link: "/web-development" },
+    { name: "SocialMediaMarketing", image: "images/creatives/Social-Media-Marketing.png", link: "/social-media-marketing" },
+    { name: "GoogleAds", image: "images/creatives/Google-Ads.png", link: "/google-ads" },
+    { name: "SEO", image: "images/creatives/Search-Engine-Optimization.png", link: "/service-engine-optimization" },
     { name: "UIUXDevelopment", image: "images/creatives/UI-UX.png", link: "/uiux-development" },
-    // { name: "Web Services", image: "images/creatives/Web-Development.png", link: "/services/service6" },
-    { name: "EcommerceDevelopment", image: "images/creatives/Web-Development.png", link: "/ecommerce-development" },
-    { name: "PerformanceMarketing", image: "images/creatives/Web-Development.png", link: "/performance-marketing" },
-    { name: "EcommerceDevelopment", image: "images/creatives/Web-Development.png", link: "/ecommerce-development" },
-    { name: "ApplicationDevelopment", image: "images/creatives/Web-Development.png", link: "/application-development" },
+    { name: "PerformanceMarketing", image: "images/creatives/Performance-Marketing.png", link: "/performance-marketing" },
+    { name: "EcommerceDevelopment", image: "images/creatives/Ecommerce-development.png", link: "/ecommerce-development" },
+    { name: "ApplicationDevelopment", image: "images/creatives/Application-Development.png", link: "/application-development" },
   ];
 
  
@@ -119,7 +122,11 @@ const Header = ({ darkBg = false }) => {
                 </ul>
               </nav>
               <label value="menu-toggle" onClick={menuClick} className="responsive-menu-btn d-lg-none d-inline">
-                <img src="/images/icons/hamburger-menu.png" className="img-fluid menu-btn" alt="menu" />
+              {menuState ? (
+                    <img src="/images/icons/cross-icon.png" alt="" /> // Cross icon (×)
+                ) : (
+                  <img src="/images/icons/hamburger-menu.png" alt="" /> // Hamburger icon (☰)
+                )}
               </label>
               <div className="nav-buttton ml-5 d-lg-flex d-none gap-3 extras-btns">
                 <button className="genral-btn btn-red" onClick={() => { navigate("/contact") }}>Contact Us</button>
@@ -127,6 +134,9 @@ const Header = ({ darkBg = false }) => {
             </div>
           </nav>
           <nav className="responsive-popup-menu w-100">
+          <div className="hamburger-icon d-lg-none" onClick={toggleMenu}>
+                
+            </div>
             <div className="py-3 d-lg-none navbar-box" style={{ display: menuState ? "block" : "none"}}>
               <ul className="resp-nav-list d-lg-none w-100 gap-4 hs-dropdown [--trigger:hover] pl-4" style={{ display: menuState ? "block" : "none", color: "white" }}>
                 <li>

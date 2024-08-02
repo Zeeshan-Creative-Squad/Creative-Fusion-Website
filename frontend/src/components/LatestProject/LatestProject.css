@@ -91,4 +91,9 @@
         text-align: center;
     }
 
+    .LatestProject-container .latest-project-arrow-icon {
+        width: 20px;
+        height: 20px;
+    }
+
 }

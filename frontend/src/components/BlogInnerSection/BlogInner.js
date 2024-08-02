@@ -7,45 +7,60 @@ import BlogPosting from '../BlogsMain/BlogPosting';
 import './SubBlogPosting.css'
 import Footer from '../../screens/Footer';
 
-function BlogInner() {
+
+function BlogInner({text, blogContent, date, Heading}) {
+ 
+  
   return (
     <>
     <div className="box multi-gradient blog-inner">
     {/* <div className='container'> */}
-        <Header />
+       
     <div className='container'>
       <div className="headset">
         <button className='blog-btn'>Technology</button>
         <h6>ByCreativeFusion</h6>
-        <h6>March 15, 2024</h6>
+        <h6>{date}</h6>
       </div>
       <div className="main-heading">
-        <h1 className='blog-head'>Top Web Design Trends 2024</h1>
+        <h1 className='blog-head'>{Heading}</h1>
       </div>
-      <div className="image-container">
+      {/* <div className="image-container">
         <img src="images/creatives/blogbanner.png" alt="Centered" />
-      </div>
+      </div> */}
       {/* <div className='blog-rest-content container'> */}
       <div className="subheading-container">
-      <h2 className='upperheading-h2'>Laudantium perferendis ad vel consequator dolorem deleniti</h2>
-          <p className='upperpara'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a  </p>
+      <div className={`body-paragraph my-3 color-dark`} dangerouslySetInnerHTML={{ __html: text }}></div>
+      {blogContent.map((item) => (
+        <>
+          <h2 className="head-h2" style={{textTransform:"capatalize"}}>{item.heading}</h2>
+          <div className={`para_main my-3`} dangerouslySetInnerHTML={{ __html: item.paragraph }}></div>
+        </>
+      ))}
       
         <div className="subheading-content">
-          <h2 className='heading-h2'>Laudantium perferendis ad vel consequator dolorem deleniti</h2>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, </p>
+        <div className={`body-paragraph my-3 color-dark`} dangerouslySetInnerHTML={{ __html: text }}></div>
+      {blogContent.map((item) => (
+        <>
+          <h2 className="head-h2" style={{textTransform:"capatalize"}}>{item.heading}</h2>
+          <div className={`para_main my-3`} dangerouslySetInnerHTML={{ __html: item.paragraph }}></div>
+        </>
+      ))}
         </div>
 
-        <p className='para-content'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, so thats the reason that why we are eligible</p>
+        <div className={`body-paragraph my-3 color-dark`} dangerouslySetInnerHTML={{ __html: text }}></div>
+      {blogContent.map((item) => (
+        <>
+          <h2 className="head-h2" style={{textTransform:"capatalize"}}>{item.heading}</h2>
+          <div className={`para_main my-3`} dangerouslySetInnerHTML={{ __html: item.paragraph }}></div>
+        </>
+      ))}
       
 
-      <div className="subheading-work">
-          <h2 className='heading-h2'>Laudantium perferendis ad vel consequator dolorem deleniti</h2>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, </p>
-      </div>
      
       {/* </div> */}
 
-      {/* New section with horizontal lines, text, and social media icons */}
+      
      
         <hr className="divider" />
         <div className="blog-content">

@@ -11,6 +11,17 @@ const getBlogs = (req, res) => {
   });
 };
 
+const getBlogsId = (req, res) => {
+  Blog.find({})
+  .then(blogs => {
+    const FilterBlog = blogs.map(ele => ele["slug_url"])
+    res.json({ message: 'Successfully retrieved blogs!', status: 'success', data: FilterBlog });
+  })
+  .catch(error => {
+    res.status(500).json({ message: 'Failed to retrieve blogs!', status: 'fail', error: error });
+  });
+};
+
 const getBlogsByCategory = (req, res) => {
   const category_id = req.params.id;
 
@@ -54,6 +65,7 @@ const getBlogById = (req, res) => {
 const createBlog = (req, res) => {
   const blog_object = req.body;
   if (!blog_object || Object.keys(blog_object).length === 0) return res.json({ message: 'Required parameters missing!', status: 'fail' });
+  
       
   Blog.find({})
     .sort({ blog_id: -1 })
@@ -137,4 +149,4 @@ const deleteBlog = (req, res) => {
     });
 };
 
-export{getBlogs, getBlogsByCategory, getBlogById,  createBlog, updateBlog, deleteBlog}
+export{getBlogs, getBlogsByCategory, getBlogById, getBlogsId, createBlog, updateBlog, deleteBlog}
