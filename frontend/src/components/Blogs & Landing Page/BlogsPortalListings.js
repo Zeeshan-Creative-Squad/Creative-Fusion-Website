@@ -112,7 +112,7 @@ const BlogsPortalListings = () => {
 
             <div className="blogs_upload">
               <button onClick={UploadBlog}>
-                <img src="/icons/plus-white.png" alt="icon"/>
+                <img src="/images/icons/upload-icon.png" alt="icon" className="upload-button-img"/>
                 <span>Upload New Blog</span>
               </button>
             </div>
@@ -133,7 +133,7 @@ const BlogsPortalListings = () => {
                   <div className='entity_details mb-2 d-flex justify-content-start align-items-center'>
                       {/* <img className='img-fluid' src="/images/icons/ETB-Logo.png" alt='Favicon logo' /> */}
                       <div className='entity_dates'>
-                          <h5>ETB-HOME STAGING</h5>
+                          <h5>Creative Fusion</h5>
                           <h4>{element.published_date}</h4>
                       </div> 
                   </div>
@@ -145,8 +145,8 @@ const BlogsPortalListings = () => {
                       <h3>{element.title}</h3>
                       <p>{element.brief_paragraph}</p>
                       <div className='action_btns'>
-                         <button onClick={() => editBlog(element.blog_id)} className='edit'> <span><img src='/icons/edit.svg' className='img-fluid' alt='Edit Img' /></span> Edit Blog</button>
-                         <button onClick={() => deleteBlog(element.blog_id)} className='delete'> <span><img src='/icons/delete.svg' className='img-fluid' alt='Delete Img' /></span> Delete Blog</button>
+                         <button onClick={() => editBlog(element.blog_id)} className='edit'> <span><img src='/images/icons/edit-icon.png' className='img-fluid' alt='Edit Img' /></span></button>
+                         <button onClick={() => deleteBlog(element.blog_id)} className='delete'> <span><img src='/images/icons/delete-icon.png' className='img-fluid' alt='Delete Img' /></span> Delete Blog</button>
                       </div>
                   </div>
               </div>

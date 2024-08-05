@@ -1,6 +1,16 @@
+.blogs_portal_listings {
+  /* background-image: url('../../public/images/creatives/portal-bg.jpg'); */
+}
+
+.blogs_portal_listings .upload-button-img {
+  width: 25px;
+  height: 25px;
+  align-items: center;
+}
+
 .blogs_portal_listings .blogs_upload button {
   border: none;
-  background-color: #3F1626;
+  background-color: #ea3317;
   padding: 10px;
 }
 
@@ -89,7 +99,9 @@
   background-color: #B8B8B8;
   border: none;
   color: #ffffff;
-  padding: 10px;
+  /* padding: 10px; */
+  height: 50px;
+  width: 50px;
 }
 
 .blogs_portal_listings .action_btns .delete {
@@ -151,6 +163,7 @@
   margin-right: .5rem;
   color: #ffffff;
   font-weight: 600;
+  align-items: center;
 }
 
 /* ------- */

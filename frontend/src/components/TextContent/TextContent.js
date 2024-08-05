@@ -1,6 +1,22 @@
 import React from 'react'
 import "./TextContent.css"
 
+const handleRedirect = (btnText) => {
+    switch (btnText) {
+      case 'Home':
+        window.location.href = '/home';
+        break;
+      case 'Learn More':
+        window.location.href = '/about';
+        break;
+      case 'Contact':
+        window.location.href = '/contact';
+        break;
+      default:
+        console.log('No matching case found');
+    }
+  };
+
 function TextContent({
     img="",
     imgg="",
@@ -59,7 +75,14 @@ function TextContent({
                     }
                     
 
-                    {btn && <button className='genral-btn btn-red mt-2'>{btnText}</button>}
+                    {btn && (
+  <button 
+    className='genral-btn btn-red mt-2' 
+    onClick={() => handleRedirect(btnText)}
+  >
+    {btnText}
+  </button>
+)}
                     {
                         reviewContent &&
                         <div>

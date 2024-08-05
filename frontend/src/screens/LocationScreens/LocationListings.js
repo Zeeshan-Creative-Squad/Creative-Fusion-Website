@@ -84,7 +84,7 @@ const LocationListings = () => {
                 <div className='container'> 
                     <div className='blogs_upload'>
                         <button onClick={UploadBlog}>
-                            <img src='/images/icons/plus-white.png' alt='white'/>
+                            <img src='/images/icons/upload-icon.png' alt='white' className='upload-button-img'/>
                             <span>Add New Location Page</span>
                         </button>
                     </div>

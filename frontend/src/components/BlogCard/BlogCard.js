@@ -1,6 +1,6 @@
 import React from 'react'
 import "./BlogCard.css"
-import { Navigate, useNavigate } from 'react-router-dom'
+import { Navigate, useNavigate, Link } from 'react-router-dom'
 
 function MainCard({
     img,
@@ -21,10 +21,10 @@ function MainCard({
 
             <p className='body-paragraph'>{content}</p>
 
-            <p className='anchor color-yellow' onClick={() => { navigate(link) }}>
+           <Link to="/blog"><p className='anchor color-yellow'>
                 Read Article
                 <img src='/images/icons/arrow-right-yellow.svg' className='blogs-article-icon' alt='arrow icon' />
-            </p>
+            </p></Link> 
         </div>
     )
 }
@@ -59,13 +59,13 @@ function BlogCard() {
                     <div className='row gy-3'>
                         <div className='col-lg-6'>
                         <div className='col-lg-6 text-center text-lg-end d-none my-3 my-lg-0'>
-                            <button className='genral-btn btn-red'>Our Blogs</button>
+                           <Link to="/blog" style={{textDecoration: "none"}}><button className='genral-btn btn-red'>Our Blogs</button></Link> 
                         </div>
                             <h3 className='body-heading text-center text-lg-start font-bebus color-blue' >Insights and Inspiration for Your Digital Journey</h3>
                             <p className='body-paragraph text-center text-lg-start font-manrope'>Our content is designed to keep you informed and inspired.</p>
                         </div>
                         <div className='col-lg-6 text-center d-none d-lg-block text-lg-end my-3 my-lg-0'>
-                            <button className='genral-btn btn-red'>Our Blogs</button>
+                        <Link to="/blog" style={{textDecoration: "none"}}><button className='genral-btn btn-red'>Our Blogs</button></Link> 
                         </div>
                     </div>
                 </div>

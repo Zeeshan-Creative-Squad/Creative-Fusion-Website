@@ -21,11 +21,11 @@ const Header = ({ darkBg = false }) => {
   
 
   const services = [
-    { name: "Design & Branding", image: "images/creatives/Design-&-Branding.png", link: "/servicesinner" },
+    { name: "Design & Branding", image: "images/creatives/Design-&-Branding.png", link: "/design-and-branding" },
     { name: "Web Development", image: "images/creatives/Web-Development.png", link: "/web-development" },
     { name: "SocialMediaMarketing", image: "images/creatives/Social-Media-Marketing.png", link: "/social-media-marketing" },
     { name: "GoogleAds", image: "images/creatives/Google-Ads.png", link: "/google-ads" },
-    { name: "SEO", image: "images/creatives/Search-Engine-Optimization.png", link: "/service-engine-optimization" },
+    { name: "SEO", image: "images/creatives/Search-Engine-Optimization.png", link: "/search-engine-optimization" },
     { name: "UIUXDevelopment", image: "images/creatives/UI-UX.png", link: "/uiux-development" },
     { name: "PerformanceMarketing", image: "images/creatives/Performance-Marketing.png", link: "/performance-marketing" },
     { name: "EcommerceDevelopment", image: "images/creatives/Ecommerce-development.png", link: "/ecommerce-development" },

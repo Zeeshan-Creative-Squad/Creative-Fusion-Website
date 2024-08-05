@@ -286,7 +286,7 @@ const addParagraph = ()=>{
           <h2 className="h2_main">Blogs Upload</h2>
           <button onClick={PopupCloseHandler}>
             <span>
-              <img src="/icons/cancel.png" className="cancel-icon" alt="cancel icon"/>
+              <img src="/images/icons/cross-icon-menu.png" className="cancel-icon" alt="cancel icon"/>
             </span>
           </button>
         </div>

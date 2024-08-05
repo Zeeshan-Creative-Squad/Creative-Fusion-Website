@@ -111,7 +111,7 @@ const LocationPagePopup = ({locationPageDetails, editMode, reloadLocationPage, i
             <div className='popup_blog_view'> 
                 <div className='blogs_closing'>
                     <h2 className='h2_main'>Location Page Upload</h2>
-                    <button onClick={PopupCloseHandler}><span><img src='/icons/cancel.png' alt='icon'/></span></button>
+                    <button onClick={PopupCloseHandler}><span><img src='/images/icons/cross-icon-menu.png' alt='icon' className='cross-icon' style={{width: "30px", height: "30px"}}/></span></button>
                 </div>
 
                 <div className='location_fields input_fields_blogs'>

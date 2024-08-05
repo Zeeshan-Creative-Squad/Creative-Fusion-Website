@@ -237,7 +237,7 @@ If We need to rely on consent as a legal basis for processing Your information a
               You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.
 </p> <br/>
 <br/>
-<br/>    <h1 className='body-heading my-5'>
+<br/>    <h1 className='body-heading my-5 text-center'>
                  <span className='color-yellow'>Thank You!</span>
               </h1>
             </div>

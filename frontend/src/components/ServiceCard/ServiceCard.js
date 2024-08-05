@@ -49,13 +49,13 @@ function ServiceCardBox({
             <img src={img} alt='card icon' className='img-fluid mb-4 mb-xxl-5'/>
             <h5 className='body-heading' style={{fontSize:"24px"}}>{title}</h5>
             <p className='body-paragraph my-4'>{content}</p>
-            <p 
+            {/* <p 
             className='service-card-anchor color-yellow'
             onClick={()=>{navigate(link)}}
             >
                 Read More 
                 <img src='/images/icons/arrow-right-yellow.svg' alt='arrow right '/>
-            </p>
+            </p> */}
         </div>
     )
 }
