@@ -23,13 +23,13 @@ const Header = ({ darkBg = false }) => {
   const services = [
     { name: "Design & Branding", image: "images/creatives/Design-&-Branding.png", link: "/design-and-branding" },
     { name: "Web Development", image: "images/creatives/Web-Development.png", link: "/web-development" },
-    { name: "SocialMediaMarketing", image: "images/creatives/Social-Media-Marketing.png", link: "/social-media-marketing" },
-    { name: "GoogleAds", image: "images/creatives/Google-Ads.png", link: "/google-ads" },
+    { name: "Social Media Marketing", image: "images/creatives/Social-Media-Marketing.png", link: "/social-media-marketing" },
+    { name: "Google Ads", image: "images/creatives/Google-Ads.png", link: "/google-ads" },
     { name: "SEO", image: "images/creatives/Search-Engine-Optimization.png", link: "/search-engine-optimization" },
-    { name: "UIUXDevelopment", image: "images/creatives/UI-UX.png", link: "/uiux-development" },
-    { name: "PerformanceMarketing", image: "images/creatives/Performance-Marketing.png", link: "/performance-marketing" },
-    { name: "EcommerceDevelopment", image: "images/creatives/Ecommerce-development.png", link: "/ecommerce-development" },
-    { name: "ApplicationDevelopment", image: "images/creatives/Application-Development.png", link: "/application-development" },
+    { name: "UIUX Development", image: "images/creatives/UI-UX.png", link: "/uiux-development" },
+    { name: "Performance Marketing", image: "images/creatives/Performance-Marketing.png", link: "/performance-marketing" },
+    { name: "Ecommerce Development", image: "images/creatives/Ecommerce-development.png", link: "/ecommerce-development" },
+    { name: "Application Development", image: "images/creatives/Application-Development.png", link: "/application-development" },
   ];
 
  
