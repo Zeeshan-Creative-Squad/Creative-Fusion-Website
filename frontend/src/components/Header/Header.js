@@ -28,7 +28,7 @@ const Header = ({ darkBg = false }) => {
     { name: "SEO", image: "images/creatives/Search-Engine-Optimization.png", link: "/search-engine-optimization" },
     { name: "UIUX Development", image: "images/creatives/UI-UX.png", link: "/uiux-development" },
     { name: "Performance Marketing", image: "images/creatives/Performance-Marketing.png", link: "/performance-marketing" },
-    { name: "Ecommerce Development", image: "images/creatives/Ecommerce-development.png", link: "/ecommerce-development" },
+    { name: "Ecommerce Development", image: "images/creatives/Ecommerce-Development.png", link: "/ecommerce-development" },
     { name: "Application Development", image: "images/creatives/Application-Development.png", link: "/application-development" },
   ];
 

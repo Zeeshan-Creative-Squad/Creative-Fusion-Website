@@ -9,7 +9,7 @@ const handleRedirect = (btnText) => {
       case 'Learn More':
         window.location.href = '/about';
         break;
-      case 'Contact':
+      case 'Contact Us':
         window.location.href = '/contact';
         break;
       default:

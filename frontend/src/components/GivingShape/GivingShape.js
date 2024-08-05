@@ -1,5 +1,6 @@
 import React from 'react'
 import "./GivingShape.css"
+import { Link } from 'react-router-dom'
 
 function GivingShape(props) {
   return (
@@ -18,7 +19,7 @@ function GivingShape(props) {
                         </h3>
 
                     </div>
-                    <button className='genral-btn btn-red mt-2'>Contact Us</button>
+                   <Link to='/contact'><button className='genral-btn btn-red mt-2' style={{textDecoration: "none"}}>Contact Us</button></Link> 
                    
                    
                 </div>
