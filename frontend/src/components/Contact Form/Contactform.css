@@ -56,6 +56,7 @@
   margin-top: 5px;
   background: transparent;
   width: 100%;
+  color: white;
 
 }
 
@@ -106,7 +107,7 @@
   .contact_section .contact-details {
     text-align: center;
   }
-  
+
 
   .contact_section .contact-details .body-heading {
     font-size: 32px;
@@ -140,9 +141,9 @@
   }
 
   .contact_section h4,
-.contact_section h2,
-.contact_section p {
-  align-self: center;
-  text-align: center;
-}
+  .contact_section h2,
+  .contact_section p {
+    align-self: center;
+    text-align: center;
+  }
 }

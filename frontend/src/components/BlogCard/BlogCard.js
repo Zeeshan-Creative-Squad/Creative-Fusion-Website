@@ -1,6 +1,6 @@
-import React from 'react'
-import "./BlogCard.css"
-import { Navigate, useNavigate, Link } from 'react-router-dom'
+import React from 'react';
+import "./BlogCard.css";
+import { Navigate, useNavigate, Link } from 'react-router-dom';
 
 function MainCard({
     img,
@@ -21,10 +21,10 @@ function MainCard({
 
             <p className='body-paragraph'>{content}</p>
 
-           <Link to="/blog"><p className='anchor color-yellow'>
+            <Link to="/blog"><p className='anchor color-yellow'>
                 Read Article
                 <img src='/images/icons/arrow-right-yellow.svg' className='blogs-article-icon' alt='arrow icon' />
-            </p></Link> 
+            </p></Link>
         </div>
     )
 }
@@ -42,7 +42,7 @@ function SecondaryCard({
                 </div>
                 <div className='col-12 col-lg-7 design-date-content'>
                     <p className='body-paragraph mx-auto mb-2 date color-red'>Design ____
-                    {date}</p>
+                        {date}</p>
                     <h3 className='title mx-auto color-white'>{title}</h3>
                 </div>
             </div>
@@ -51,21 +51,21 @@ function SecondaryCard({
 }
 
 function BlogCard() {
-  return (
+    return (
         <div className='container'>
-    <div className='BlogCard-container'>
-            {/* <div className='main'> */}
+            <div className='BlogCard-container'>
+                {/* <div className='main'> */}
                 <div className='text-content'>
                     <div className='row gy-3'>
                         <div className='col-lg-6'>
-                        <div className='col-lg-6 text-center text-lg-end d-none my-3 my-lg-0'>
-                           <Link to="/blog" style={{textDecoration: "none"}}><button className='genral-btn btn-red'>Our Blogs</button></Link> 
-                        </div>
+                            <div className='col-lg-6 text-center text-lg-end d-none my-3 my-lg-0'>
+                                <Link to="/blog" style={{ textDecoration: "none" }}><button className='genral-btn btn-red'>Our Blogs</button></Link>
+                            </div>
                             <h3 className='body-heading text-center text-lg-start font-bebus color-blue' >Insights and Inspiration for Your Digital Journey</h3>
                             <p className='body-paragraph text-center text-lg-start font-manrope'>Our content is designed to keep you informed and inspired.</p>
                         </div>
                         <div className='col-lg-6 text-center d-none d-lg-block text-lg-end my-3 my-lg-0'>
-                        <Link to="/blog" style={{textDecoration: "none"}}><button className='genral-btn btn-red'>Our Blogs</button></Link> 
+                            <Link to="/blog" style={{ textDecoration: "none" }}><button className='genral-btn btn-red'>Our Blogs</button></Link>
                         </div>
                     </div>
                 </div>
@@ -99,20 +99,13 @@ function BlogCard() {
                                 date="Jan 30,2024"
                                 title="Font sizes in Branding design: The complete guide to follow"
                             />
-                        
-                        </div>  
+                        </div>
                     </div>
-
                 </div>
-
-
             </div>
-
-
         </div>
-
-    // </div>
-  )
+        // </div>
+    )
 }
 
 export default BlogCard;

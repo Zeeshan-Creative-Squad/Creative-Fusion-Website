@@ -8,10 +8,8 @@ import Contact from './screens/Contact';
 import CaseStudies from './screens/CaseStudies';
 import Blog from './screens/Blog';
 import LatestProject from './components/LatestProject/LatestProject';
-import Bloginner from './components/BlogInnerSection/BlogInner'
 import CasestudyInner from './components/CaseStudyInnerSection/CasestudyInner';
 import PrivacyPolicyPage from './screens/PrivacyPolicyPage';
-import Header from './components/Header/Header';
 import SocialMediaMarketing from './screens/SocialMediaMarketing';
 import GoogleAds from './screens/GoogleAds';
 import PerformanceMarketing from './screens/PerformanceMarketing';
@@ -20,20 +18,17 @@ import EcommerceDevelopment from './screens/EcommerceDevelopment';
 import ApplicationDevelopment from './screens/ApplicationDevelopment';
 import SearchEngineOptimization from './screens/SearchEngineOptimization';
 import DesignAndBranding from './screens/DesignAndBranding';
-
 import BlogsScreen from "./AdminScreens/BlogsScreens/BlogsScreen";
 import AdminScreen from "./AdminScreens/AdminScreen";
 import LocationScreen from './screens/LocationScreens/LocationScreen';
 import LocationPages from "./components/LocationPages_/LocationPages"
 import BlogInnerPage from './screens/BlogInnerPage';
-
-
-
+import LoginScreen from './AdminScreens/LoginScreen';
 
 function App() {
   return (
     <div className="App">
-   
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -60,7 +55,8 @@ function App() {
         <Route path="/admin" element={<AdminScreen />} />
         <Route path="/admin/blogs" element={<BlogsScreen />} />
         <Route path='/location/:slug' element={<LocationPages />} />
-        <Route path='/admin/location-pages' element={<LocationScreen />}/>
+        <Route path='/admin/location-pages' element={<LocationScreen />} />
+        <Route path="/login" element={<LoginScreen />} />
       </Routes>
     </div>
   );

@@ -13,13 +13,6 @@ function CaseStudies() {
                     <CaseStudiesHero />
                 </div>
             </div>
-
-
-
-
-
-
-
         </>
     )
 }

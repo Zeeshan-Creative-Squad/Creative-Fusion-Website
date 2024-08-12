@@ -5,7 +5,10 @@
   align-items: center;
   justify-content: flex-start;
   padding: 8vh 0vh 0vh 0vh;
+}
 
+.blog-inner .head-h2 {
+  color: white;
 }
 
 .blog-inner .headset h6 {
@@ -64,6 +67,7 @@
 .blog-inner .subheading-container {
   margin-bottom: 20px;
   /* margin-left: 150px; */
+  color: white;
 }
 
 .blog-inner .upperheading-h2 {
@@ -149,6 +153,7 @@
   .blog-inner .headset {
     display: flex;
   }
+
   .blog-inner .headset h6 {
     margin-bottom: 5px;
     font-size: 10px;
@@ -157,6 +162,7 @@
     align-items: center;
     justify-content: center;
   }
+
   .blog-inner .image-container {
     width: 100%;
   }
@@ -244,6 +250,5 @@
     justify-content: flex-end;
     margin-right: 0px;
     padding-right: 0px;
-
   }
 }

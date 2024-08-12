@@ -1,107 +1,97 @@
-*{
-  
-  scroll-behavior: smooth; 
-  
+* {
+  scroll-behavior: smooth;
   font-family: "Manrope", sans-serif;
 }
 
-
-.font-manrope
-{
+.font-manrope {
   font-family: "Manrope", sans-serif;
 }
 
-.color-blue
-{
+.color-blue {
   color: #023c58;
 }
-.color-red
-{
-  color: #ea3317!important;
+
+.color-red {
+  color: #ea3317 !important;
 }
-.color-yellow
-{
+
+.color-yellow {
   color: #f58e09;
 }
-.color-white
-{
+
+.color-white {
   color: white;
 }
 
-.font-bold
-{
+.font-bold {
   font-weight: bold;
   letter-spacing: 2.5px;
 }
 
-.genral-btn
-{
+.genral-btn {
   border-radius: 24px;
-  padding:12px 49px;
+  padding: 12px 49px;
   font-family: "Manrope", sans-serif;
   font-size: 12px;
   text-decoration: none;
 }
 
-.btn-red
-{
+.btn-red {
   background-color: #ea3317;
   border: 1px solid #ea3317;
   color: white;
   transition: .5s;
   text-decoration: none;
 }
-.btn-red:hover
-{
+
+.btn-red:hover {
   background-color: #f42000;
   text-decoration: none;
 }
-.btn-yellow
-{
+
+.btn-yellow {
   background-color: #f58e09;
   border: 1px solid #f58e09;
-  color:  #0a0a0a;
+  color: #0a0a0a;
   transition: .5s;
 }
-.btn-yellow:hover
-{
+
+.btn-yellow:hover {
   background-color: #df8107;
-  color:rgba(255, 255, 255, 0.699);
+  color: rgba(255, 255, 255, 0.699);
 }
-.btn-trans
-{
+
+.btn-trans {
   background-color: rgba(255, 255, 255, 0);
-  border: 1px solid  #313131;
-  color:  #313131;
+  border: 1px solid #313131;
+  color: #313131;
   transition: .5s;
 }
-.btn-trans:hover
-{
-  background-color:  #313131;
+
+.btn-trans:hover {
+  background-color: #313131;
   color: white;
 }
 
-.hero-heading-font-size
-{
+.hero-heading-font-size {
   font-size: 72px;
 }
 
-.body-heading
-{
+.body-heading {
   font-size: 42px;
   font-weight: 900;
   letter-spacing: 1.5px;
   font-family: "Manrope", sans-serif;
   color: white;
 }
-.body-paragraph
-{
+
+.body-paragraph {
   font-size: 16px;
   font-family: "Manrope", sans-serif;
   color: #eaebeb;
 }
-.sub-heading
-{
+
+.sub-heading {
   font-size: 19px;
   font-family: "Manrope", sans-serif;
 }

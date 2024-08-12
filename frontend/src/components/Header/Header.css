@@ -1,5 +1,4 @@
 .header {
-
   z-index: 1;
   position: relative;
   display: flex;
@@ -8,7 +7,6 @@
 }
 
 .header .header-wrapper {
-
   width: 100%;
   margin: auto;
   margin-top: 2rem;
@@ -87,9 +85,6 @@
   height: 22px;
 }
 
-
-
-
 .header .extras-btns .blue-btn img {
   width: 17px;
   margin-right: 3px;
@@ -107,9 +102,7 @@
   width: 100%;
 }
 
-
 /* Dropdown css */
-
 .navigation-dropdown {
   position: relative;
   display: inline-block;
@@ -148,14 +141,11 @@
   color: #c65c38 !important;
 }
 
-
 /* Custom CSS Animation */
 .dropdown-content-enter {
   opacity: 0;
   transform: translateY(-10px);
 }
-
-
 
 .dropdown-content-enter-active {
   display: block;
@@ -185,7 +175,6 @@
   animation: rotate180 .3s forwards;
 }
 
-
 @keyframes rotate180 {
   from {
     transform: rotate(0deg);
@@ -211,7 +200,6 @@
   }
 }
 
-
 .header .nav-list .none-delay {
   display: none;
 }
@@ -220,9 +208,7 @@
   display: flex;
 }
 
-
 /* Add to existing CSS */
-
 .dropdown-item {
   position: relative;
   display: flex;
@@ -231,7 +217,7 @@
   width: 100%;
 }
 
-.dropdown-item .flexxbox{
+.dropdown-item .flexxbox {
   width: 2vh;
 }
 
@@ -252,43 +238,36 @@
 .dropdown-content {
   position: absolute;
   top: 100%;
-  /* Change as needed */
   left: 0;
-  /* Change as needed */
   display: flex;
   width: auto;
   flex-direction: column;
-  /* Update if needed */
 }
 
-.header .itemsof-dropdown{
-  
+.header .itemsof-dropdown {
   line-height: 1;
   display: inline;
 }
 
-.responsive-popup-menu .navbar-box{
+.responsive-popup-menu .navbar-box {
   opacity: 1;
-    list-style: none;
-    font-family: 'Mulish', sans-serif;
-    background: linear-gradient(to bottom, #252525, #454545);
-    border: 2px solid;
-border-image: linear-gradient(to bottom, #252525, #454545);
-border-image-slice: 1;
-    box-shadow: 0 3px 10px #4b4a4a;
-    padding: 10px 18px 15px 18px;
-    transition: .6s;
-  
+  list-style: none;
+  font-family: 'Mulish', sans-serif;
+  background: linear-gradient(to bottom, #252525, #454545);
+  border: 2px solid;
+  border-image: linear-gradient(to bottom, #252525, #454545);
+  border-image-slice: 1;
+  box-shadow: 0 3px 10px #4b4a4a;
+  padding: 10px 18px 15px 18px;
+  transition: .6s;
 }
 
-.responsive-popup-menu .resp-nav-list{
+.responsive-popup-menu .resp-nav-list {
   padding: 8px 0px 8px 10px;
-    border-bottom: 2px solid rgb(60, 60, 60);
-    text-align: start;
-    
+  border-bottom: 2px solid rgb(60, 60, 60);
+  text-align: start;
+
 }
-
-
 
 @media(max-width : 1200px) {
   /* .header .nav-list .nav-links
@@ -347,11 +326,10 @@ border-image-slice: 1;
   .header .header-wrapper {
     margin-top: 0rem;
   }
+
   .header .header-wrapper .navbar .navbar-container {
     margin-top: 12px;
   }
-
-
 
   .header .main-nav {
     flex-direction: column;
@@ -390,4 +368,3 @@ border-image-slice: 1;
     color: black;
   }
 }
-

@@ -16,35 +16,40 @@ dotenv.config();
 connectDataBase();
 
 const app = express();
- 
+
 app.use(compression())
 app.use(cors());
 app.use(express.json({ limit: "1500kb" }));
 app.use('/uploads', express.static('uploads/blogImages'));
- 
 app.use("/api/users", userRoutes);
 app.use("/api/upload", uploadRoutes);
 app.use('/api/categories', categoryRouter);
 app.use("/", blogRoutes);
 app.use('/api/locationpages', locationRouter);
 
-
-  
 let transport = {
-  host: "smtpout.secureserver.net",  
-  secure: true,
-  secureConnection: false,
-  tls: {
-      ciphers:'SSLv3'
-  },
-  requireTLS:true,
-  port: 465,
-  debug: true,
+  service: "gmail",
   auth: {
     user: process.env.USER,
     pass: process.env.PASS,
   },
 };
+
+// let transport = {
+//   host: "smtpout.secureserver.net",  
+//   secure: true,
+//   secureConnection: false,
+//   tls: {
+//       ciphers:'SSLv3'
+//   },
+//   requireTLS:true,
+//   port: 465,
+//   debug: true,
+//   auth: {
+//     user: process.env.USER,
+//     pass: process.env.PASS,
+//   },
+// };
 
 
 let transporter = nodemailer.createTransport(transport);
@@ -61,7 +66,7 @@ app.post("/send-appointment", (req, res, next) => {
   let name = req.body.name;
   let email = req.body.email;
   let formType = req.body.formType;
-  let phone = req.body.phoneNum;
+  let phone = req.body.phone;
   let message = req.body.message;
   let appointment = req.body.appointmentType;
   let date = req.body.date;
@@ -71,9 +76,9 @@ app.post("/send-appointment", (req, res, next) => {
   let mail = {
     from: name,
     to: process.env.USER,
-    subject: "New Message From HB-Care",
+    subject: "New Message From Creative-Fusion",
     text: content,
-    replyTo:email
+    replyTo: email
   };
   transporter.sendMail(mail, (err, data) => {
     if (err) {
@@ -87,22 +92,21 @@ app.post("/send-appointment", (req, res, next) => {
     }
   });
 });
-
 
 app.post("/send-contact-form-main", (req, res, next) => {
   let formType = req.body.formType;
   let name = req.body.name;
   let email = req.body.email;
   let message = req.body.message;
-  let phone = req.body.phoneNum;
+  let phone = req.body.phone;
   let content = `Form-type: ${formType} \n name: ${name} \n email: ${email} \n phone number: ${phone} \n message: ${message}`;
 
   let mail = {
     from: name,
     to: [process.env.USER],
-    subject: "New Message From HB-Care",
+    subject: "New Message From Creative-Fusion",
     text: content,
-    replyTo:email
+    replyTo: email
   };
   transporter.sendMail(mail, (err, data) => {
     if (err) {
@@ -116,7 +120,6 @@ app.post("/send-contact-form-main", (req, res, next) => {
     }
   });
 });
-
 
 app.post("/send-quote", (req, res, next) => {
   let name = req.body.name;
@@ -129,9 +132,9 @@ app.post("/send-quote", (req, res, next) => {
   let mail = {
     from: name,
     to: process.env.USER,
-    subject: "New Message From HB-Care",
+    subject: "New Message From Creative-Fusion",
     text: content,
-    replyTo:email
+    replyTo: email
   };
   transporter.sendMail(mail, (err, data) => {
     if (err) {
@@ -153,9 +156,9 @@ app.post("/send-newsletter", (req, res, next) => {
 
   let mail = {
     to: process.env.USER,
-    subject: "New Message From HB-Care",
+    subject: "New Message From Creative-Fusion",
     text: content,
-    replyTo:email
+    replyTo: email
   };
   transporter.sendMail(mail, (err, data) => {
     if (err) {
@@ -172,7 +175,7 @@ app.post("/send-newsletter", (req, res, next) => {
 app.post("/send-assesment", (req, res, next) => {
   let email = req.body.email;
   let formType = req.body.formType;
-  let {assementData} = req.body;
+  let { assementData } = req.body;
   const content = `
 Form-type: ${formType}
 Client-email: ${email}
@@ -198,15 +201,14 @@ Assessment Data:
   Marital Status: ${assementData.maritalStatus}
 `;
 
-
   let mail = {
     to: process.env.USER,
-    subject: "New Message From HB-Care",
+    subject: "New Message From Creative-Fusion",
     text: content,
-    replyTo:email,
-    attachments:[
+    replyTo: email,
+    attachments: [
       {
-        path:assementData.cv
+        path: assementData.cv
       }
     ]
   };
@@ -224,11 +226,11 @@ Assessment Data:
   });
 });
 
-  
-const __dirname=path.resolve()
+
+const __dirname = path.resolve()
 
 // HTTPS Redirection Middleware
-if(process.env.NODE_ENV === 'production') {
+if (process.env.NODE_ENV === 'production') {
   app.use((req, res, next) => {
     if (req.header('x-forwarded-proto') !== 'https')
       res.redirect(`https://${req.header('host')}${req.url}`)
@@ -240,7 +242,7 @@ if(process.env.NODE_ENV === 'production') {
 app.use('/uploads', express.static(path.join(__dirname, '/uploads')))
 
 if (process.env.NODE_ENV === "production") {
-  app.use(express.static(path.join(path.resolve(), "/frontend/build"))); 
+  app.use(express.static(path.join(path.resolve(), "/frontend/build")));
   app.get("*", (req, res) =>
     res.sendFile(
       path.resolve(path.resolve(), "frontend", "build", "index.html")
@@ -252,11 +254,8 @@ if (process.env.NODE_ENV === "production") {
   });
 }
 
-
-
 app.use(notFound);
 app.use(errorHandler);
-
 
 const Port = process.env.PORT || 5000;
 

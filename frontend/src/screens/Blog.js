@@ -9,13 +9,6 @@ function Blog() {
                     <BlogMain />
                 </div>
             </div>
-
-
-
-
-
-
-
         </>
     )
 }

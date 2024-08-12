@@ -11,69 +11,58 @@ import Contactform from '../components/Contact Form/Contactform'
 import Footer from './Footer'
 
 function Home() {
-  return (
-    <>
-        <div className='box multi-gradient '>
-            <div className='glass-box'>
-                <HomeHero/>
+    return (
+        <>
+            <div className='box multi-gradient '>
+                <div className='glass-box'>
+                    <HomeHero />
+                </div>
             </div>
-        </div>
-        <TextContent
-            img="/images/creatives/Mask-Group-107.webp"
-            subHeading="About Us"
-            heading="Crafting Digital "
-            headingAfterBr="Excellence Together"
-            paragraph="We specialize in delivering best digital media solutions that empower businesses to thrive online. With a passionate team of experts, we blend creativity and technology to bring your ideas to life."
-            btn={true}
-            btnText="Learn More"
-            shiftRow={false}
-        />
+            <TextContent
+                img="/images/creatives/Mask-Group-107.webp"
+                subHeading="About Us"
+                heading="Crafting Digital "
+                headingAfterBr="Excellence Together"
+                paragraph="We specialize in delivering best digital media solutions that empower businesses to thrive online. With a passionate team of experts, we blend creativity and technology to bring your ideas to life."
+                btn={true}
+                btnText="Learn More"
+                shiftRow={false}
+            />
 
-        {/* <div className='box multi-4-gradient '>
-            <div className='glass-box'> */}
-                <MyServices/>
+            <MyServices />
+            <LatestProject />
+            <ServiceCard />
+            <TrustedPartner />
 
-                {/* <div style={{height:"40px"}}></div> */}
-                <LatestProject/>
+            <TextContent
+                img="/images/creatives/home-text-2.png"
+                subHeading=""
+                heading="Showcasing Success"
+                headingAfterBr=" Across B2B & B2C "
+                headingAfterBrmore="Industries"
+                paragraph="Lorem ipsum dolor sit amet in quis, consectetur eros adipiscing et elit. Suspendisse varius enim in eros elementum tristique. Duis cursus,"
+                btn={false}
+                btnText=""
+                shiftRow={true}
+                listData={["Professional Sports", "Automotive", "Construction", "Technology", "Healthcare", "E-Commerce", "Hospitality", "Finance", "Real Estate", "Retail", "Education", "Legal"]}
+            />
 
-                <ServiceCard/>
-
-                <TrustedPartner/>
-            {/* </div>
-        </div> */}
-        
-
-        <TextContent
-            img="/images/creatives/home-text-2.png"
-            subHeading=""
-            heading="Showcasing Success"
-            headingAfterBr=" Across B2B & B2C "
-            headingAfterBrmore="Industries"
-            paragraph="Lorem ipsum dolor sit amet in quis, consectetur eros adipiscing et elit. Suspendisse varius enim in eros elementum tristique. Duis cursus,"
-            btn={false}
-            btnText=""
-            shiftRow={true}
-            listData={["Professional Sports","Automotive" ,"Construction" ,"Technology","Healthcare","E-Commerce" ,"Hospitality","Finance" ,"Real Estate","Retail" ,"Education","Legal"]}
-                 
-        />
-
-        <div className='box multi-gradient '>
-            <div className='glass-box'>
-               <BlogCard/>
+            <div className='box multi-gradient '>
+                <div className='glass-box'>
+                    <BlogCard />
+                </div>
             </div>
-        </div>
 
-        <Testimonials/>
+            <Testimonials />
 
-        <div className='box multi-gradient '>
-            <div className='glass-box'>
-               <Contactform/>
+            <div className='box multi-gradient '>
+                <div className='glass-box'>
+                    <Contactform />
+                </div>
             </div>
-        </div>
-       
-        <Footer />
-    </>
-  )
-}
+            <Footer />
+        </>
+    );
+};
 
-export default Home
+export default Home;

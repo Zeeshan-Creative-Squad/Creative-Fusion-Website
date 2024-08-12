@@ -11,8 +11,6 @@
   height: auto;
 }
 
-
-
 .contact_section .third-image {
   margin-bottom: 150px;
 }
@@ -60,7 +58,7 @@
   transform: translateY(17%)
 }
 
-.contact_section .genral-btn{
+.contact_section .genral-btn {
   font-size: 15px;
 }
 
@@ -140,6 +138,7 @@
   border-radius: 6px;
   border: 1px solid grey;
   width: 100%;
+  color: white;
 }
 
 @media (min-width: 1400px) {

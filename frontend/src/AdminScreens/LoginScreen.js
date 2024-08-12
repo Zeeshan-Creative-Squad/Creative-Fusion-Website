@@ -23,7 +23,7 @@ const LoginScreen = () => {
   }, [dispatch, history, userInfo]);
 
   const showPassword = () => {
-    setDisplayPassword((prev)=> !prev);
+    setDisplayPassword((prev) => !prev);
   };
 
   const formSubmitHander = (event) => {
@@ -89,7 +89,6 @@ const LoginScreen = () => {
                           ? "fa-solid fa-eye"
                           : "fa-solid fa-eye-slash"
                       }
-                      
                     ></i>
                   </p>
                 </Col>

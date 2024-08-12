@@ -1,20 +1,18 @@
-import React,{useState,useEffect} from 'react'
+import React, { useState, useEffect } from 'react'
 import CommonHeroComponent from '../components/CommonHeroComponent/CommonHeroComponent';
 import BlogInner from '../components/BlogInnerSection/BlogInner';
 import BlogPosting from '../components/BlogsMain/BlogPosting';
 import { useNavigate, useParams } from 'react-router-dom';
 import axios from 'axios';
 import { Spinner } from 'react-bootstrap';
+import Header from '../components/Header/Header';
 
 const BlogInnerPage = () => {
-    const [blogsData, setBlogsData] = useState();
+  const [blogsData, setBlogsData] = useState();
   const [recentBlogs, setRecentBlogs] = useState([]);
-
   const [loading, setLoading] = useState(false);
-
   const navigate = useNavigate()
-
-  const id  = useParams().id;
+  const id = useParams().id;
 
   let blogAPICalledId = false;
   let allBlogsCalled = false;
@@ -24,13 +22,12 @@ const BlogInnerPage = () => {
     allBlogsCalled = true;
 
     setLoading(true);
-    
     axios
       .get(`/blogs`, {})
       .then((res) => {
         if (res.data.status === "success") {
           let Updated_recent_blogs = [];
-          
+
           let blog = res.data.data.find((item) => item.slug_url == id);
           setBlogsData(blog);
 
@@ -45,7 +42,7 @@ const BlogInnerPage = () => {
           });
           console.log(blog)
           setRecentBlogs(Updated_recent_blogs.slice(0, 2));
-          console.log("",recentBlogs)
+          console.log("", recentBlogs)
           setLoading(false);
         }
       })
@@ -70,44 +67,44 @@ const BlogInnerPage = () => {
     navigate(`/blogs/${slug_url}`);
   };
 
-
   return (
-    <div>
-         {
-           loading  ? (
-            <div
-              style={{ width: "100%", height: "100vh" }}
-              className="d-flex justify-content-center align-items-center"
-            >
-              <Spinner
-                style={{ color: "#3F1626", width: "120px", height: "120px" }}
-              />
-            </div>
-          ) :(
-              blogsData && 
+    <div className='box'>
+      <div className='glass-box'>
+        <Header />
+        <div>
+          {
+            loading ? (
+              <div
+                style={{ width: "100%", height: "100vh" }}
+                className="d-flex justify-content-center align-items-center"
+              >
+                <Spinner
+                  style={{ color: "#ea3317", width: "120px", height: "120px" }}
+                />
+              </div>
+            ) : (
+              blogsData &&
               <>
-        <CommonHeroComponent Para="Welcome to the world of interior design, where creativity, vision, and functionality converge to transform houses into dream homes."
-        backgroundImg="/images/creatives/blogsinner-hero.jpg"
-        
+                <CommonHeroComponent Para="Welcome to the world of interior design, where creativity, vision, and functionality converge to transform houses into dream homes."
+                  backgroundImg="/images/creatives/blogsinner-hero.jpg"
                   Heading={blogsData.title}
-
-        />
-         {
+                />
+                {
                   recentBlogs &&
 
-        <BlogInner 
-        text={blogsData.brief_paragraph}
-                  blogContent={blogsData.blogs_content}
-                  date={blogsData?.published_date}
-                  Heading={blogsData.title}/>
-
+                  <BlogInner
+                    text={blogsData.brief_paragraph}
+                    blogContent={blogsData.blogs_content}
+                    date={blogsData?.published_date}
+                    Heading={blogsData.title} />
                 }
-                </>
+              </>
             )
           }
-
-        <BlogPosting 
-        />
+          <BlogPosting
+          />
+        </div>
+      </div>
     </div>
   )
 }

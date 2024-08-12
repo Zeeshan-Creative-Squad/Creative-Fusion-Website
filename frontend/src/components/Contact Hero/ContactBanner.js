@@ -5,9 +5,18 @@ import { useNavigate } from "react-router-dom";
 import SocialIcons from "../SocialMediaIcons/SocialIcons";
 import Header from "../Header/Header";
 import Footer from "../../screens/Footer";
+import axios from "axios";
 
 const ContactBanner = () => {
-  // State to manage which image to display
+  const [email, setEmail] = useState("");
+  const [name, setName] = useState("");
+  const [phone, setPhone] = useState("");
+  const [message, setMessage] = useState("");
+  const [success, setSuccess] = useState(false);
+  const [error, setError] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const navigate = useNavigate();
+
   const [displayedImage, setDisplayedImage] = useState("quaid"); // Default image
   const [animate, setAnimate] = useState(false);
 
@@ -24,20 +33,30 @@ const ContactBanner = () => {
     setTimeout(() => setAnimate(false), 500);
   };
 
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [phone, setPhone] = useState("");
-  const [message, setMessage] = useState("");
-  const [success, setSuccess] = useState(false);
-  const [error, setError] = useState(false);
-  const [loading, setLoading] = useState(false);
-
-  const navigate = useNavigate();
-
   const formSubmitHandler = (e) => {
     e.preventDefault();
     setLoading(true);
-    // Your form submission logic
+    axios
+      .post("/send-contact-form-main", {
+        email: email,
+        name: name,
+        phone: phone,
+        message: message,
+        formType: "Contactform",
+      })
+      .then((response) => {
+        if (response.data.msg === "success") {
+          setError(false);
+          setSuccess("Form Submit Successfully!");
+          setLoading(false);
+          setEmail("");
+        } else if (response.data.msg === "fail") {
+          setSuccess(false);
+          setError("Email failed to send, try again by reloading the page.");
+          setLoading(false);
+          setEmail("");
+        }
+      });
   };
 
   const handlePhoneChange = (e) => {
@@ -67,8 +86,8 @@ const ContactBanner = () => {
               {displayedImage === "quaid" ? (
                 <>
                   <h2 className="body-heading contact-heading2">Karachi</h2>
-                  <p className="body-paragraph contact-notpara">+92 (321)12345678</p>
-                  <p className="body-paragraph contact-notpara">info@creativefusion.com</p>
+                  <p className="body-paragraph contact-notpara">+92 (333)2843681</p>
+                  <p className="body-paragraph contact-notpara">hell0@creativefusion.com</p>
                   <p className="body-paragraph contact-para">3rd Floor, Al-Ahmed plaza, Block-C, Gulshan-e-Iqbal, Karachi</p>
                   <img
                     src="images/creatives/tomb.svg"
@@ -90,7 +109,7 @@ const ContactBanner = () => {
                 </>
               )}
               <div className="third-image">
-               
+
                 <img className="img-fluid" src="images/creatives/bottom-image.svg" alt="Your Third Image" />
               </div>
             </div>
@@ -104,7 +123,7 @@ const ContactBanner = () => {
                 </p>
               </div>
 
-                <div className="row gy-4">
+              <div className="row gy-4">
                 <div className="col-12">
                   <form className="contact_form_form_containers" onSubmit={formSubmitHandler}>
                     <div className="row gy-4">
@@ -116,7 +135,7 @@ const ContactBanner = () => {
                           maxLength="40"
                           onChange={handleNameChange}
                           placeholder="Full Name"
-                        
+
                         />
                       </div>
                       <div className="col-md-6 col-12">
