@@ -87,7 +87,7 @@ const ContactBanner = () => {
                 <>
                   <h2 className="body-heading contact-heading2">Karachi</h2>
                   <p className="body-paragraph contact-notpara">+92 (333)2843681</p>
-                  <p className="body-paragraph contact-notpara">hell0@creativefusion.com</p>
+                  <p className="body-paragraph contact-notpara">hello@creativefusion.com</p>
                   <p className="body-paragraph contact-para">3rd Floor, Al-Ahmed plaza, Block-C, Gulshan-e-Iqbal, Karachi</p>
                   <img
                     src="images/creatives/tomb.svg"
