@@ -266,8 +266,33 @@
   padding: 8px 0px 8px 10px;
   border-bottom: 2px solid rgb(60, 60, 60);
   text-align: start;
+}
+
+.dropdown-mobile-topical-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+  padding: 0px;
+  margin: 0;
+  
+  
+}
+
+.dropdown-mobile-topical-content.open {
+  max-height: 500px; 
+  opacity: 1;
+  background-color: #424140;
+  border-radius: 10px;
+  padding: 15px;
+  gap: 10px;
+  width: fit-content;
 
 }
+
+
+
+
 
 @media(max-width : 1200px) {
   /* .header .nav-list .nav-links

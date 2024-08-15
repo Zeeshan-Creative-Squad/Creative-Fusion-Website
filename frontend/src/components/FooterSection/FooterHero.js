@@ -25,7 +25,7 @@ const FooterHero = () => {
                             <li onClick={() => handleClick("/")}><span className='span-hover'>Home</span></li>
                             <li onClick={() => handleClick("/about")}><span className='span-hover'>About</span></li>
                             <li onClick={() => handleClick("/services")}><span className='span-hover'>Services</span></li>
-                            <li onClick={() => handleClick("/casestudies")}><span className='span-hover'>Case Studies</span></li>
+                            <li onClick={() => handleClick("#")}><span className='span-hover'>Case Studies</span></li>
                             <li onClick={() => handleClick("/blog")}><span className='span-hover'>Blogs</span></li>
                         </ul>
                     </div>
