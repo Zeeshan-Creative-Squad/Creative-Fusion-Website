@@ -34,7 +34,7 @@ function BlogInner({ text, blogContent, date, Heading }) {
                 <div className={`para_main my-3`} dangerouslySetInnerHTML={{ __html: item.paragraph }}></div>
               </>
             ))}
-            <div className="subheading-content">
+            {/* <div className="subheading-content">
               <div className={`body-paragraph my-3 color-dark`} dangerouslySetInnerHTML={{ __html: text }}></div>
               {blogContent.map((item) => (
                 <>
@@ -42,14 +42,14 @@ function BlogInner({ text, blogContent, date, Heading }) {
                   <div className={`para_main my-3`} dangerouslySetInnerHTML={{ __html: item.paragraph }}></div>
                 </>
               ))}
-            </div>
-            <div className={`body-paragraph my-3 color-dark`} dangerouslySetInnerHTML={{ __html: text }}></div>
-            {blogContent.map((item) => (
+            </div> */}
+            {/* <div className={`body-paragraph my-3 color-dark`} dangerouslySetInnerHTML={{ __html: text }}></div> */}
+            {/* {blogContent.map((item) => (
               <>
                 <h2 className="head-h2" style={{ textTransform: "capatalize" }}>{item.heading}</h2>
                 <div className={`para_main my-3`} dangerouslySetInnerHTML={{ __html: item.paragraph }}></div>
               </>
-            ))}
+            ))} */}
             {/* </div> */}
             <hr className="divider" />
             <div className="blog-content">

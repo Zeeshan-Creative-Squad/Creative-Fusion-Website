@@ -1,0 +1,69 @@
+.Refund-Policy {
+    height: auto;
+    display: flex;
+    justify-content: left;
+    /* Center vertically */
+    align-items: left;
+    /* Center horizontally */
+    text-align: left;
+    /* Center text */
+}
+
+.Refund-Policy .text-center {
+    text-align: left;
+    width: auto;
+}
+
+.Refund-Policy .body-heading {
+    text-align: left;
+    font-size: 30px;
+}
+
+.Refund-Policy .body-paragraph {
+    text-align: left;
+}
+
+.Refund-Policy .main {
+    text-align: left;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.Refund-Policy .para {
+    font-size: 14px;
+    text-align: left;
+    color: white;
+}
+
+
+
+.Refund-Policy .text-content {
+    padding-bottom: 295px;
+    text-align: center;
+}
+
+.Refund-Policy .Abouthero-btn {
+    height: 50px;
+}
+
+.Refund-Policy ul {
+    color: white;
+}
+
+.Refund-Policy .body-paragraph li {
+    color: white;
+    /* Makes the bullet points and text white */
+}
+
+
+@media (min-width: 1400px) {
+    .Refund-Policy {
+        min-height: 65vh;
+    }
+}
+
+@media (max-width: 1400px) {
+    .Refund-Policy .body-paragraph {
+        width: 100%;
+    }
+}

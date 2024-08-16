@@ -24,6 +24,7 @@ import LocationScreen from './screens/LocationScreens/LocationScreen';
 import LocationPages from "./components/LocationPages_/LocationPages"
 import BlogInnerPage from './screens/BlogInnerPage';
 import LoginScreen from './AdminScreens/LoginScreen';
+import RefundPolicyPage from './screens/RefundPolicyPage';
 
 function App() {
   return (
@@ -51,6 +52,7 @@ function App() {
         <Route path="/blogs/:id" element={<BlogInnerPage />} />
         <Route path="/projects" element={<LatestProject />} />
         <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
+        <Route path="/refund-policy" element={<RefundPolicyPage />} />
 
         <Route path="/admin" element={<AdminScreen />} />
         <Route path="/admin/blogs" element={<BlogsScreen />} />

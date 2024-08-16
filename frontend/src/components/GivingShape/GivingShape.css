@@ -1,10 +1,9 @@
-.GivingShape-container
-{
+.GivingShape-container {
     background-color: #101010;
 }
 
 @media (max-width: 762px) {
-    .GivingShape-container .content-section{
+    .GivingShape-container .content-section {
         margin-top: 18px;
         text-align: center;
     }

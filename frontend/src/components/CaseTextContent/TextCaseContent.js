@@ -67,7 +67,7 @@ function TextCaseContent({
                     </div>
 
                     <div className='text-content col-lg-6 text-center text-lg-start'>
-                       
+
                         <h3 className='font-bebus body-heading' style={{ color: "white", fontWeight: "900", fontSize: "50px" }}>
                             {heading}<br className='d-none d-lg-block'></br>
                         </h3>

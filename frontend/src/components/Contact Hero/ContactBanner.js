@@ -17,19 +17,19 @@ const ContactBanner = () => {
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
 
-  const [displayedImage, setDisplayedImage] = useState("quaid"); // Default image
+  const [displayedImage, setDisplayedImage] = useState("quaid");
   const [animate, setAnimate] = useState(false);
 
   useEffect(() => {
     const interval = setInterval(() => {
       toggleImage();
-    }, 5000); // Change image every 5 seconds
+    }, 5000);
     return () => clearInterval(interval);
-  }, [displayedImage]); // Dependency array
+  }, [displayedImage]);
 
   const toggleImage = () => {
     setDisplayedImage(displayedImage === "quaid" ? "canada" : "quaid");
-    setAnimate(true); // Trigger the animation
+    setAnimate(true);
     setTimeout(() => setAnimate(false), 500);
   };
 

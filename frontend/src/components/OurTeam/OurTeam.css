@@ -7,6 +7,32 @@
     margin-top: 15px;
 }
 
+/* Style for the navigation buttons */
+.swiper-button-next, .swiper-button-prev {
+    color: #ea331742; /* Change this to your desired color */
+}
+
+/* Style for the navigation buttons on hover */
+.swiper-button-next:hover, .swiper-button-prev:hover {
+    color: #b6b3b367; /* Change this to your desired hover color */
+}
+
+/* Optional: Customizing the size and appearance */
+.swiper-button-next::after, .swiper-button-prev::after {
+    font-size: 20px; /* Adjust the size as needed */
+    font-weight: bold; /* Adjust font weight if needed */
+}
+
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+    color: #ea3317;
+}
+
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+    color: #ea3317;
+}
+
+
+
 @media (max-width: 991px) {
     .OurTeam-container .team-card {
         margin-top: 30px;

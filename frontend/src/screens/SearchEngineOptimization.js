@@ -4,8 +4,10 @@ import GivingShape from '../components/GivingShape/GivingShape';
 import GratefulPartner from '../components/GratefulPartner/GratefulPartner';
 import TextContent from '../components/TextContent/TextContent';
 import Footer from './Footer'
+import { useNavigate } from 'react-router-dom';
 
 function SearchEngineOptimization() {
+    const navigate = useNavigate();
   return (
     <>
         <div className='box multi-gradient '>
@@ -50,7 +52,9 @@ function SearchEngineOptimization() {
             <div className='container py-5 text-center'>
                 <h3 className='body-heading ' style={{textTransform:"capitalize",fontSize:"58px"}}>Let's👋work <br className='d-none d-lg-block'></br>together.</h3>
 
-                <button className='genral-btn btn-red my-5'>Get A Custom Proposal</button>
+                <button onClick={() => {
+                            navigate("/contact")
+                        }} className='genral-btn btn-red my-5'>Get A Custom Proposal</button>
             </div>
             </div>
         </div>

@@ -150,6 +150,7 @@ ul {
   margin-bottom: 14px;
   /* margin-right: 14rem; */
   color: #F0F0F0;
+  
 }
 
 .contact-icon {
@@ -219,6 +220,7 @@ ul {
 .footer .icon:hover {
   color: red;
 }
+
 
 .footer-section-right .contact-icon {
   padding-right: 10px;

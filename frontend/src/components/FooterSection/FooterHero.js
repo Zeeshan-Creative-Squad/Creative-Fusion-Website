@@ -32,26 +32,40 @@ const FooterHero = () => {
                     <div className="footer-second-section">
                         <ul className='ul-segment-second pl-0'>
                             <h2 className='head-h1'>Terms & Updates</h2>
-                            <li onClick={() => handleClick("/contact")}><span className='span-hover'>Refund Policy</span></li>
+                            <li onClick={() => handleClick("/refund-policy")}><span className='span-hover'>Refund Policy</span></li>
                             <li onClick={() => handleClick("/privacy-policy")}><span className='span-hover'>Privacy Policy</span></li>
                         </ul>
                     </div>
 
                     <div className="footer-section-right">
                         <p className='specific-paragraph'>
-                            <span className='span'>hello</span>@creativefusion.com
+                            <a href="mailto:hello@creativefusion.com" style={{ textDecoration: "none", color: "white" }}>
+                                <span className='span'>hello</span>@creativefusion.com
+                            </a>
                         </p>
                         <p className='specific-paragraph d-none d-lg-block'>
-                            +92<span className='span'>3332843681</span>
+                            <a href="tel:+923332843681" style={{ textDecoration: "none", color: "white" }}>
+                                +92<span className='span'>3332843681</span>
+                            </a>
                         </p>
                         <p className='specific-paragraph d-lg-none d-md-none d-block'>
-                            +92<span className='span'>3332843681</span>
+                            <a href="tel:+923332843681" style={{ textDecoration: "none", color: "white" }}>
+                                +92<span className='span'>3332843681</span>
+                            </a>
                         </p>
                         <p className='specific-paragraph'>
-                            3rd Floor, Al-Ahmed plaza, University Rd, Block 13-C<br />
-                            <span className='span-block'>Gulshan-e-Iqbal, Karachi</span>
+                            <a
+                                href="https://www.google.com/maps/search/?api=1&query=3rd+Floor,+Al-Ahmed+plaza,+University+Rd,+Block+13-C,+Gulshan-e-Iqbal,+Karachi"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                style={{ textDecoration: "none", color: "white" }}
+                            >
+                                3rd Floor, Al-Ahmed plaza, University Rd, Block 13-C<br />
+                                <span className='span-block'>Gulshan-e-Iqbal, Karachi</span>
+                            </a>
                         </p>
                     </div>
+
                 </div>
                 <div className="blog-subfooter">
                     <hr className="divider" />
