@@ -63,11 +63,6 @@ const Team = [
         name: "Muhammad Anas",
         title: "Senior PPC Specialist"
     },
-    {
-        Img: "/images/creatives/team-1.png",
-        name: " Taha Sheikh,",
-        title: " CEO (Pakistan & MENA Region)"
-    },
     // Add more team members here if needed
 ];
 

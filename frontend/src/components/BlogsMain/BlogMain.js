@@ -39,7 +39,7 @@ function BlogMain() {
             </div>
            
            <div>
-            <BlogPosting heading={false}/>
+            <BlogPosting heading="Latest Blogs"/>
             {/* <Pagination /> */}
             <LetsWork />
            </div>

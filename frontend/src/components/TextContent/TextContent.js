@@ -32,7 +32,9 @@ function TextContent({
   listData = null,
   reviewContent = false,
   stat = false,
-  transparentBg = false
+  transparentBg = false,
+  title = "",
+  designation = ""
 }) {
 
   return (
@@ -85,8 +87,8 @@ function TextContent({
                   <div className='d-flex gap-3 align-items-center founder-div'>
                     <img src='/images/creatives/about-text-content-1.png' alt='person' className='' />
                     <div>
-                      <p className='sub-heading color-red mb-0'>Salman Baig</p>
-                      <p className='body-paragraph mb-3'>Founder, CEO</p>
+                      <p className='sub-heading color-red mb-0'>{title}</p>
+                      <p className='body-paragraph mb-3'>{designation}</p>
                       <div className='d-flex gap-2 social-icons-founder'>
                         <img src='/images/icons/rc-x-icon.svg' alt='social icon' />
                         <img src='/images/icons/rc-insta-icon.svg' alt='social icon' />
