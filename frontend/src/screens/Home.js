@@ -15,8 +15,10 @@ function Home() {
     return (
         <>
             <Helmet>
-                <title>Creative Digital Solutions - Top Marketing Agency in Karachi</title>
-                <meta name="description" content="Elevate your brand with the best digital marketing agency in Karachi. We offer expert services in SEO, Google Ads, web development, and more to help your business thrive." />
+                <title>Top Digital Marketing Services Agency in Pakistan
+                </title>
+                <meta name="description" content="Top Digital Marketing Services Agency in Pakistan. Creative Fusion is your go-to digital marketing agency near you, offering expert solutions to elevate your brand.
+" />
             </Helmet>
             <div className='box multi-gradient '>
                 <div className='glass-box'>
