@@ -1,33 +1,33 @@
-.AboutHero-container
-{
+.AboutHero-container {
     height: 100vh;
     min-height: auto;
 }
 
-.AboutHero-container .text-content{
-    text-align: left; 
+.AboutHero-container .text-content {
+    text-align: left;
     padding-bottom: 295px;
 }
 
-.AboutHero-container .body-heading{
+.AboutHero-container .body-heading {
     font-size: 55px;
     font-weight: 900;
 }
 
-.AboutHero-container .body-paragraph{
+.AboutHero-container .body-paragraph {
     line-height: 2.2;
     /* padding-right: 265px; */
     width: 70%;
     font-size: 16px;
 }
 
-.AboutHero-container .home-hero-img{
+.AboutHero-container .home-hero-img {
     position: absolute;
     max-height: 105%;
     left: 45%;
     bottom: 20%;
     transform: translateX(-50%);
 }
+
 /* .AboutHero-container .img-1
 {
     top: 60px;
@@ -35,33 +35,32 @@
 } */
 
 
-.AboutHero-container .Abouthero-btn{
+.AboutHero-container .Abouthero-btn {
     height: 50px;
 }
 
-.AboutHero-container .img-container
-{
+.AboutHero-container .img-container {
     height: 550px;
 }
 
 @media (max-width: 768px) {
     .AboutHero-container {
-        height: auto; 
-        padding-bottom: 100px; 
+        height: auto;
+        padding-bottom: 100px;
     }
 
     .AboutHero-container .text-content {
-        padding-bottom: 50px; 
+        padding-bottom: 50px;
         text-align: center;
         padding: 12vh 0vh;
     }
 
     .AboutHero-container .body-heading {
-        font-size: 38px; 
+        font-size: 38px;
     }
 
     .AboutHero-container .body-paragraph {
-        font-size: 14px; 
+        font-size: 14px;
         line-height: 1.6;
         text-align: center;
         width: 100%;
@@ -69,31 +68,42 @@
     }
 
     .AboutHero-container .home-hero-img {
-        max-width: 100%; 
-        width: auto; 
-        height: auto; 
-        position: static; 
-        margin: 0 auto; 
-        bottom: auto; 
-        left: 50%; 
-        transform: translateX(0%); 
+        max-width: 100%;
+        width: auto;
+        height: auto;
+        position: static;
+        margin: 0 auto;
+        bottom: auto;
+        left: 50%;
+        transform: translateX(0%);
         align-items: center;
     }
 
     .AboutHero-container .img-container {
-        height: auto; 
+        height: auto;
         align-items: center;
     }
 }
 
-@media(max-width:992px) and (min-width: 769px){
+@media(max-width:992px) and (min-width: 769px) {
     .AboutHero-container .home-hero-img {
-       
+
         width: 100%;
-        bottom: 50%; 
-        left: 0; 
-        transform: translateX(0%); 
+        bottom: 50%;
+        left: 0;
+        transform: translateX(0%);
         align-items: center;
     }
 
+}
+
+@media screen and (max-width: 1366px) and (max-height: 768px) {
+    .AboutHero-container .body-heading {
+        font-size: 45px;
+        font-weight: 900;
+    }
+
+    .AboutHero-container .about-main-content {
+        padding: 7vh 0vh;
+    }
 }

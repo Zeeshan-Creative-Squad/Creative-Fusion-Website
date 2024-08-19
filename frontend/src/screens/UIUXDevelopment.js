@@ -5,11 +5,16 @@ import GratefulPartner from '../components/GratefulPartner/GratefulPartner';
 import TextContent from '../components/TextContent/TextContent';
 import Footer from './Footer'
 import { useNavigate } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
 function UIUXDevelopment() {
     const navigate = useNavigate();
   return (
     <>
+     <Helmet>
+      <title>Top UI/UX Design Services in Karachi - UI/UX Design Company in Pakistan</title>
+      <meta name="description" content="Enhance user experiences with our top UI/UX design services in Karachi. We offer expert UI/UX design and development, tailored to meet your needs." />
+    </Helmet>
         <div className='box multi-gradient '>
             <div className='glass-box'>
                 <ServicesInnerHero Heading="UIUX" yellowHeading="Development" Para="Step into the world of UI/UX Development with us, where we collaborate to create intuitive and engaging user experiences. From user research to interface design and usability testing, we're here for you. " heroBannerImg="/images/creatives/UIUX-Hero.png"/>

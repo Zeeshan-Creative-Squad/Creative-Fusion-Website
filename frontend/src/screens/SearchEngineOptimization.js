@@ -5,11 +5,16 @@ import GratefulPartner from '../components/GratefulPartner/GratefulPartner';
 import TextContent from '../components/TextContent/TextContent';
 import Footer from './Footer'
 import { useNavigate } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
 function SearchEngineOptimization() {
     const navigate = useNavigate();
   return (
     <>
+     <Helmet>
+      <title>Top SEO Service Agency in Karachi - Best SEO Company in Pakistan</title>
+      <meta name="description" content="Boost your online visibility with our top SEO services in Karachi. As the best SEO company in Pakistan, we offer professional, affordable SEO solutions." />
+    </Helmet>
         <div className='box multi-gradient '>
             <div className='glass-box'>
                 <ServicesInnerHero Heading="Search Engine" yellowHeading="Optimization" Para="Step into the world of SEO with us, where we collaborate to enhance your website's visibility on search engines. From keyword optimization to content creation and technical SEO, we're here for you. " heroBannerImg="/images/creatives/SEO-Hero-Services.webp"/>

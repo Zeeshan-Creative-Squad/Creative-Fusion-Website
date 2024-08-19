@@ -5,11 +5,16 @@ import GratefulPartner from '../components/GratefulPartner/GratefulPartner';
 import TextContent from '../components/TextContent/TextContent';
 import Footer from './Footer'
 import { useNavigate } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
 function SocialMediaMarketing() {
     const navigate = useNavigate();
   return (
     <>
+     <Helmet>
+      <title>Top Social Media Marketing Service Agency in Karachi - Pakistan</title>
+      <meta name="description" content="Boost your brand with the best social media marketing services in Karachi. Our agency offers tailored solutions for businesses in Pakistan, from strategy to execution." />
+    </Helmet>
         <div className='box multi-gradient '>
             <div className='glass-box'>
                 <ServicesInnerHero Heading="Social Media" yellowHeading="Marketing" Para="Step into the world of Social Media Marketing with us, where we collaborate to enhance your brand's presence across various social media platforms. From content creation to community management, we do it all. " heroBannerImg="/images/creatives/Social-Media-Marketing-Hero.png"/>

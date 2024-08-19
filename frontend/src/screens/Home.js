@@ -9,10 +9,15 @@ import BlogCard from '../components/BlogCard/BlogCard'
 import Testimonials from '../components/Testimonials/Testimonials'
 import Contactform from '../components/Contact Form/Contactform'
 import Footer from './Footer'
+import { Helmet } from 'react-helmet';
 
 function Home() {
     return (
         <>
+            <Helmet>
+                <title>Creative Digital Solutions - Top Marketing Agency in Karachi</title>
+                <meta name="description" content="Elevate your brand with the best digital marketing agency in Karachi. We offer expert services in SEO, Google Ads, web development, and more to help your business thrive." />
+            </Helmet>
             <div className='box multi-gradient '>
                 <div className='glass-box'>
                     <HomeHero />

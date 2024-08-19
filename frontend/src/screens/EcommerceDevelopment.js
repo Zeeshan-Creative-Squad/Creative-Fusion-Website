@@ -5,11 +5,16 @@ import GratefulPartner from '../components/GratefulPartner/GratefulPartner';
 import TextContent from '../components/TextContent/TextContent';
 import Footer from './Footer'
 import { useNavigate } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
 function EcommerceDevelopment() {
     const navigate = useNavigate()
   return (
     <>
+     <Helmet>
+      <title>Top E-Commerce Website Development Services Agency in Karachi</title>
+      <meta name="description" content="Create a seamless online shopping experience with our top e-commerce website development services Agency in Karachi. Custom solutions for optimal performance." />
+    </Helmet>
         <div className='box multi-gradient '>
             <div className='glass-box'>
 

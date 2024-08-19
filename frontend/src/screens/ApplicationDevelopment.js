@@ -5,11 +5,16 @@ import GratefulPartner from '../components/GratefulPartner/GratefulPartner';
 import TextContent from '../components/TextContent/TextContent';
 import Footer from './Footer'
 import { useNavigate } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
 function EcommerceDevelopment() {
     const navigate = useNavigate();
     return (
         <>
+        <Helmet>
+      <title>Best Mobile App Development Services Company in Karachi & Pakistan</title>
+      <meta name="description" content="Partner with the best mobile app development company in Karachi. We offer custom app solutions, from design to deployment, tailored to your needs." />
+    </Helmet>
             <div className='box multi-gradient '>
                 <div className='glass-box'>
 

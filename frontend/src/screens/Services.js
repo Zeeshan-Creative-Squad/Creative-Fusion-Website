@@ -3,10 +3,15 @@ import ServicesHero from '../components/ServicesHero/ServicesHero'
 import ServicesTextContent from '../components/ServicesTextContent/ServicesTextContent'
 import Contactform from '../components/Contact Form/Contactform'
 import Footer from './Footer'
+import { Helmet } from 'react-helmet'
 
 function Services() {
   return (
     <>
+     <Helmet>
+      <title>Creative Digital Solutions - Top Marketing Agency in Karachi</title>
+      <meta name="description" content="Elevate your brand with the best digital marketing agency in Karachi. We offer expert services in SEO, Google Ads, web development, and more to help your business thrive." />
+    </Helmet>
     <div>
             <div className='box multi-gradient'>
                 <div className='glass-box'>

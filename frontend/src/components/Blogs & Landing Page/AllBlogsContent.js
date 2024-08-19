@@ -81,7 +81,7 @@ export const AllBlogsContent = [
         listpara_3: `SEO optimization is an important factor in driving traffic to your ecommerce website. Ecommerce development services in Toronto can help you optimize your website for search engines to ensure that your website appears at the top of search engine results pages.`,
         heading_2: `Top Ecommerce Development Companies in Toronto`,
         listHeading_4: `Creative Squad`,
-        listpara_4: `Creative Squad is a leading ecommerce development company in Toronto. They specialize in creating customized ecommerce websites that are tailored to the unique needs of each client. With a team of experienced developers and designers, Creative Squad can help you build a high-quality and professional ecommerce website.`, 
+        listpara_4: `Creative Squad is a leading ecommerce development company in Toronto. They specialize in creating customized ecommerce websites that are tailored to the unique needs of each client. With a team of experienced developers and designers, Creative Squad can help you build a high-quality and professional ecommerce website.`,
         listHeading_5: `Pixelcarve`,
         listpara_5: `Pixelcarve is another top ecommerce development company in Toronto. They have a team of skilled developers and designers who can help you create a customized ecommerce website that reflects your brand's values and goals. They also specialize in SEO optimization, ensuring that your website appears at the top of search engine results pages.`,
         heading_3: `Thought Media`,
@@ -95,24 +95,24 @@ export const PopularBlogsArray = [
     {
         id: 1,
         cards_data: [
-            {  
+            {
                 blog_id: 1,
-                heading: `Building Your Social Media Marketing Strategy for 2023`,  
-                creative: '/images/web_creatives/popular_blog_1.png', 
-                date: 'June 19, 2027',  
+                heading: `Building Your Social Media Marketing Strategy for 2023`,
+                creative: '/images/web_creatives/popular_blog_1.png',
+                date: 'June 19, 2027',
             },
-            {  
+            {
                 blog_id: 2,
-                heading: `6 Reasons You Need a Digital Marketing Strategy`,  
-                creative: '/images/web_creatives/popular_blog_1.png', 
-                date: 'June 19, 2027',  
+                heading: `6 Reasons You Need a Digital Marketing Strategy`,
+                creative: '/images/web_creatives/popular_blog_1.png',
+                date: 'June 19, 2027',
             },
-            {  
+            {
                 blog_id: 3,
-                heading: `The Top Ecommerce Platforms in 2023 You Need To Know`,  
-                creative: '/images/web_creatives/popular_blog_1.png', 
-                date: 'June 19, 2027',  
+                heading: `The Top Ecommerce Platforms in 2023 You Need To Know`,
+                creative: '/images/web_creatives/popular_blog_1.png',
+                date: 'June 19, 2027',
             },
-        ], 
+        ],
     },
 ]

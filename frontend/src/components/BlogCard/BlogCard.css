@@ -1,113 +1,104 @@
 .BlogCard-container {
-    padding: 12vh 0;
-  }
-  
- .BlogCard-container .body-heading {
-    font-weight: 900;
-    font-size: 50px; /* Adjust font size for responsiveness */
-  }
-  
-  .BlogCard-container .body-paragraph {
-    margin-top: 15px; /* Adjust spacing */
-    margin-bottom: 2rem; /* Adjust spacing */
-  }
-  
-  .BlogCard-container .anchor {
-    text-decoration: underline;
-    cursor: pointer;
-    transition: .3s;
-    display: inline-block; /* Ensures clickable area fits content */
-  }
-  
-  .BlogCard-container .title {
-    /* font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 6px; */
-    font-size: 30px;
-    text-align: left;
-   
-    
-  }
-  
-  .date {
-    font-size: 14px; /* Adjust font size */
-    margin-top: 3px; /* Adjust spacing */
-  }
-  
-  .secondary-card {
-    /* height: 180px; */ /* Uncomment if needed */
-    /* width: 90vh; */ /* Uncomment if needed */
-  }
-  
-  .image-of-secondoryCard img {
-    max-width: 100%; /* Ensure images don't overflow container */
-  }
-
-  .MainCard .blogs-article-icon {
-    width: 20px;
-    height: 20px;
-  }
-
-  .MainCard .span-line {
-   
-  }
-  
-  @media (max-width: 768px) {
-    .BlogCard-container .body-heading {
-        font-size: 36px; /* Smaller font size for tablets */
-    }
-
-    .BlogCard-container .MainCard {
-      padding: 8vh 0vh;
-    }
-
-    .BlogCard-container .title {
-        font-size: 18px; /* Adjusted font size for titles */
-    }
-
-    .BlogCard-container .body-paragraph {
-        margin-top: 10px; /* Adjusted spacing */
-        margin-bottom: 1.5rem; /* Adjusted spacing */
-    }
-
-    .date {
-        font-size: 12px; /* Smaller font size for date */
-    }
-
-    .secondary-card-div{
-      justify-content: center;
-      align-items: center;
-    }
-    .MainCard .span-line {
-      
-    }
-
-    .design-date-content {
-      padding: 2vh 0vh;
-    }
-    
+  padding: 12vh 0;
 }
 
-/* For mobile devices */
+.BlogCard-container .body-heading {
+  font-weight: 900;
+  font-size: 50px;
+}
+
+.BlogCard-container .body-paragraph {
+  margin-top: 15px;
+  margin-bottom: 2rem;
+}
+
+.BlogCard-container .anchor {
+  text-decoration: underline;
+  cursor: pointer;
+  transition: .3s;
+  display: inline-block;
+}
+
+.BlogCard-container .title {
+  /* font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 6px; */
+  font-size: 30px;
+  text-align: left;
+}
+
+.date {
+  font-size: 14px;
+  margin-top: 3px;
+}
+
+.secondary-card {}
+
+.image-of-secondoryCard img {
+  max-width: 100%;
+}
+
+.MainCard .blogs-article-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.MainCard .span-line {}
+
+@media (max-width: 768px) {
+  .BlogCard-container .body-heading {
+    font-size: 36px;
+  }
+
+  .BlogCard-container .MainCard {
+    padding: 8vh 0vh;
+  }
+
+  .BlogCard-container .title {
+    font-size: 18px;
+  }
+
+  .BlogCard-container .body-paragraph {
+    margin-top: 10px;
+    margin-bottom: 1.5rem;
+  }
+
+  .date {
+    font-size: 12px;
+  }
+
+  .secondary-card-div {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .MainCard .span-line {}
+
+  .design-date-content {
+    padding: 2vh 0vh;
+  }
+
+}
+
 @media (max-width: 480px) {
-    .BlogCard-container {
-        padding: 8vh 0; /* Adjust padding for mobile */
-    }
+  .BlogCard-container {
+    padding: 8vh 0;
+  }
 
-    .BlogCard-container .body-heading {
-        font-size: 28px; /* Even smaller font size for mobile */
-    }
+  .BlogCard-container .body-heading {
+    font-size: 28px;
+  }
 
-    .BlogCard-container .title {
-        font-size: 16px; /* Further adjusted font size for titles */
-    }
+  .BlogCard-container .title {
+    font-size: 16px;
+  }
 
-    .BlogCard-container .body-paragraph {
-        margin-top: 8px; /* Further adjusted spacing */
-        margin-bottom: 1rem; /* Further adjusted spacing */
-    }
+  .BlogCard-container .body-paragraph {
+    margin-top: 8px;
+    margin-bottom: 1rem;
+  }
 
-    .date {
-        font-size: 10px; /* Smaller font size for date */
-    }
+  .date {
+    font-size: 10px;
+  }
 }

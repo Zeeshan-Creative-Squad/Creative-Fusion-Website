@@ -1,11 +1,11 @@
 .HomeHero-container {
     height: 100vh;
     min-height: auto;
-    position: relative; /* Add this to ensure absolute positioning works correctly */
+    position: relative;
 }
 
 .HomeHero-container .text-content {
-    text-align: left; 
+    text-align: left;
     padding-bottom: 180px;
 }
 
@@ -20,7 +20,6 @@
 }
 
 .HomeHero-container .text-content .body-paragraph {
-    /* Add styles if needed */
     line-height: 1.9;
 }
 
@@ -42,9 +41,9 @@
     width: 80%;
 }
 
-.HomeHero-container .img-2{
+.HomeHero-container .img-2 {
     position: relative;
-    top: -197px;
+    top: -200px;
 }
 
 .HomeHero-container .img-container {
@@ -52,15 +51,13 @@
     margin-left: 8%;
 }
 
-
-
 @media (max-width: 768px) {
     .HomeHero-container {
         height: auto;
-        padding: 20px; /* Add padding for smaller screens */
+        padding: 20px;
     }
 
-    .HomeHero-container .Hero-Text-Div{
+    .HomeHero-container .Hero-Text-Div {
         padding: 40px 20px;
     }
 
@@ -69,28 +66,28 @@
     }
 
     .HomeHero-container .text-content {
-        text-align: center; /* Center text for smaller screens */
-        padding-bottom: 0px; 
+        text-align: center;
+        padding-bottom: 0px;
     }
 
     .HomeHero-container .text-content .body-heading {
-        font-size: 32px; /* Adjust font size for smaller screens */
+        font-size: 32px;
     }
 
     .HomeHero-container .text-content .body-paragraph {
-        font-size: 16px; /* Adjust font size for smaller screens */
+        font-size: 16px;
     }
 
     .HomeHero-container .home-hero-img {
         position: absolute;
         max-height: 100%;
-        width: 100%; /* Make the image responsive */
+        width: 100%;
         left: 50%;
         bottom: 40%;
         transform: translateX(-50%);
-        margin-top: 25px; /* Add margin to separate text and image */
+        margin-top: 25px;
     }
-    
+
     .HomeHero-container .img-1 {
         top: -24px;
         width: 100%;
@@ -99,31 +96,31 @@
     .HomeHero-container .img-container {
         height: auto;
         margin-left: 0;
-        text-align: center; /* Center image container */
+        text-align: center;
     }
 
     .HomeHero-container .img-2 {
         position: relative;
-        top: 21px; /* Adjust position if necessary */
-        height: 480px; /* Adjust height if necessary */
+        top: 21px;
+        height: 480px;
     }
 }
 
 @media (min-width: 769px) and (max-width: 991px) {
     .HomeHero-container {
-        height: 100vh; /* Adjust height for medium screens */
+        height: 100vh;
     }
 }
 
 @media (max-width: 576px) {
     .HomeHero-container {
         height: auto;
-        padding: 20px; /* Add padding for smaller screens */
+        padding: 20px;
     }
-   
+
     .HomeHero-container .text-content {
-        text-align: center; /* Center text for smaller screens */
-        padding-bottom: 0px; 
+        text-align: center;
+        padding-bottom: 0px;
     }
 
     .HomeHero-container .text-content .body-heading {
@@ -131,19 +128,19 @@
     }
 
     .HomeHero-container .text-content .body-paragraph {
-        font-size: 14px; /* Adjust font size for smaller screens */
+        font-size: 14px;
     }
 
     .HomeHero-container .home-hero-img {
         position: absolute;
         max-height: 100%;
-        width: 100%; /* Make the image responsive */
+        width: 100%;
         left: 50%;
         bottom: 40%;
         transform: translateX(-50%);
-        margin-top: 20px; /* Add margin to separate text and image */
+        margin-top: 20px;
     }
-    
+
     .HomeHero-container .img-1 {
         top: auto;
         width: 100%;
@@ -152,15 +149,35 @@
     .HomeHero-container .img-container {
         height: auto;
         margin-left: 0;
-        text-align: center; /* Center image container */
+        text-align: center;
     }
 
     .HomeHero-container .img-2 {
         position: relative;
-        top: 21px; /* Adjust position if necessary */
-        height: 490px; /* Adjust height if necessary */
+        top: 21px;
+        height: 490px;
     }
 }
 
+/* @media screen and (max-width: 1366px) and (max-height: 768px) {
+    .HomeHero-container .home-hero-img {
+        max-height: 120%;
 
+    }
 
+    .HomeHero-container .img-2 {
+        position: relative;
+        top: -95px;
+    }
+
+    .HomeHero-container .img-1 {
+        top: -20px;
+        width: 80%;
+    }
+
+    .HomeHero-container .text-content .body-heading {
+
+        font-size: 45px;
+        font-weight: 800;
+    }
+} */

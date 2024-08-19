@@ -1,7 +1,7 @@
-import React, { Fragment } from "react"; 
+import React, { Fragment } from "react";
 import BlogsListings from "./BlogsListings";
 
-const Blog = () => { 
+const Blog = () => {
   return (
     <Fragment>
       <BlogsListings />

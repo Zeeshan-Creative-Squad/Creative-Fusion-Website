@@ -8,12 +8,12 @@ import { Form, Spinner } from "react-bootstrap";
 const BlogsPopup = ({ blogsDetails, editMode, reloadBlogs, id }) => {
 
   // 
-  const [anchorValue,setAnchorValue]= useState("")
-  const [anchorHref,setAnchorHref]= useState("")
-  const [cusImg , setCusImg] = useState("")
-  const [metaTit,setMetaTit] = useState("")
-  const [metaDesc,setMetaDesc] = useState("")
-  const [metaCon,setMetaCon] = useState("")
+  const [anchorValue, setAnchorValue] = useState("")
+  const [anchorHref, setAnchorHref] = useState("")
+  const [cusImg, setCusImg] = useState("")
+  const [metaTit, setMetaTit] = useState("")
+  const [metaDesc, setMetaDesc] = useState("")
+  const [metaCon, setMetaCon] = useState("")
 
   const [uploading, setUploading] = useState(false);
   const [blogsData, setBlogsData] = useState({
@@ -191,9 +191,9 @@ const BlogsPopup = ({ blogsDetails, editMode, reloadBlogs, id }) => {
     axios
       .put(`/blog/${id}`, {
         ...blogsData,
-        metaTitle:metaTit,
-        metaDescription:metaDesc,
-        canonicalLink:metaCon,
+        metaTitle: metaTit,
+        metaDescription: metaDesc,
+        canonicalLink: metaCon,
         blogs_content: blogsData.blogs_content.filter(
           (obj) => obj.heading !== "" && obj.paragraph !== ""
         ),
@@ -214,9 +214,9 @@ const BlogsPopup = ({ blogsDetails, editMode, reloadBlogs, id }) => {
     axios
       .post(`/blog`, {
         ...blogsData,
-        metaTitle:metaTit,
-        metaDescription:metaDesc,
-        canonicalLink:metaCon,
+        metaTitle: metaTit,
+        metaDescription: metaDesc,
+        canonicalLink: metaCon,
         blogs_content: blogsData.blogs_content.filter(
           (obj) => obj.heading !== "" && obj.paragraph !== ""
         ),
@@ -246,33 +246,33 @@ const BlogsPopup = ({ blogsDetails, editMode, reloadBlogs, id }) => {
 
     // Check if the input element exists
     if (inputElement) {
-        // Select the text in the input element
-        inputElement.select();
+      // Select the text in the input element
+      inputElement.select();
 
-        document.execCommand('copy');
+      document.execCommand('copy');
 
-        inputElement.setSelectionRange(0, 0);
+      inputElement.setSelectionRange(0, 0);
 
-        console.log(`Value "${inputElement.value}" copied to clipboard.`);
+      console.log(`Value "${inputElement.value}" copied to clipboard.`);
     } else {
-        console.error(`Input element with ID "${inputId}" not found.`);
+      console.error(`Input element with ID "${inputId}" not found.`);
     }
-}
-const addParagraph = ()=>{
-  let currData = blogsData.blogs_content;
-  currData.push({
-    heading: "",
-    paragraph: "",
-  })
-  setBlogsData((prev)=>{
-    return (
-      {
-        ...prev,
-        blogs_content:currData
-      }
-    )
-  })
-}
+  }
+  const addParagraph = () => {
+    let currData = blogsData.blogs_content;
+    currData.push({
+      heading: "",
+      paragraph: "",
+    })
+    setBlogsData((prev) => {
+      return (
+        {
+          ...prev,
+          blogs_content: currData
+        }
+      )
+    })
+  }
 
   return (
     <Popup
@@ -286,7 +286,7 @@ const addParagraph = ()=>{
           <h2 className="h2_main">Blogs Upload</h2>
           <button onClick={PopupCloseHandler}>
             <span>
-              <img src="/images/icons/cross-icon-menu.png" className="cancel-icon" alt="cancel icon"/>
+              <img src="/images/icons/cross-icon-menu.png" className="cancel-icon" alt="cancel icon" />
             </span>
           </button>
         </div>
@@ -361,27 +361,27 @@ const addParagraph = ()=>{
               <div>
                 <label className="mb-1 mt-4">Meta Title :</label>
                 <input
-                value={metaTit}
-                onChange={(e)=>{setMetaTit(e.target.value)}}
-                className=""
-                id="meta title"
-                placeholder="Meta title"
+                  value={metaTit}
+                  onChange={(e) => { setMetaTit(e.target.value) }}
+                  className=""
+                  id="meta title"
+                  placeholder="Meta title"
                 />
               </div>
-              
+
               <label className="mb-1 mt-3">Meta Description :</label>
               <input
                 type="text"
                 value={metaDesc}
-                onChange={(e)=>{setMetaDesc(e.target.value)}}
+                onChange={(e) => { setMetaDesc(e.target.value) }}
                 placeholder="Meta description"
               />
 
               <label className="mb-1 mt-3">Canonical Link :</label>
               <input
                 type="text"
-                value={ metaCon}
-                onChange={(e)=>{setMetaCon(e.target.value)}}
+                value={metaCon}
+                onChange={(e) => { setMetaCon(e.target.value) }}
                 placeholder="Canonical Link"
               />
               {/* <input
@@ -469,13 +469,13 @@ const addParagraph = ()=>{
                       />
                     </div>
                   ))}
-                  <button 
+                  <button
                     className=""
-                    style={{width:"100%",padding:"10px",border:"1px solid black"}}
+                    style={{ width: "100%", padding: "10px", border: "1px solid black" }}
                     onClick={addParagraph}
-                    >
-                     +  Add Paragraph
-                    </button>
+                  >
+                    +  Add Paragraph
+                  </button>
                 </div>
               )}
             </div>

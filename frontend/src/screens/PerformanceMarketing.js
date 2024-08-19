@@ -5,11 +5,16 @@ import GratefulPartner from '../components/GratefulPartner/GratefulPartner';
 import TextContent from '../components/TextContent/TextContent';
 import Footer from './Footer'
 import { useNavigate } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
 function PerformanceMarketing() {
     const navigate = useNavigate();
   return (
     <>
+     <Helmet>
+      <title>Top Performance Marketing Services in Karachi - Expert Agency</title>
+      <meta name="description" content="Boost your brand with our top performance marketing specialist services in Karachi. We offer data-driven strategies and innovative solutions for optimal ROI." />
+    </Helmet>
         <div className='box multi-gradient '>
             <div className='glass-box'>
                 <ServicesInnerHero Heading="Performance" yellowHeading="Marketing" Para="Step into the world of Performance Marketing with us, where we collaborate to drive measurable results for your brand. From data-driven strategies to ROI-focused campaigns, we're here for you. " heroBannerImg="/images/creatives/Performance-Hero.png"/>

@@ -5,11 +5,16 @@ import GratefulPartner from '../components/GratefulPartner/GratefulPartner';
 import TextContent from '../components/TextContent/TextContent';
 import Footer from './Footer'
 import { useNavigate } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
 function GoogleAds() {
     const navigate = useNavigate();
   return (
     <>
+     <Helmet>
+      <title>Best PPC & Google Ads Service Agency in Karachi - Pakistan</title>
+      <meta name="description" content="Maximize ROI with top PPC management services in Karachi. Our agency offers targeted PPC management, Google Ads solutions for businesses across Pakistan. Get expert help today!" />
+    </Helmet>
         <div className='box multi-gradient '>
             <div className='glass-box'>
                 <ServicesInnerHero Heading="Google" yellowHeading="Ads" Para="Step into the world of Google Ads with us, where we collaborate to create high-impact advertising campaigns. From keyword research to ad creation and optimization, we're here to ensure your brand reaches its target audience effectively." heroBannerImg="/images/creatives/GoogleAds-Hero.webp"/>
