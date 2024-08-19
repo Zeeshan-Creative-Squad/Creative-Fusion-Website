@@ -6,55 +6,113 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
-  <url>
+<url>
     <loc>https://www.crea8ivefusion.com/</loc>
+ 
   </url>
+
   <url>
     <loc>https://www.crea8ivefusion.com/about</loc>
   </url>
+
   <url>
     <loc>https://www.crea8ivefusion.com/services</loc>
+
   </url>
+
   <url>
     <loc>https://www.crea8ivefusion.com/design-and-branding</loc>
+
   </url>
+
   <url>
     <loc>https://www.crea8ivefusion.com/web-development</loc>
+  
   </url>
+
   <url>
     <loc>https://www.crea8ivefusion.com/social-media-marketing</loc>
+
   </url>
+
   <url>
     <loc>https://www.crea8ivefusion.com/google-ads</loc>
+  
   </url>
+
   <url>
     <loc>https://www.crea8ivefusion.com/search-engine-optimization</loc>
+
   </url>
+
   <url>
     <loc>https://www.crea8ivefusion.com/uiux-development</loc>
+
   </url>
+
   <url>
     <loc>https://www.crea8ivefusion.com/performance-marketing</loc>
+
   </url>
+
   <url>
     <loc>https://www.crea8ivefusion.com/ecommerce-development</loc>
+
   </url>
+
   <url>
     <loc>https://www.crea8ivefusion.com/application-development</loc>
+
   </url>
-  <url>
-    <loc>https://www.crea8ivefusion.com/casestudies</loc>
-  </url>
-  <url>
-    <loc>https://www.crea8ivefusion.com/blog</loc>
-  </url>
+
   <url>
     <loc>https://www.crea8ivefusion.com/contact</loc>
+
   </url>
+
+  <url>
+    <loc>https://www.crea8ivefusion.com/blog</loc>
+
+  </url>
+
+  <url>
+    <loc>https://www.crea8ivefusion.com/blogs/why-creative-fusions-web-development-is-essential-for-pakistani-businesses</loc>
+
+  </url>
+
+  <url>
+    <loc>https://www.crea8ivefusion.com/blogs/why-uiux-development-is-crucial-for-pakistani-websites-creative-fusions-perspective</loc>
+
+  </url>
+
+  <url>
+    <loc>https://www.crea8ivefusion.com/blogs/creative-fusions-ecommerce-development-services-grow-your-business-online</loc>
+
+  </url>
+
+  <url>
+    <loc>https://www.crea8ivefusion.com/blogs/the-ultimate-guide-to-seo-for-pakistani-businesses-insights-from-creative-fusion</loc>
+
+  </url>
+
+  <url>
+    <loc>https://www.crea8ivefusion.com/blogs/how-creative-fusions-design-and-branding-can-transform-your-brand-in-pakistan</loc>
+
+  </url>
+
+  <url>
+    <loc>https://www.crea8ivefusion.com/blogs/creative-fusions-google-ads-expertise-drive-traffic-and-sales-in-pakistan</loc>
+
+  </url>
+
   <url>
     <loc>https://www.crea8ivefusion.com/refund-policy</loc>
+
   </url>
+
   <url>
     <loc>https://www.crea8ivefusion.com/privacy-policy</loc>
+
   </url>
+
 </urlset>
