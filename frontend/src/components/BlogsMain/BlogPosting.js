@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
 import './BlogPosting.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -10,7 +10,7 @@ import { useNavigate } from 'react-router-dom';
 import { Spinner } from 'react-bootstrap';
 
 const cardDataOlevel = [
-  
+
   {
     cardImg: "./images/creatives/blogcardimg.png",
     title: "The Power of Progressive Web apps",
@@ -40,7 +40,6 @@ function BlogPosting(props) {
 
   const navigate = useNavigate()
 
-
   let blogAPICalledId = false;
   let allBlogsCalled = false;
 
@@ -49,7 +48,7 @@ function BlogPosting(props) {
     allBlogsCalled = true;
 
     setLoading(true);
-    
+
     axios
       .get(`/blogs`, {})
       .then((res) => {
@@ -66,7 +65,7 @@ function BlogPosting(props) {
               date: item.published_date,
             });
           });
-          
+
           setRecentBlogs(Updated_recent_blogs);
           setLoading(false);
         }
@@ -116,49 +115,49 @@ function BlogPosting(props) {
         </div>
 
         {
-        loading?
-          <div
-            style={{ width: "100%", height: "100vh" }}
-            className="d-flex justify-content-center align-items-center"
-          >
-            <Spinner
-              style={{ color: "#3F1626", width: "120px", height: "120px" }}
-            />
-          </div>
-        :
-
-        <Swiper
-          loop={true}
-          spaceBetween={50}
-          autoplay={{
-            delay: 1400,
-            disableOnInteraction: false,
-          }}
-          breakpoints={{
-            280: {
-              slidesPerView: 1,
-            },
-            992: {
-              slidesPerView: 3,
-            }
-          }}
-          modules={[Autoplay]} // Register the Autoplay module
-          className="card-list py-4 mx-0 w-100 px-2"
-        >
-          {recentBlogs.map((ele, ind) => (
-            <SwiperSlide key={ind} style={{ height: "auto" }}>
-              <CardBox
-                className="h-100"
-                cardImg={ele.logo}
-                title={ele.blog_description}
-                price={ele.price}
-                slug_url={ele.slug_url}
-                content={ele.content}
+          loading ?
+            <div
+              style={{ width: "100%", height: "100vh" }}
+              className="d-flex justify-content-center align-items-center"
+            >
+              <Spinner
+                style={{ color: "#3F1626", width: "120px", height: "120px" }}
               />
-            </SwiperSlide>
-          ))}
-        </Swiper>
-}
+            </div>
+            :
+
+            <Swiper
+              loop={true}
+              spaceBetween={50}
+              autoplay={{
+                delay: 1400,
+                disableOnInteraction: false,
+              }}
+              breakpoints={{
+                280: {
+                  slidesPerView: 1,
+                },
+                992: {
+                  slidesPerView: 3,
+                }
+              }}
+              modules={[Autoplay]} // Register the Autoplay module
+              className="card-list py-4 mx-0 w-100 px-2"
+            >
+              {recentBlogs.map((ele, ind) => (
+                <SwiperSlide key={ind} style={{ height: "auto" }}>
+                  <CardBox
+                    className="h-100"
+                    cardImg={ele.logo}
+                    title={ele.blog_description}
+                    price={ele.price}
+                    slug_url={ele.slug_url}
+                    content={ele.content}
+                  />
+                </SwiperSlide>
+              ))}
+            </Swiper>
+        }
       </div>
     </div>
   );

@@ -1,25 +1,16 @@
 import React, { Fragment, useEffect, useState } from 'react';
 import './LandingPage.css';
 import { Helmet } from 'react-helmet';
-// import PartnershipAwards from './components/PartnershipAwards';
-// import OurServices from '../../components/OurServices/ourServices'
-// import BusinessGrowth from './components/BusinessGrowth';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
 import { Spinner } from 'react-bootstrap';
-import LocationContent from './Components/LocationContent'; 
+import LocationContent from './Components/LocationContent';
 import TextContent from '../TextContent/TextContent';
-// import NotFound from '../../screens/NotFound';
-// import Footer from '../Footer/Footer';
-
-
-// import Header from '../Header/Header';
-// import TextContent from '../TextContent/TextContent';
 
 const LocationPages = () => {
     const [locationPage, setLocationPage] = useState({});
     const [loading, setLoading] = useState(true);
-    const {slug} = useParams();
+    const { slug } = useParams();
 
     let locationDataCalled = false
 
@@ -28,22 +19,22 @@ const LocationPages = () => {
     }, []);
 
     const fetchLocationPageDataById = () => {
-        if(locationDataCalled) return;
+        if (locationDataCalled) return;
         locationDataCalled = true;
 
         setLoading(true)
         axios.get(`/api/locationpages/url/${slug}`, {})
-        .then((res) => {
-            if (res.data.status === "success") {
-                
-                setLoading(false)
-                setLocationPage(res.data.data)
-            }else { setLoading(false)  }
-        }).catch((err) => { setLoading(false) })
+            .then((res) => {
+                if (res.data.status === "success") {
+
+                    setLoading(false)
+                    setLocationPage(res.data.data)
+                } else { setLoading(false) }
+            }).catch((err) => { setLoading(false) })
     }
 
     const MapHelmetMetaTags = () => {
-        return(
+        return (
             <Helmet>
                 <title>{locationPage?.meta_title}</title>
                 <meta name="keywords" content={locationPage?.meta_keywords} />
@@ -56,11 +47,11 @@ const LocationPages = () => {
     const isEmpty = (obj) => { return Object.keys(obj).length === 0 };
 
     const LocationPageModule = () => {
-        return ( 
+        return (
             <div className='location_page_wrapper'>
-                
-        
-                { MapHelmetMetaTags() }
+
+
+                {MapHelmetMetaTags()}
                 {/* <Header
                     darkBg={true}
                 /> */}
@@ -96,9 +87,9 @@ const LocationPages = () => {
         )
     }
 
-    return ( 
-        <Fragment> 
-            { loading ? <div className='w-100 text-center'> <Spinner style={{color: 'black', width: '120px', height: '120px'}} /> </div> : ( isEmpty(locationPage) ? <h3>NotFound</h3> : LocationPageModule()) }
+    return (
+        <Fragment>
+            {loading ? <div className='w-100 text-center'> <Spinner style={{ color: 'black', width: '120px', height: '120px' }} /> </div> : (isEmpty(locationPage) ? <h3>NotFound</h3> : LocationPageModule())}
         </Fragment>
     )
 };

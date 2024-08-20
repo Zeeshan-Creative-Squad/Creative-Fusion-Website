@@ -28,43 +28,43 @@ const AdminScreen = () => {
       <Helmet>
         <meta name="robots" content="noindex" />
       </Helmet>
-    <div
-      style={{ width: "100%", height: "100vh", paddingTop: "120px" }}
-      className="Admin-screen-main d-flex justify-content-center align-items-start"
-    >
-      <div className="container admin-screen">
-        <div className="row pb-3">
-          <div className="col">
-            <h1 className="h1_main">Profile</h1>
+      <div
+        style={{ width: "100%", height: "100vh", paddingTop: "120px" }}
+        className="Admin-screen-main d-flex justify-content-center align-items-start"
+      >
+        <div className="container admin-screen">
+          <div className="row pb-3">
+            <div className="col">
+              <h1 className="h1_main">Profile</h1>
+            </div>
+            <div className="col d-flex justify-content-end">
+              <button
+                // style={{ width: "70%", maxWidth: "200px" }}
+                onClick={logoutHandler}
+                className="genral-btn btn-red"
+              >
+                Logout
+              </button>
+            </div>
           </div>
-          <div className="col d-flex justify-content-end">
-            <button
-              // style={{ width: "70%", maxWidth: "200px" }}
-              onClick={logoutHandler}
-              className="genral-btn btn-red"
-            >
-              Logout
-            </button>
-          </div>
-        </div>
-        <h1 className="heading_capital">
-          <span>Admin Portal</span>
-        </h1>
-        <h2 className="h2_main pt-3 pb-3">Please Select an option:</h2>
-        {/* <Link  to="/admin/casestudy">
+          <h1 className="heading_capital">
+            <span>Admin Portal</span>
+          </h1>
+          <h2 className="h2_main pt-3 pb-3">Please Select an option:</h2>
+          {/* <Link  to="/admin/casestudy">
          Case Study 
         </Link> */}
-        <br />
-        <Link className="h3_main" to="/admin/blogs">
-          Blogs
-        </Link>
-        <br />
-        <Link className="h3_main" to="/admin/location-pages">
-          Location Pages
-        </Link>
-        
+          <br />
+          <Link className="h3_main" to="/admin/blogs">
+            Blogs
+          </Link>
+          <br />
+          <Link className="h3_main" to="/admin/location-pages">
+            Location Pages
+          </Link>
+
+        </div>
       </div>
-    </div>
     </Fragment>
   );
 };

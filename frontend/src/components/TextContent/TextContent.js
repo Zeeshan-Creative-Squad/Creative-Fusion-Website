@@ -85,7 +85,8 @@ function TextContent({
                 reviewContent &&
                 <div>
                   <div className='d-flex gap-3 align-items-center founder-div'>
-                    <img src='/images/creatives/about-text-content-1.png' alt='person' className='' />
+                    {/* <img src='/images/creatives/Taha-Sheikh.jfif' alt='person' className='' /> */}
+                    <img src={imgg} alt='person' className='' style={{width: "100px"}}/>
                     <div>
                       <p className='sub-heading color-red mb-0'>{title}</p>
                       <p className='body-paragraph mb-3'>{designation}</p>
