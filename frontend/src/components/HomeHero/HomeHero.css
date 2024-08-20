@@ -30,20 +30,20 @@
 
 .HomeHero-container .home-hero-img {
     position: absolute;
-    max-height: 140%;
+    max-height: 130%;
     left: 57%;
     bottom: 1.5%;
     transform: translateX(-50%);
 }
 
 .HomeHero-container .img-1 {
-    top: -83px;
+    top: -80px;
     width: 80%;
 }
 
 .HomeHero-container .img-2 {
     position: relative;
-    top: -200px;
+    top: -145px;
 }
 
 .HomeHero-container .img-container {

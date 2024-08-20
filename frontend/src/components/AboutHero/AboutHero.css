@@ -43,6 +43,10 @@
     height: 550px;
 }
 
+.AboutHero-container .about-main-content {
+    padding: 16vh 0vh;
+}
+
 @media (max-width: 768px) {
     .AboutHero-container {
         height: auto;
@@ -52,7 +56,7 @@
     .AboutHero-container .text-content {
         padding-bottom: 50px;
         text-align: center;
-        padding: 12vh 0vh;
+        /* padding: 12vh 0vh; */
     }
 
     .AboutHero-container .body-heading {
@@ -107,3 +111,9 @@
         padding: 7vh 0vh;
     }
 }
+
+/* @media (max-width: 1650px) {
+    .AboutHero-container .about-main-content {
+        padding: 15vh 0vh;
+    }
+} */
