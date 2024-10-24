@@ -1,17 +1,16 @@
-.TextContent-container
-{
+.TextContent-container {
     background-color: #101010;
     padding-top: 5rem;
     padding-bottom: 5rem;
-    
 }
-.TextContent-container .imgg-style{
+
+.TextContent-container .imgg-style {
     width: 60vh;
     height: 35vh;
     margin-left: 36px;
 }
-.TextContent-container .list-bullet
-{
+
+.TextContent-container .list-bullet {
     margin: 0;
     margin-right: 5px;
 }
@@ -19,79 +18,93 @@
 .TextContent-container .body-heading {
     font-size: 50px;
     font-weight: 900;
-
 }
 
-.TextContent-container .body-paragraph{
+.TextContent-container .body-paragraph {
     color: #EAEBEB;
+}
+
+@media (max-width: 1024px) {
+    .TextContent-container .body-heading {
+        font-size: 40px;
+        font-weight: 900;
+    }
+    .TextContent-container {
+        background-color: #101010;
+        padding-top: 0rem;
+        padding-bottom: 0rem;
+        padding: 4vh 0vh;
+    }
 }
 
 @media (max-width: 768px) {
     .TextContent-container {
-        padding-top: 3rem; 
-        padding-bottom: 3rem; 
+        padding-top: 3rem;
+        padding-bottom: 3rem;
     }
 
     .TextContent-container .imgg-style {
-        width: 100%; 
-        height: auto; 
-        margin-left: 0; 
+        width: 100%;
+        height: auto;
+        margin-left: 0;
     }
 
     .TextContent-container .text-content {
-        text-align: center; 
+        text-align: center;
     }
 
     .TextContent-container .body-heading {
-        font-size: 28px; 
+        font-size: 28px;
         text-align: center;
         margin-bottom: 18px;
     }
-   
+
 
     .TextContent-container .body-paragraph {
-        margin-bottom: 2rem; 
-        font-size: 16px; 
-        width: auto; 
-        max-width: none; 
+        margin-bottom: 2rem;
+        font-size: 16px;
+        width: auto;
+        max-width: none;
         text-align: center;
-        
+
     }
 
     .TextContent-container .list-para {
         border-bottom: 0.5px solid rgba(128, 128, 128, 0.664);
         width: 100%;
-    
+
         padding: 1.1vh 0vh;
     }
 
     .TextContent-container .icon-list {
-        flex-direction: column; 
+        flex-direction: column;
     }
 
     .TextContent-container .list-bullet {
-        margin-right: 0.5rem; 
+        margin-right: 0.5rem;
     }
 
     .TextContent-container .genral-btn {
-        width: 100%; 
-        margin-top: 1rem; 
+        width: 100%;
+        margin-top: 1rem;
     }
 
     .TextContent-container .img-fluid {
-        max-width: 100%; 
+        max-width: 100%;
     }
 
     .TextContent-container .row {
-        margin-left: 0; 
-        margin-right: 0; 
+        margin-left: 0;
+        margin-right: 0;
     }
-    .TextContent-container .founder-div{
+
+    .TextContent-container .founder-div {
         flex-direction: column;
         justify-content: center;
         text-align: center;
     }
-    .TextContent-container .social-icons-founder{
+
+    .TextContent-container .social-icons-founder {
         justify-content: center;
     }
 }

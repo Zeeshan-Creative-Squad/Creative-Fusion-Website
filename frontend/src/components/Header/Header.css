@@ -275,12 +275,10 @@
   opacity: 0;
   padding: 0px;
   margin: 0;
-  
-  
 }
 
 .dropdown-mobile-topical-content.open {
-  max-height: 500px; 
+  max-height: 500px;
   opacity: 1;
   background-color: #424140;
   border-radius: 10px;
@@ -289,6 +287,8 @@
   width: fit-content;
 
 }
+
+@media(max-width : 1280px) {}
 
 
 
@@ -312,7 +312,6 @@
 
 @media (max-width: 1024px) {
   .header {
-    flex-direction: column;
     align-items: flex-start;
     padding: 0 1rem;
   }
@@ -321,10 +320,9 @@
     margin-top: 1rem;
   }
 
-  .header .main-nav {
-    flex-direction: column;
+  /* .header .main-nav {
     align-items: flex-start;
-  }
+  } */
 
   .header .nav-list {
     display: none;

@@ -1,11 +1,13 @@
-.ServicesHero-container {}
+.ServicesHero-container {
+    height: 100vh;
+}
 
 .ServicesHero-container .text-content {
     text-align: left;
     padding-bottom: 190px;
 }
 
-.ServicesHero-container .service-text-div{
+.ServicesHero-container .service-text-div {
     padding: 16vh 2vh;
 }
 
@@ -49,12 +51,49 @@
     padding-bottom: 190px;
 }
 
-@media (min-width: 1000px) and (max-width: 1399.98px) {
+/* @media (min-width: 1000px) and (max-width: 1399.98px) {
     .ServicesHero-container .text-content {
         padding-bottom: 150px;
         text-align: center;
     }
+} */
+
+
+@media (max-width: 1280px) {
+    .ServicesHero-container .body-heading {
+        font-size: 35px;
+    }
+
+    .ServicesHero-container .service-text-div {
+        padding: 4vh 2vh 0vh 2vh;
+    }
+
+    .ServicesHero-container .services-para {
+        font-size: 1rem;
+        line-height: 2;
+        color: #eaebeb;
+        padding-right: 0px;
+    }
 }
+
+
+@media (max-width: 1024px) {
+    .ServicesHero-container .service-text-div {
+        padding: 4vh 2vh 0vh 2vh;
+    }
+
+    .ServicesHero-container .body-heading {
+        font-size: 32px;
+    }
+
+    .ServicesHero-container .services-para {
+        font-size: 1rem;
+        line-height: 2;
+        color: #eaebeb;
+        padding-right: 0px;
+    }
+}
+
 
 @media (max-width: 768px) {
     .ServicesHero-container {
@@ -62,7 +101,7 @@
         padding: 20px;
     }
 
-    .ServicesHero-container .service-text-div{
+    .ServicesHero-container .service-text-div {
         padding: 5vh 0vh;
     }
 
@@ -96,7 +135,8 @@
     .ServicesHero-container .services-hero-img {
         padding-bottom: 50px;
     }
-    .ServicesHero-container .service-btn{
+
+    .ServicesHero-container .service-btn {
         margin-top: 12px;
     }
 }
