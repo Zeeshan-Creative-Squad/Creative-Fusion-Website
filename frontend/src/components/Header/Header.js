@@ -24,17 +24,17 @@ const Header = ({ darkBg = false, props }) => {
 
   const onClickService = (e) => {
     e.preventDefault();
-    
-      clickCountRef.current++;
-      if (clickCountRef.current === 1) {
-        setIsDropdownOpenServices(true);
-      } 
-      else if (clickCountRef.current === 2) {
-        setMenuState(false)
-        setIsDropdownOpenServices(false)
-        navigate("/services");
-        clickCountRef.current = 0;
-      }
+
+    clickCountRef.current++;
+    if (clickCountRef.current === 1) {
+      setIsDropdownOpenServices(true);
+    }
+    else if (clickCountRef.current === 2) {
+      setMenuState(false)
+      setIsDropdownOpenServices(false)
+      navigate("/services");
+      clickCountRef.current = 0;
+    }
   };
 
 
